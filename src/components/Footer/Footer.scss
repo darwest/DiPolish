@@ -1,0 +1,93 @@
+@import "../../scss/common/mixins";
+@import "../../scss/common/variables";
+@import "../../scss/common/reset";
+
+.google-maps{
+    margin-bottom:-10px;
+}
+
+.footer {
+    @include width-height-value(100%, 170px);
+    background-color: $main-background-blue;
+
+    .footer-content {
+        @include width-height-value(100%, 170px);
+        @include flex-container(row, space-between, center);
+
+        .logo-socnetwork {
+            @include flex-container(column, flex-start, flex-start);
+
+            .socnetworks-link {
+                @include flex-container(row, space-between, flex-start);
+                width: 65%;
+
+                .telegram-link {
+                    background-color: $main-background-white;
+                    @include width-height-value(29px, 25px);
+                    border-radius: 2px;
+                    
+                }
+                .tik-link{
+                    @include width-height-value(34px, 32px);
+                    border-radius: 2px;
+                }
+            }
+        }
+
+        .menu-block {
+            .menu-list-footer {
+                @include flex-container(row, space-between, center);
+                list-style: none;
+                @extend %reset-margin-padding;
+
+                .menu-item {
+                    margin-right: 38px;
+                    @include position(relative);
+
+                    &:nth-last-child(2) {
+                        margin-right: 26px;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    .menu-link {
+                        @include position(relative);
+                        @include text-styles(20px, 400, $text-primary-color);
+
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $hover-color;
+                            transition: color 0.3s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .dev-block {
+        @include width-height-value(100%, 50px);
+        background: #222;
+
+        .dev-flex-container {
+            @include width-height-value(100%, 50px);
+            @include flex-container(row, space-between, center);
+
+            .name-dev {
+                @include text-styles(14px, 400, #B6C1CE);
+                line-height: 16px;
+            }
+
+            .link-dev {
+                @include text-styles(14px, 400, #B6C1CE);
+                line-height: 16px;
+                text-decoration: none
+
+            }
+        }
+    }
+}
+

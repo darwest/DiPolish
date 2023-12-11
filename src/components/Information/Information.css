@@ -1,0 +1,91 @@
+.info-block {
+  width: 100%;
+  height: 1000px;
+}
+.info-block .info-flex-container {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info-block .info-flex-container .section-info-blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.info-block .info-flex-container .section-info-blocks .info-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 350px;
+  height: 415px;
+  background-color: #F66E0B;
+  border-radius: 40px 0 40px 0;
+  margin: 10px;
+}
+.info-block .info-flex-container .section-info-blocks .info-block .icon-info {
+  width: 82px;
+  height: 85px;
+  flex-shrink: 0;
+}
+.info-block .info-flex-container .section-info-blocks .info-block .title-info {
+  font-size: 42px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+.info-block .info-flex-container .section-info-blocks .info-block .subtitle-info {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+.info-block .info-flex-container .section-info-blocks .info-block .block-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.info-block .info-flex-container .section-waiting-call {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: #F66E0B solid 1px;
+}
+.info-block .info-flex-container .section-waiting-call .block-waiting-call {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 152px;
+  align-items: center;
+  flex-shrink: 0;
+}
+.info-block .info-flex-container .section-waiting-call .block-waiting-call .text-block-waiting-call {
+  font-size: 42px;
+  font-weight: 600;
+  color: #F66E0B;
+}
+.info-block .info-flex-container .section-waiting-call .block2-waiting-call {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 352px;
+  height: 152px;
+  align-items: center;
+  flex-shrink: 0;
+  background: #F66E0B;
+}
+.info-block .info-flex-container .section-waiting-call .block2-waiting-call .text2-block-waiting-call {
+  font-size: 42px;
+  font-weight: 600;
+  color: #fff;
+}/*# sourceMappingURL=Information.css.map */

@@ -1,0 +1,222 @@
+@import "../../scss/common/mixins";
+@import "../../scss/common/reset";
+@import "../../scss/common/variables";
+@media (max-width: 992px) {
+
+  .header {
+    height: 100px;
+
+    .header-flex-container {
+      height: 100px;
+
+      .menu-list {
+
+        .menu-item {
+          margin-right: 18px;
+          @include position(relative);
+
+          &:nth-last-child(2) {
+            margin-right: 13px;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .menu-link {
+            @include position(relative);
+            @include text-styles(14px, 400, $text-primary-color);
+          }
+        }
+
+        .menu-item-button {
+          @include button-style($main-background-orange, 15px, 20px, 8px 16px);
+
+          .menu-link-button {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+
+  .logo-block {
+    width: 120px;
+
+    .logo {
+      width: 120px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    @include z-index(999);
+    @include height-value(120px);
+
+
+    & .active {
+      box-shadow: none;
+    }
+
+    .header-flex-container {
+      @include flex-container(column, flex-start, flex-end);
+      height: 100%;
+
+      .logo {
+        width: 140px;
+      }
+
+      .menu-block {
+        display: none;
+        background-color: none;
+        transition: all 0.5s ease;
+        z-index: 1;
+        background-color: $main-background-blue;
+        padding: 20px;
+        border-radius: 10px;
+        opacity: 0.95;
+
+        &.active {
+          transition: all 0.5s ease;
+          display: block;
+          visibility: visible;
+          z-index: 20;
+          display: block;
+        }
+
+        .menu-list {
+          @include flex-container(column, center, center);
+          gap: 20px;
+          position: relative;
+
+          .menu-item {
+
+            .menu-link {
+              @include position(relative);
+              @include text-styles(14px, 400, $text-primary-color);
+            }
+
+
+           
+          }
+           .menu-item-button {
+              @include button-style($main-background-orange, 15px, 20px, 8px 16px);
+
+              .menu-link-button {
+                font-size: 15px;
+              }
+
+            }
+        }
+      }
+
+      .burger-menu {
+        display: block;
+        position: relative;
+        @include flex-container(row, center, center);
+        @include width-height-value(35px, 20px);
+        @include button-style($main-background-orange, 21px, 6px, 3px 2px);
+        @include z-index(99);
+      }
+
+      .menu-burger-block {
+        display: block;
+        @include position(relative);
+        @include width-height-value(12px, 8px);
+        @include z-index(4);
+        padding: 2px 2px;
+
+        & span {
+          @include position(absolute);
+          @include width-height-value(100%, 2px);
+          background-color: white;
+          left: 0;
+          top: 5px;
+          transition: all 0.3s ease 0s;
+        }
+
+        &.active {
+          &::before {
+            transform: rotate(45deg);
+            top: 5px;
+          }
+
+          &::after {
+            transform: rotate(-45deg);
+            bottom: 5px;
+          }
+
+          span {
+            transform: scale(0);
+          }
+        }
+
+        &::before,
+        &::after {
+          content: "";
+          background-color: white;
+          @include position(absolute);
+          @include width-height-value(100%, 2px);
+          left: 0;
+          transition: all 0.3s ease 0s;
+        }
+
+        &::before {
+          top: 0;
+        }
+
+        &::after {
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  .logo {
+    width: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    @include height-value(80px);
+
+    .header-flex-container {
+      @include height-value(80%);
+
+      .menu-block {
+
+        .menu-list {
+
+          .menu-item {
+            margin: 15px 0 0 0;
+
+            .menu-link {
+              @include position(relative);
+              @include text-styles(10px, 400, $text-primary-color);
+            }
+            }
+
+            .menu-item-button {
+              @include button-style($main-background-orange, 11px, 20px, 8px 16px);
+
+              .menu-link-button {
+                font-size: 11px;
+              }
+            
+          }
+        }
+      }
+
+      .logo-block {
+        width: 90px;
+        height: 45px;
+
+        .logo {
+          width: 90px;
+        }
+      }
+    }
+  }
+}

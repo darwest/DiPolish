@@ -1,0 +1,85 @@
+.test-module-block {
+  width: 100%;
+  height: 1001px;
+  background: #B2BCC8;
+}
+.test-module-block .reference-text {
+  font-size: 36px;
+  font-weight: 800;
+  color: #303881;
+  font-style: normal;
+  line-height: normal;
+  text-align: right;
+  margin: 0;
+  padding-top: 80px;
+}
+.test-module-block .test-module-flex-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.test-module-block .test-module-flex-container .photo-test-module {
+  width: 486px;
+  height: 719px;
+  flex-shrink: 0;
+  position: absolute;
+  right: -80px;
+  bottom: 0;
+}
+.test-module-block .test-module-flex-container .content-test-module-block {
+  width: 840px;
+  height: 690px;
+  border-radius: 40px;
+  background: #303881;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 15px;
+}
+.test-module-block .test-module-flex-container .content-test-module-block .title-test-module-block {
+  font-size: 60px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 81.6px;
+  letter-spacing: 2.04px;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+.test-module-block .test-module-flex-container .content-test-module-block .subtitle-test-module-block {
+  font-size: 24px;
+  font-weight: 800;
+  color: #F6B40B;
+  text-align: center;
+  margin: 0;
+}
+.test-module-block .test-module-flex-container .content-test-module-block .text-test-module-block {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  width: 85%;
+}
+.test-module-block .test-module-flex-container .content-test-module-block .button-try {
+  width: 356px;
+  height: 76px;
+  border-radius: 50px;
+  background: #F66E0B;
+  margin: 60px 0 0 0;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.test-module-block .test-module-flex-container .content-test-module-block .button-try .link-button-try {
+  font-size: 25px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  line-height: 16px;
+  text-decoration: none;
+}/*# sourceMappingURL=TestModule.css.map */

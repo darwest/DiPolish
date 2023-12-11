@@ -1,0 +1,312 @@
+@import "../../scss/common/mixins";
+@import "../../scss/common/reset";
+@import "../../scss/common/variables";
+
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {
+
+    .statistics-block {
+        @include width-height-value(100%, 400px);
+
+        .statistics-flex-container {
+            @include width-height-value(100%, 400px);
+
+            .title-statistics-block {
+
+                .vertical-line {
+                    height: 250px;
+                }
+
+                .title-statistics {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+            }
+
+            .right-statistics-block {
+                @include flex-container(column, center, flex-end);
+
+                .statistics {
+                    border-radius: 40px;
+                    @include width-height-value(680px, 130px);
+                    margin-left: 40px;
+
+
+                    .statistics-list-text {
+                        padding: 0 10px 0 40px;
+                        margin-top: 30px;
+
+                        .statistics-list-number-item {
+                            @include text-styles(35px, 800, $main-color1);
+                        }
+
+                        .statistics-list-text-item {
+                            @include text-styles(18px, 700, $main-color1);
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+
+            .colors-blocks {
+                @include flex-container(row, center, center);
+
+                .color-block-one {
+                    @include width-height-value(115px, 40px);
+                }
+
+                .color-block-two {
+                    @include width-height-value(112px, 40px);
+                }
+
+                .color-block-three {
+                    @include width-height-value(112px, 40px);
+                }
+
+                .color-block-four {
+                    @include width-height-value(112px, 40px);
+                }
+
+                .color-block-fifth {
+                    @include width-height-value(112px, 40px);
+                }
+
+                .color-block-six {
+                    @include width-height-value(115px, 40px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .statistics-block {
+        @include width-height-value(100%, 350px);
+
+        .statistics-flex-container {
+            @include width-height-value(100%, 350px);
+
+            .title-statistics-block {
+
+                .vertical-line {
+                    height: 200px;
+                }
+
+                .title-statistics {
+                    font-size: 30px;
+                    line-height: 45px;
+                }
+            }
+
+            .right-statistics-block {
+                @include flex-container(column, center, flex-end);
+
+                .statistics {
+                    border-radius: 30px;
+                    @include width-height-value(450px, 100px);
+                    margin-left: 40px;
+
+
+                    .statistics-list-text {
+                        padding: 0 10px 0 25px;
+                        margin-top: 24px;
+
+                        .statistics-list-number-item {
+                            @include text-styles(26px, 800, $main-color1);
+                        }
+
+                        .statistics-list-text-item {
+                            @include text-styles(14px, 700, $main-color1);
+                            line-height: 16px;
+                        }
+                    }
+                }
+            }
+
+            .colors-blocks {
+                @include flex-container(row, center, center);
+
+                .color-block-one {
+                    @include width-height-value(80px, 25px);
+                }
+
+                .color-block-two {
+                    @include width-height-value(75px, 25px);
+                }
+
+                .color-block-three {
+                    @include width-height-value(70px, 25px);
+                }
+
+                .color-block-four {
+                    @include width-height-value(70px, 25px);
+                }
+
+                .color-block-fifth {
+                    @include width-height-value(75px, 25px);
+                }
+
+                .color-block-six {
+                    @include width-height-value(80px, 25px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .statistics-block {
+        @include width-height-value(100%, 300px);
+
+        .statistics-flex-container {
+            @include width-height-value(100%, 300px);
+
+            .title-statistics-block {
+                width: 30%;
+
+                .vertical-line {
+                    height: 150px;
+                    width: 4px;
+                }
+
+                .title-statistics {
+                    font-size: 24px;
+                    line-height: 35px;
+                }
+            }
+
+            .right-statistics-block {
+                @include flex-container(column, center, flex-end);
+
+                .statistics {
+                    border-radius: 30px;
+                    @include width-height-value(330px, 100px);
+                    margin-left: 20px;
+
+
+                    .statistics-list-text {
+                        margin-top: 24px;
+                        padding: 0 0 0 20px;
+
+                        .statistics-list-number-item {
+                            @include text-styles(22px, 800, $main-color1);
+                        }
+
+                        .statistics-list-text-item {
+                            @include text-styles(10px, 700, $main-color1);
+                            line-height: 12px;
+                        }
+                    }
+                }
+            }
+
+            .colors-blocks {
+                @include flex-container(row, center, center);
+
+                .color-block-one {
+                    @include width-height-value(60px, 25px);
+                }
+
+                .color-block-two {
+                    @include width-height-value(55px, 25px);
+                }
+
+                .color-block-three {
+                    @include width-height-value(50px, 25px);
+                }
+
+                .color-block-four {
+                    @include width-height-value(50px, 25px);
+                }
+
+                .color-block-fifth {
+                    @include width-height-value(55px, 25px);
+                }
+
+                .color-block-six {
+                    @include width-height-value(60px, 25px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .statistics-block {
+        @include width-height-value(100%, 170px);
+
+        .statistics-flex-container {
+            @include width-height-value(100%, 170px);
+
+            .title-statistics-block {
+                width: 35%;
+                .vertical-line {
+                    height: 100px;
+                    width: 4px;
+                    margin: 0 10px;
+                }
+
+                .title-statistics {
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+            }
+
+            .right-statistics-block {
+                @include flex-container(column, center, flex-end);
+
+                .statistics {
+                    border-radius: 15px;
+                    @include width-height-value(160px, 50px);
+                    margin-left: 0;
+
+
+                    .statistics-list-text {
+                        margin-top: 10px;
+                        padding: 0 0 0 10px;
+
+                        .statistics-list-number-item {
+                            @include text-styles(12px, 800, $main-color1);
+                        }
+
+                        .statistics-list-text-item {
+                            @include text-styles(5px, 700, $main-color1);
+                            line-height: 6px;
+                        }
+                    }
+                }
+            }
+
+            .colors-blocks {
+                margin-top: 10px;
+                @include flex-container(row, center, center);
+
+                .color-block-one {
+                    @include width-height-value(30px, 10px);
+                }
+
+                .color-block-two {
+                    @include width-height-value(25px, 10px);
+                }
+
+                .color-block-three {
+                    @include width-height-value(25px, 10px);
+                }
+
+                .color-block-four {
+                    @include width-height-value(25px, 10px);
+                }
+
+                .color-block-fifth {
+                    @include width-height-value(25px, 10px);
+                }
+
+                .color-block-six {
+                    @include width-height-value(30px, 10px);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+@import "../../scss/common/mixins";
+@import "../../scss/common/reset";
+@import "../../scss/common/variables";
+
+
+.banner-block {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include width-height-value(100%, 98%);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+            linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+            linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+            url('../../assets/img/background.png');
+        background-size: cover;
+        background-position: center;
+        filter: blur(3px);
+        z-index: -1;
+        top: -90px;
+    }
+
+
+    .banner-flex-container {
+        padding: 0 15px;
+        max-height: 700px;
+
+        .banner-block-one {
+            @include flex-container(row, space-between, center);
+            max-height: 700px;
+
+            .banner-text-block {
+                @include flex-container(column, space-between, flex-start);
+
+                .banner-title {
+                    margin-bottom: 8px;
+                    @include text-styles(34px, 700, $text-primary-color);
+                    line-height: 48px;
+                    word-wrap: break-word;
+
+                }
+
+                .banner-subtitle {
+                    margin: 0 0 50px;
+                    @include text-styles(24px, 400, #A8A8A8);
+                    word-wrap: break-word
+                }
+
+                .banner-button {
+                    text-align: center;
+                    @include button-style($main-background-orange, 21px, 50px, 18px 28px);
+                    width: 180px;
+                    color: $main-background-white;
+                    text-decoration: none;
+                    font-weight: 700;
+                }
+
+                .banner-button:hover {
+                    background-color: $main-background-white;
+                    transition: background-color 0.3s ease;
+                    color: $hover-color;
+                    transition: color 0.3s ease, background-color 0.3s ease;
+                }
+
+            }
+        }
+
+        .banner-image-block {
+            @include width-height-value(520px, 720px);
+            margin-top: 120px;
+
+            .main-photo {
+                @include width-height-value(520px, 720px);
+            }
+        }
+    }
+
+    .banner-block-two {
+        @include width-height-value(100%, 400px);
+        background-color: $main-background-blue;
+        transform: skewY(-5deg);
+        overflow: hidden;
+        z-index: 5;
+
+        .banner-flex-container-two {
+            @include flex-container(row, flex-end, center);
+            @include width-height-value(100%, 400px);
+            z-index: 5;
+
+            .banner-title-two {
+                margin: 0;
+                padding-right: 10px;
+                @include text-styles(34px, 700, $text-primary-color);
+                line-height: 48px;
+                width: 60%;
+                text-align: right;
+                transform: skewY(5deg);
+            }
+        }
+    }
+}

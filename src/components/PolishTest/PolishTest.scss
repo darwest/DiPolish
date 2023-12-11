@@ -1,0 +1,156 @@
+@import "../../scss/common/variables";
+@import "../../scss/common/mixins";
+@import "../../scss/common/common";
+
+
+.test-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding: 20 px 15px;
+}
+
+.test-heading{
+    text-align: center;
+    color: $main-color1;
+    font-weight: 900;
+    font-size: 2.4rem;
+}
+
+.test-description{
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.test-btn{
+    background-color: $main-background-orange;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    padding: 15px;
+    transition: all .4s ease;
+    font-weight: 700;
+ }
+
+ .test-btn:hover{
+    border-color: $main-background-orange;
+    background-color: transparent;
+    color: $main-background-orange;
+ }
+
+.test-body{
+    width: 100%;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+}
+ 
+ .test-element{
+    width: 100%;
+ }
+
+ .test-variants{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+
+    &  input {
+        cursor: pointer;
+    }
+ }
+
+ .test-buttons{
+    display: flex;  
+    gap: 15px;
+
+    & > button {
+        background-color: $main-background-orange;
+        color: white;
+        border: transparent;
+        border-radius: 15px;
+        font-size: 1rem;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .test-btn-next{
+        background-color: $main-color1;
+        color: white;
+     }
+ }
+
+.test-audio-text{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: $main-background-orange;
+    font-size: 1.2rem;
+    width: 600px;
+}
+
+.test-audio-input{
+    margin: 20px 0;
+    padding: 5px 10px;
+    border: 2px solid $main-background-orange;
+    outline: none;
+    width: 100%;
+}
+
+.test-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .test-result-list{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 500px;
+        overflow: auto;
+        margin-bottom: 50px;
+        padding: 0 15px;
+
+        .test-result-element{
+            list-style: none;
+            padding: 15px;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 20px;
+            font-weight: 700;
+            transition: all .5s ease;
+        }
+
+        .result-correct{
+            color: green;
+        }
+
+        .result-correct:hover{
+            color: white;
+            background-color: green;
+        }
+
+        .result-incorrect{
+            color: red;
+        }
+
+        .result-incorrect:hover{
+            color: white;
+            background-color: red;
+        }
+    }
+}
+
+.test-target{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.text-orange{
+    color: $main-background-orange;
+    font-weight: 900;
+}

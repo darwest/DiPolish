@@ -1,0 +1,22 @@
+.navbar-item {
+  margin-right: 26px;
+  position: relative;
+}
+.navbar-item:nth-last-child(2) {
+  margin-right: 24px;
+}
+.navbar-item:last-child {
+  margin-right: 0;
+}
+.navbar-item .navbar-link {
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navbar-item .navbar-link:hover {
+  color: #F66E0B;
+  transition: color 0.3s ease;
+}/*# sourceMappingURL=NavBar.css.map */

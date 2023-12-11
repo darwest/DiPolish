@@ -1,0 +1,218 @@
+@import "../../scss/common/mixins";
+
+@media (max-width: 1200px) {
+  .info-block {
+    @include width-height-value(100%, 900px);
+
+    .info-flex-container {
+      @include width-height-value(100%, 900px);
+      .section-info-blocks {
+        .info-block {
+          @include width-height-value(280px, 355px);
+          border-radius: 40px 0 40px 0;
+          margin: 10px;
+
+          .icon-info {
+            @include width-height-value(72px, 75px);
+            flex-shrink: 0;
+          }
+
+          .title-info {
+            @include text-styles(36px, 600, $text-primary-color);
+            margin: 0;
+          }
+
+          .subtitle-info {
+            @include text-styles(22px, 400, $text-primary-color);
+            text-align: center;
+          }
+
+          .block-contact {
+            @include flex-container(column, space-evenly, center);
+          }
+        }
+      }
+
+      .section-waiting-call {
+        margin-top: 70px;
+        .block-waiting-call {
+          @include width-height-value(290px, 152px);
+
+          .text-block-waiting-call {
+            @include text-styles(36px, 600, $main-color2);
+          }
+        }
+
+        .block2-waiting-call {
+          @include width-height-value(290px, 152px);
+
+          .text2-block-waiting-call {
+            @include text-styles(36px, 600, $text-primary-color);
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .info-block {
+    @include width-height-value(100%, 700px);
+
+    .info-flex-container {
+      @include width-height-value(100%, 700px);
+      .section-info-blocks {
+        .info-block {
+          @include width-height-value(210px, 290px);
+          border-radius: 30px 0 30px 0;
+          margin: 10px;
+
+          .icon-info {
+            @include width-height-value(52px, 55px);
+            flex-shrink: 0;
+          }
+
+          .title-info {
+            @include text-styles(26px, 600, $text-primary-color);
+            margin: 0;
+          }
+
+          .subtitle-info {
+            @include text-styles(16px, 400, $text-primary-color);
+            text-align: center;
+          }
+
+          .block-contact {
+            @include flex-container(column, space-evenly, center);
+          }
+        }
+      }
+
+      .section-waiting-call {
+        margin-top: 70px;
+        .block-waiting-call {
+          @include width-height-value(220px, 100px);
+
+          .text-block-waiting-call {
+            @include text-styles(26px, 600, $main-color2);
+          }
+        }
+
+        .block2-waiting-call {
+          @include width-height-value(220px, 100px);
+
+          .text2-block-waiting-call {
+            @include text-styles(26px, 600, $text-primary-color);
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .info-block {
+    @include width-height-value(100%, 500px);
+
+    .info-flex-container {
+      @include width-height-value(100%, 500px);
+      .section-info-blocks {
+        .info-block {
+          @include width-height-value(170px, 220px);
+          border-radius: 25px 0 25px 0;
+          margin: 10px;
+
+          .icon-info {
+            @include width-height-value(42px, 45px);
+            flex-shrink: 0;
+          }
+
+          .title-info {
+            @include text-styles(22px, 600, $text-primary-color);
+            margin: 0;
+          }
+
+          .subtitle-info {
+            @include text-styles(14px, 400, $text-primary-color);
+            text-align: center;
+          }
+
+          .block-contact {
+            @include flex-container(column, space-evenly, center);
+          }
+        }
+      }
+
+      .section-waiting-call {
+        margin-top: 50px;
+        .block-waiting-call {
+          @include width-height-value(175px, 80px);
+
+          .text-block-waiting-call {
+            @include text-styles(22px, 600, $main-color2);
+          }
+        }
+
+        .block2-waiting-call {
+          @include width-height-value(175px, 80px);
+
+          .text2-block-waiting-call {
+            @include text-styles(22px, 600, $text-primary-color);
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .info-block {
+    @include width-height-value(100%, 250px);
+
+    .info-flex-container {
+      @include width-height-value(100%, 250px);
+      .section-info-blocks {
+        .info-block {
+          @include width-height-value(85px, 100px);
+          border-radius: 15px 0 15px 0;
+          margin: 10px;
+
+          .icon-info {
+            @include width-height-value(22px, 25px);
+            flex-shrink: 0;
+          }
+
+          .title-info {
+            @include text-styles(12px, 600, $text-primary-color);
+            margin: 0;
+          }
+
+          .subtitle-info {
+            @include text-styles(6px, 400, $text-primary-color);
+            text-align: center;
+          }
+
+          .block-contact {
+            @include flex-container(column, space-evenly, center);
+          }
+        }
+      }
+
+      .section-waiting-call {
+        margin-top: 20px;
+        .block-waiting-call {
+          @include width-height-value(95px, 30px);
+
+          .text-block-waiting-call {
+            @include text-styles(12px, 600, $main-color2);
+          }
+        }
+
+        .block2-waiting-call {
+          @include width-height-value(95px, 30px);
+
+          .text2-block-waiting-call {
+            @include text-styles(12px, 600, $text-primary-color);
+          }
+        }
+      }
+    }
+  }
+}

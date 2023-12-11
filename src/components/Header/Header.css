@@ -1,0 +1,53 @@
+.header .header-flex-container .menu-list, body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: #303881;
+  width: 100%;
+  height: 120px;
+  box-shadow: 0 0 15px 8px #282828;
+}
+.header .header-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+}
+.header .header-flex-container .burger-menu {
+  display: none;
+}
+.header .header-flex-container .menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.header .header-flex-container .menu-list .menu-item-button {
+  background-color: #F66E0B;
+  font-size: 21px;
+  border-radius: 26px;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: none;
+  z-index: 3;
+}
+.header .header-flex-container .menu-list .menu-item-button .menu-link-button {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.header .header-flex-container .menu-list .menu-item-button .menu-link-button:hover {
+  color: #F66E0B;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.header .header-flex-container .menu-list .menu-item-button:hover {
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  color: #F66E0B;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}/*# sourceMappingURL=Header.css.map */

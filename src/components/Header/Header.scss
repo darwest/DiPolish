@@ -1,0 +1,50 @@
+@import "../../scss/common/mixins";
+@import "../../scss/common/reset";
+@import "../../scss/common/variables";
+
+
+.header {
+  background-color: $main-background-blue;
+  @include width-height-value(100%,120px);
+  box-shadow: 0 0 15px 8px $box-shadow-color;
+
+  .header-flex-container {
+    @include flex-container(row, space-between, center);
+    @include width-height-value(100%,120px);
+
+    .burger-menu {
+      display: none
+    }
+
+    .menu-list {
+      @include flex-container(row, space-between, center);
+      list-style: none;
+      @extend %reset-margin-padding;
+
+     
+      .menu-item-button {
+        @include button-style($main-background-orange, 21px, 26px, 12px 20px);
+        z-index: 3;
+
+        .menu-link-button {
+          text-decoration: none;
+          color: $text-primary-color;
+          transition: color 0.3s ease;
+        }
+
+        .menu-link-button:hover {
+          color: $hover-color;
+          transition: color 0.3s ease, background-color 0.3s ease;
+        }
+      }
+
+      .menu-item-button:hover {
+        background-color: $main-background-white;
+        transition: background-color 0.3s ease;
+        color: $hover-color;
+        transition: color 0.3s ease, background-color 0.3s ease;
+      }
+
+    }
+  }
+}

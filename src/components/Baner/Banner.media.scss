@@ -1,0 +1,169 @@
+@import "../../scss/common/mixins";
+@import "../../scss/common/reset";
+@import "../../scss/common/variables";
+
+@media (max-width: 992px) {
+  
+    .banner-block {
+    .banner-flex-container {
+        max-height: 400px;
+        padding: 0 10px;
+
+        .banner-block-one {
+            max-height: 400px;
+
+            .banner-text-block {
+
+                .banner-title {
+                    @include text-styles(24px, 700, $text-primary-color);
+                    line-height: 30px;
+                }
+
+                .banner-subtitle {
+                    margin: 0 0 30px;
+                    @include text-styles(16px, 400, #A8A8A8);
+                }
+
+                .banner-button {
+                    @include button-style($main-background-orange, 20px, 30px, 12px 16px);
+                    width: 120px;
+
+                    .banner-button-link {
+                        @include link-style(none, $main-background-white, 20px, 700);
+                    }
+                }
+
+            }
+        }
+
+        .banner-image-block {
+            @include width-height-value(290px, 340px);
+            margin-top: 20px;
+
+            .main-photo {
+                @include width-height-value(290px, 400px);
+            }
+        }
+    }
+
+    .banner-block-two {
+        @include width-height-value(100%, 300px);
+
+        .banner-flex-container-two {
+            @include width-height-value(100%, 300px);
+
+            .banner-title-two {
+                margin: 0;
+                @include text-styles(24px, 700, $text-primary-color);
+                line-height: 30px;
+                width: 60%;
+            }
+        }
+    }
+}
+}
+
+
+@media (max-width: 768px) {
+  
+    .banner-block {
+        .banner-flex-container {
+            max-height: 350px;
+            padding: 0;
+            .banner-block-one {
+                max-height: 350px;
+    
+                .banner-text-block {
+    
+                    .banner-title {
+                        @include text-styles(22px, 700, $text-primary-color);
+                        line-height: 25px;
+                    }
+    
+                }
+            }
+            .banner-image-block {
+                @include width-height-value(270px, 300px);
+                margin-top: 20px;
+    
+                .main-photo {
+                    @include width-height-value(270px, 370px);
+                }
+            }
+        }
+    
+        .banner-block-two {
+            @include width-height-value(100%, 200px);
+    
+            .banner-flex-container-two {
+                @include width-height-value(100%, 200px);
+    
+                .banner-title-two {
+                    margin: 0;
+                    @include text-styles(22px, 700, $text-primary-color);
+                    line-height: 30px;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+ 
+    .banner-block {
+        .banner-flex-container {
+            max-height: 250px;
+            padding: 0;
+            .banner-block-one {
+                max-height: 350px;
+    
+                .banner-text-block {
+                    padding-left: 10px;
+                    .banner-title {
+                        @include text-styles(10px, 700, $text-primary-color);
+                        line-height: 16px;
+                        margin-bottom: 0;
+                    }
+                    .banner-subtitle {
+                        margin: 0 0 10px;
+                        @include text-styles(8px, 400, #A8A8A8);
+                    }
+    
+                    .banner-button {
+                        @include button-style($main-background-orange, 10px, 30px, 5px 6px);
+                        width: 80px;
+    
+                        .banner-button-link {
+                            @include link-style(none, $main-background-white, 10px, 700);
+                        }
+                    }
+    
+                }
+            }
+            .banner-image-block {
+                @include width-height-value(170px, 190px);
+                margin-top: 20px;
+    
+                .main-photo {
+                    @include width-height-value(170px, 235px);
+                }
+            }
+        }
+    
+        .banner-block-two {
+            @include width-height-value(100%, 115px);
+    
+            .banner-flex-container-two {
+                @include width-height-value(100%, 115px);
+    
+                .banner-title-two {
+                    margin: 0;
+                    @include text-styles(10px, 700, $text-primary-color);
+                    line-height: 18px;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import "../../scss/common/mixins";
+
+.price-section{
+  @include width-height-value(100%, 800px);
+  .price-flex-container{
+    @include flex-container(column, flex-start, stretch);
+    @include width-height-value(100%, 100%);
+
+    .icons-price{
+      @include flex-container(row, center, center);
+    }
+    .title-price-section{
+      @include text-styles(55px, 700, $main-color2);
+      margin:60px 0 5px;
+      text-align: right;
+    }
+    .subtitle-price-section{
+      @include text-styles(28px, 300, #2F2F2F);
+      text-align: right;
+      margin: 2px 0 80px;
+    }
+    .price-blocks-container{
+      @include flex-container(row, space-between, center);
+
+      .price-block{
+        @include flex-container(column, center, center);
+        @include width-height-value(365px, 440px);
+        border-radius: 60px;
+        background: $main-background-blue;
+        .title-price-block{
+          @include text-styles(36px, 500, $text-primary-color);
+        }
+        .icon-price-block{
+          @include width-height-value(100px, 86px);
+
+        }
+        .price{
+          @include flex-container(column, center, center);
+          @include width-height-value(240px, 90px);
+          @include text-styles(32px, 500, $main-color3);
+          border-radius: 60px;
+          background: #D9D9D9;
+          margin: 0;
+        }
+        .description-price{
+          @include text-styles(24px, 500, $text-primary-color);
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../scss/common/mixins";
+
+.navbar-item {
+    margin-right: 26px;
+    @include position(relative);
+
+    &:nth-last-child(2) {
+      margin-right: 24px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .navbar-link {
+      @include position(relative);
+      @include text-styles(20px, 400, $text-primary-color);
+
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        color: $hover-color;
+        transition: color 0.3s ease;
+      }
+    }
+  }

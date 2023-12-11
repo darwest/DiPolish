@@ -1,0 +1,69 @@
+@import "../../scss/common/mixins";
+
+@media (max-width: 1200px) {
+  .test-video {
+    @include height-value(400px);
+
+    iframe {
+      @include width-height-value(777px, 90%);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .test-video {
+    @include text-styles(18px, 300, $text-primary-color);
+    text-align: left;
+    margin: 0 0 35px;
+  }
+}
+
+.video-wrapper {
+  @include height-value(295px);
+
+  iframe {
+    @include width-height-value(577px, 90%);
+  }
+}
+
+@media (max-width: 768px) {
+  .test-video {
+    @include height-value(220px);
+
+    iframe {
+      @include width-height-value(400px, 90%);
+      border-radius: 15px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .test-video {
+    @include height-value(150px);
+    padding: 0;
+
+    iframe {
+      @include width-height-value(260px, 90%);
+      border-radius: 15px;
+    }
+  }
+
+  .test-btn{
+    font-size: 1rem;
+  }
+
+  .test-result-element{
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+
+  .hint{
+    .container{
+      margin: 0 auto;
+    }
+  }
+
+  .hint-text{
+      font-size: 1.2rem;
+  }
+}

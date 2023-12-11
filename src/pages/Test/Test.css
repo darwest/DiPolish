@@ -1,0 +1,55 @@
+.test-wrapper {
+  padding: 50px 0 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.test-container {
+  padding: 0 15px;
+}
+
+.test-video {
+  position: relative;
+  height: 500px;
+  max-width: 1020px;
+  margin: 0 auto;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+.test-video iframe {
+  width: 977px;
+  height: 90%;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+}
+
+.hint {
+  background-color: #303881;
+  color: white;
+  padding: 40px 15px;
+  margin-top: 50px;
+}
+
+.hint-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.hint-text {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.hint-btn {
+  background-color: #F66E0B;
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 1.2rem;
+  color: white;
+}/*# sourceMappingURL=Test.css.map */

@@ -1,0 +1,194 @@
+@media (max-width: 1200px) {
+  .reviews-block {
+    background-image: url("../../assets/img/gradient.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1000px;
+    z-index: 1;
+  }
+  .reviews-block .reviews-flex-container {
+    width: 100%;
+    height: 1000px;
+  }
+  .reviews-block .reviews-flex-container .title-block .title-reviews-block {
+    font-size: 45px;
+    font-weight: 700;
+    color: #303881;
+  }
+  .reviews-block .reviews-flex-container .title-block .subtitle-reviews-block {
+    font-size: 18px;
+    font-weight: 300;
+    color: #2F2F2F;
+    margin: 8px 0 60px;
+  }
+}
+@media (max-width: 992px) {
+  .reviews-block {
+    background-image: url("../../assets/img/gradient.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1000px;
+    z-index: 1;
+  }
+  .reviews-block .reviews-flex-container {
+    width: 100%;
+    height: 1000px;
+  }
+  .reviews-block .reviews-flex-container .title-block .title-reviews-block {
+    font-size: 36px;
+    font-weight: 700;
+    color: #303881;
+  }
+  .reviews-block .reviews-flex-container .title-block .subtitle-reviews-block {
+    font-size: 18px;
+    font-weight: 300;
+    color: #2F2F2F;
+    margin: 8px 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  .reviews-block {
+    background-image: url("../../assets/img/gradient.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+    z-index: 1;
+  }
+  .reviews-block .reviews-flex-container {
+    width: 100%;
+    height: 800px;
+  }
+  .reviews-block .reviews-flex-container .bottom-title-reviews-block {
+    font-size: 25px;
+    font-weight: 700;
+    color: #303881;
+    text-align: center;
+    margin: 10px 0 0 25px;
+  }
+  .reviews-block .reviews-flex-container .title-block .title-reviews-block {
+    font-size: 30px;
+    font-weight: 700;
+    color: #303881;
+  }
+  .reviews-block .reviews-flex-container .title-block .subtitle-reviews-block {
+    font-size: 12px;
+    font-weight: 300;
+    color: #2F2F2F;
+    margin: 8px 0 40px;
+  }
+  .reviews-block .reviews-flex-container .banner-reviews-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .back-photo {
+    background-image: url("../../assets/img/tel.png");
+    background-size: cover;
+    background-position: center;
+    width: 255px;
+    height: 530px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .swiper .swiper-slide .image-slider {
+    height: 475px;
+  }
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .swiper .swiper-slide img {
+    height: 105%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media (max-width: 576px) {
+  .reviews-block {
+    background-image: url("../../assets/img/gradient.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+  }
+  .reviews-block .reviews-flex-container {
+    width: 100%;
+    height: 500px;
+  }
+  .reviews-block .reviews-flex-container .bottom-title-reviews-block {
+    font-size: 15px;
+    font-weight: 700;
+    color: #303881;
+    text-align: center;
+    margin: 10px 0 0 25px;
+  }
+  .reviews-block .reviews-flex-container .title-block .title-reviews-block {
+    font-size: 18px;
+    font-weight: 700;
+    color: #303881;
+  }
+  .reviews-block .reviews-flex-container .title-block .subtitle-reviews-block {
+    font-size: 8px;
+    font-weight: 300;
+    color: #2F2F2F;
+    margin: 0 0 20px;
+  }
+  .reviews-block .reviews-flex-container .banner-reviews-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .back-photo {
+    background-image: url("../../assets/img/tel.png");
+    background-size: cover;
+    background-position: center;
+    width: 152px;
+    height: 311px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .back-photo .swiper-slide {
+    width: 100%;
+  }
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .back-photo .swiper-slide .image-slider {
+    border-radius: 15px;
+    width: 100%;
+    overflow: hidden;
+    height: 265px;
+  }
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .back-photo .swiper-slide .image-slider img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .swiper-button-prev {
+    display: none;
+  }
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .swiper-button-next {
+    display: none;
+  }
+  .blue-line {
+    display: none;
+  }
+}/*# sourceMappingURL=Review.media.css.map */

@@ -1,0 +1,204 @@
+@import "../../scss/common/mixins";
+
+@media (max-width: 1200px) {
+
+.reviews-block {
+    background-image: url('../../assets/img/gradient.png');
+    background-size: cover;
+    background-position: center;
+    @include width-height-value(100%, 1000px);
+    z-index: 1;
+
+    .reviews-flex-container {
+        @include width-height-value(100%, 1000px);
+
+        .title-block {
+
+            .title-reviews-block {
+                @include text-styles(45px, 700, $main-color1);
+
+            }
+
+            .subtitle-reviews-block {
+                @include text-styles(18px, 300,  #2F2F2F);
+                margin: 8px 0 60px;
+
+            }
+        }
+    }
+}
+}
+@media (max-width: 992px) {
+    
+.reviews-block {
+    background-image: url('../../assets/img/gradient.png');
+    background-size: cover;
+    background-position: center;
+    @include width-height-value(100%, 1000px);
+    z-index: 1;
+
+    .reviews-flex-container {
+        @include width-height-value(100%, 1000px);
+
+        .title-block {
+
+            .title-reviews-block {
+                @include text-styles(36px, 700, $main-color1);
+
+            }
+
+            .subtitle-reviews-block {
+                @include text-styles(18px, 300,  #2F2F2F);
+                margin: 8px 0 40px;
+
+            }
+        }
+    }
+}
+}
+@media (max-width: 768px) {
+
+    .reviews-block {
+        background-image: url('../../assets/img/gradient.png');
+        background-size: cover;
+        background-position: center;
+        @include width-height-value(100%, 800px);
+        z-index: 1;
+    
+        .reviews-flex-container {
+            @include width-height-value(100%, 800px);
+            .bottom-title-reviews-block{
+                @include text-styles(25px, 700, $main-color1);
+                text-align: center;
+                margin: 10px 0 0  25px;
+            }
+            .title-block {
+    
+                .title-reviews-block {
+                    @include text-styles(30px, 700, $main-color1);
+    
+                }
+    
+                .subtitle-reviews-block {
+                    @include text-styles(12px, 300,  #2F2F2F);
+                    margin: 8px 0 40px;
+    
+                }
+            }
+            
+        .banner-reviews-block {
+            @include flex-container(column, center, center);
+
+            .banner-flex-container {
+                @include flex-container(column, center, center);
+
+                .back-photo {
+                    background-image: url('../../assets/img/tel.png');
+                    background-size: cover;
+                    background-position: center;
+                    @include width-height-value(255px, 530px);
+                    flex-shrink: 0;
+                    @include flex-container(row, center, center);
+                }
+                
+                .swiper{
+
+                    .swiper-slide{
+                        .image-slider {
+                            height: 475px;
+                        }
+                        img{
+                            height: 105%;
+                            width: 100%;
+                            object-fit: contain;
+                        }
+                    }
+
+                   
+                }
+            }
+        }
+        }
+    }
+
+}
+@media (max-width: 576px) {
+
+    .reviews-block {
+        background-image: url('../../assets/img/gradient.png');
+        background-size: cover;
+        background-position: center;
+        @include width-height-value(100%, 500px);
+        z-index: 1;
+    
+        .reviews-flex-container {
+            @include width-height-value(100%, 500px);
+            .bottom-title-reviews-block{
+                @include text-styles(15px, 700, $main-color1);
+                text-align: center;
+                margin: 10px 0 0  25px;
+            }
+            .title-block {
+    
+                .title-reviews-block {
+                    @include text-styles(18px, 700, $main-color1);
+    
+                }
+    
+                .subtitle-reviews-block {
+                    @include text-styles(8px, 300,  #2F2F2F);
+                    margin: 0 0 20px;
+    
+                }
+            }
+            
+        .banner-reviews-block {
+            @include flex-container(column, center, center);
+
+            .banner-flex-container {
+                @include flex-container(column, center, center);
+
+                .back-photo {
+                    background-image: url('../../assets/img/tel.png');
+                    background-size: cover;
+                    background-position: center;
+                    @include width-height-value(152px, 311px);
+                    flex-shrink: 0;
+                    @include flex-container(row, center, center);
+
+                    .swiper-slide{
+
+                        width: 100%;
+
+                        .image-slider {
+                            border-radius: 15px;
+                            width: 100%;
+                            overflow: hidden;
+                            height: 265px;
+                        
+                            img{
+                                width: 100%;
+                                object-fit: contain;
+                            }
+                            
+                        }
+                    }
+                }
+                .swiper-button-prev {
+                   display: none;
+                }
+
+                .swiper-button-next {
+                   display: none;
+                }
+
+            }
+        }
+        }
+    }
+
+    .blue-line{
+        display: none;
+    }
+
+}

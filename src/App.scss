@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import "./scss/common/variables";
+@import "./scss/common/mixins";
+
+body {
+  font-family: $font;
+  background-color: $main-background-white;
+}
+
+#root{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column
+}
+
+.container {
+  @include padding-margin(0 15px, 0 auto);
+  @include width-value(100%);
+  max-width: $content-width;
+}
+
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1171px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 538px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 280px;
+  }
+}

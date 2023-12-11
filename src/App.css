@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+}
+
+#root {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1171px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 538px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 280px;
+  }
+}/*# sourceMappingURL=App.css.map */

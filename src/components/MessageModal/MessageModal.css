@@ -1,0 +1,43 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.modal-buttons > button {
+  background-color: #F66E0B;
+  color: white;
+  border-radius: 15px;
+  border-color: transparent;
+  padding: 0 15px;
+  font-size: 1.2rem;
+}
+.modal-buttons > button:nth-child(2) {
+  background-color: #303881;
+}
+
+.modal-buttons button {
+  padding: 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=MessageModal.css.map */

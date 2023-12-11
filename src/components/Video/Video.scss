@@ -1,0 +1,49 @@
+@import "../../scss/common/mixins";
+
+.video-block {
+  @include width-height-value(100%, 900px);
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: $background-color-grey;
+
+  .video-flex-container {
+    @include flex-container(column, center, flex-start);
+    z-index: 1;
+    @include width-height-value(100%, 900px);
+    .title-block{
+        margin:0 0 10px 90px ;
+    .video-title {
+      @include text-styles(60px, 800, $text-primary-color);
+      text-align: left;
+      margin: 0;
+
+      span {
+        @include text-styles(60px, 800, $main-color1);
+      }
+    }
+
+    .video-text {
+      @include text-styles(24px, 300, $text-primary-color);
+      text-align: left;
+      margin: 0 0 40px;
+    }
+}
+
+    .video-wrapper {
+      @include position(relative);
+      @include height-value(500px);
+      max-width: 1020px;
+      margin: 0 auto;
+      z-index: 2;
+
+      iframe {
+        @include width-height-value(977px, 90%);
+        border-radius: 20px;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+

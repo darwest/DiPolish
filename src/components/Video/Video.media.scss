@@ -1,0 +1,147 @@
+@import "../../scss/common/mixins";
+
+@media (max-width: 1200px) {
+  .video-block {
+    @include width-height-value(100%, 750px);
+
+    .video-flex-container {
+      @include width-height-value(100%, 750px);
+
+      .title-block {
+        margin: 0 0 10px 90px;
+
+        .video-title {
+          @include text-styles(45px, 800, $text-primary-color);
+
+          span {
+            @include text-styles(45px, 800, $main-color1);
+          }
+        }
+
+        .video-text {
+          @include text-styles(20px, 300, $text-primary-color);
+          text-align: left;
+          margin: 0 0 35px;
+        }
+      }
+
+      .video-wrapper {
+        @include height-value(400px);
+
+        iframe {
+          @include width-height-value(777px, 90%);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .video-block {
+    @include width-height-value(100%, 600px);
+
+    .video-flex-container {
+      @include width-height-value(100%, 600px);
+
+      .title-block {
+        margin: 0 0 10px 90px;
+
+        .video-title {
+          @include text-styles(36px, 800, $text-primary-color);
+
+          span {
+            @include text-styles(36px, 800, $main-color1);
+          }
+        }
+
+        .video-text {
+          @include text-styles(18px, 300, $text-primary-color);
+          text-align: left;
+          margin: 0 0 35px;
+        }
+      }
+
+      .video-wrapper {
+        @include height-value(295px);
+
+        iframe {
+          @include width-height-value(577px, 90%);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .video-block {
+    @include width-height-value(100%, 450px);
+
+    .video-flex-container {
+      @include width-height-value(100%, 450px);
+
+      .title-block {
+        margin: 0 0 5px 90px;
+
+        .video-title {
+          @include text-styles(30px, 800, $text-primary-color);
+
+          span {
+            @include text-styles(30px, 800, $main-color1);
+          }
+        }
+
+        .video-text {
+          @include text-styles(16px, 300, $text-primary-color);
+          text-align: left;
+          margin: 0 0 25px;
+        }
+      }
+
+      .video-wrapper {
+        @include height-value(220px);
+
+        iframe {
+          @include width-height-value(400px, 90%);
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .video-block {
+    @include width-height-value(100%, 300px);
+
+    .video-flex-container {
+      @include width-height-value(100%, 300px);
+
+      .title-block {
+        margin: 0 0 0 45px;
+        text-align: center;
+        .video-title {
+          @include text-styles(20px, 800, $text-primary-color);
+
+          span {
+            @include text-styles(20px, 800, $main-color1);
+          }
+        }
+
+        .video-text {
+          @include text-styles(8px, 300, $text-primary-color);
+          text-align: center;
+          margin: 0 0 15px;
+        }
+      }
+
+      .video-wrapper {
+        @include height-value(150px);
+        padding: 0;
+
+        iframe {
+          @include width-height-value(260px, 90%);
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}

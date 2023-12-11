@@ -1,0 +1,226 @@
+@import "../../scss/common/mixins";
+
+@media (max-width: 1400px) {
+  .test-module-block {
+    .test-module-flex-container {
+      .photo-test-module {
+        @include width-height-value(446px, 660px);
+        right: -10px;
+      }
+
+      .content-test-module-block {
+        @include width-height-value(740px, 690px);
+        margin: 50px 0 0 50px;
+        padding: 10px;
+
+        .title-test-module-block {
+          @include text-styles(50px, 800, $text-primary-color);
+        }
+
+        .subtitle-test-module-block {
+          @include text-styles(22px, 800, $text-color-yellow);
+          text-align: center;
+          margin: 0;
+        }
+
+        .text-test-module-block {
+          @include text-styles(22px, 500, $text-primary-color);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .test-module-block {
+    @include width-height-value(100%, 100%);
+    padding-bottom: 100px;
+
+    .reference-text {
+      @include text-styles(32px, 800, $main-color1);
+      padding-top: 80px;
+    }
+
+    .test-module-flex-container {
+      .photo-test-module {
+        @include width-height-value(386px, 580px);
+        right: 5px;
+      }
+
+      .content-test-module-block {
+        @include width-height-value(650px, 600px);
+        margin: 50px 0 0 10px;
+        padding: 5px;
+
+        .title-test-module-block {
+          @include text-styles(45px, 800, $text-primary-color);
+          line-height: 50px;
+        }
+
+        .subtitle-test-module-block {
+          @include text-styles(20px, 800, $text-color-yellow);
+        }
+
+        .text-test-module-block {
+          @include text-styles(20px, 500, $text-primary-color);
+        }
+
+        .button-try {
+          @include width-height-value(300px, 76px);
+          margin: 40px 0 0 0;
+
+          .link-button-try {
+            @include text-styles(22px, 800, $text-primary-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .test-module-block {
+    @include width-height-value(100%, 100%);
+    padding-bottom: 100px;
+
+    .reference-text {
+      @include text-styles(26px, 800, $main-color1);
+      padding-top: 60px;
+    }
+
+    .test-module-flex-container {
+      .photo-test-module {
+        @include width-height-value(290px, 435px);
+        right: 15px;
+      }
+
+      .content-test-module-block {
+        @include width-height-value(480px, 480px);
+        margin: 30px 0 0 25px;
+        padding: 2px;
+
+        .title-test-module-block {
+          @include text-styles(34px, 800, $text-primary-color);
+          line-height: 40px;
+          margin-bottom: 8px;
+        }
+
+        .subtitle-test-module-block {
+          @include text-styles(15px, 800, $text-color-yellow);
+        }
+
+        .text-test-module-block {
+          @include text-styles(15px, 500, $text-primary-color);
+        }
+
+        .button-try {
+          @include width-height-value(230px, 66px);
+          margin: 30px 0 0 0;
+
+          .link-button-try {
+            @include text-styles(18px, 800, $text-primary-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .test-module-block {
+    @include width-height-value(100%, 100%);
+    padding-bottom: 80px;
+
+    .reference-text {
+      @include text-styles(22px, 800, $main-color1);
+      padding-top: 50px;
+    }
+
+    .test-module-flex-container {
+      .photo-test-module {
+        @include width-height-value(220px, 330px);
+        right: -5px;
+      }
+
+      .content-test-module-block {
+        @include width-height-value(360px, 360px);
+        margin: 50px 0 0 10px;
+        padding: 2px;
+
+        .title-test-module-block {
+          @include text-styles(26px, 800, $text-primary-color);
+          line-height: 40px;
+          margin-bottom: 3px;
+        }
+
+        .subtitle-test-module-block {
+          @include text-styles(12px, 800, $text-color-yellow);
+        }
+
+        .text-test-module-block {
+          @include text-styles(12px, 500, $text-primary-color);
+        }
+
+        .button-try {
+          @include width-height-value(190px, 46px);
+          margin: 15px 0 0 0;
+
+          .link-button-try {
+            @include text-styles(16px, 800, $text-primary-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .test-module-block {
+    @include width-height-value(100%, 100%);
+    padding-bottom: 40px;
+
+    .reference-text {
+      @include text-styles(16px, 800, $main-color1);
+      padding-top: 30px;
+    }
+
+    .test-module-flex-container {
+      .photo-test-module {
+        @include width-height-value(150px, 220px);
+        right: -20px;
+      }
+
+      .content-test-module-block {
+        @include width-height-value(170px, 250px);
+        margin: 0 0 0 7px;
+        padding: 2px;
+
+        .title-test-module-block {
+          @include text-styles(14px, 800, $text-primary-color);
+          line-height: 20px;
+          margin-bottom: 3px;
+          letter-spacing: 0;
+        }
+
+        .subtitle-test-module-block {
+          @include text-styles(10px, 800, $text-color-yellow);
+          padding: 0 10px;
+        }
+
+        .text-test-module-block {
+          @include text-styles(8px, 500, $text-primary-color);
+          width: 80%;
+        }
+
+        .button-try {
+          @include width-height-value(120px, 26px);
+          margin: 15px 0 0 0;
+
+          .link-button-try {
+            @include text-styles(10px, 800, $text-primary-color);
+          }
+        }
+      }
+    }
+  }
+}

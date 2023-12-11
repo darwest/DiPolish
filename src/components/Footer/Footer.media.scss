@@ -1,0 +1,229 @@
+@import "../../scss/common/mixins";
+
+@media (max-width: 1200px) {
+    .maps{
+        height: 380px;
+    }
+}
+
+@media (max-width:992px) {
+    .maps{
+        height: 340px;
+    }
+    .footer {
+        @include width-height-value(100%, 140px);
+
+        .footer-content {
+            @include width-height-value(100%, 140px);
+
+            .logo-socnetwork {
+                .logo-footer {
+                    width: 140px;
+                }
+
+                .socnetworks-link {
+                    @include flex-container(row, space-between, flex-start);
+                    width: 75%;
+
+                }
+            }
+
+            .menu-block {
+                .menu-list-footer {
+                    .menu-item {
+                        margin-right: 25px;
+
+                        &:nth-last-child(2) {
+                            margin-right: 25px;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        .menu-link {
+                            @include text-styles(16px, 400, $text-primary-color);
+
+                            text-decoration: none;
+
+                            &:hover {
+                                color: $hover-color;
+                                transition: color 0.3s ease;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .dev-block {
+            @include width-height-value(100%, 50px);
+            background: #222;
+
+            .dev-flex-container {
+                @include width-height-value(100%, 50px);
+                @include flex-container(row, space-between, center);
+
+                .name-dev {
+                    @include text-styles(14px, 400, #B6C1CE);
+                    line-height: 16px;
+                }
+
+                .link-dev {
+                    @include text-styles(14px, 400, #B6C1CE);
+                    line-height: 16px;
+                    text-decoration: none
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .maps{
+        height: 300px;
+    }
+    .footer {
+        @include width-height-value(100%, 140px);
+
+        .footer-content {
+            @include width-height-value(100%, 140px);
+
+            .logo-socnetwork {
+                .logo-footer {
+                    width: 120px;
+                }
+
+                .socnetworks-link {
+                    @include flex-container(row, space-between, flex-start);
+                    width: 85%;
+
+                }
+            }
+
+            .menu-block {
+                .menu-list-footer {
+                    @include flex-container(row, space-between, center);
+
+                    .menu-item {
+                        margin-right: 18px;
+
+                        &:nth-last-child(2) {
+                            margin-right: 18px;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        .menu-link {
+                            @include text-styles(11px, 400, $text-primary-color);
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .dev-block {
+            @include width-height-value(100%, 40px);
+            background: #222;
+
+            .dev-flex-container {
+                @include width-height-value(100%, 40px);
+
+                .name-dev {
+                    @include text-styles(10px, 400, #B6C1CE);
+                }
+
+                .link-dev {
+                    @include text-styles(10px, 400, #B6C1CE);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .maps{
+        height: 150px;
+    }
+    .footer {
+        @include width-height-value(100%, 140px);
+
+        .footer-content {
+            @include width-height-value(100%, 140px);
+
+            .logo-socnetwork {
+                .logo-footer {
+                    width: 100px;
+                }
+
+                .socnetworks-link {
+                    @include flex-container(row, space-between, flex-start);
+                    width: 70%;
+
+                    .facebook-icon {
+                        width: 20px;
+                    }
+
+                    .inst-icon {
+                        width: 20px
+                    }
+
+                    .telegram-link {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    .telegram-icon {
+                        width: 20px;
+                    }
+                }
+            }
+
+            .menu-block {
+                .menu-list-footer {
+                    @include flex-container(column, space-between, center);
+
+                    .menu-item {
+                        margin: 4px 0 0 0;
+
+                        &:nth-last-child(2) {
+                            margin: 4px 0 0 0;
+                        }
+
+                        .menu-link {
+                            @include text-styles(9px, 400, $text-primary-color);
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .dev-block {
+            @include width-height-value(100%, 25px);
+
+            .dev-flex-container {
+                @include width-height-value(100%, 25px);
+                @include flex-container(row, space-between, baseline);
+
+                .name-dev {
+                    @include text-styles(6px, 400, #B6C1CE);
+                    line-height: 10px;
+                    margin: 0;
+                }
+
+                .link-dev {
+                    @include text-styles(6px, 400, #B6C1CE);
+                    line-height: 0;
+                    padding-bottom: 8px;
+                }
+            }
+        }
+    }
+}

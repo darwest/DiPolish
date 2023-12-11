@@ -1,0 +1,461 @@
+@import "../../scss/common/mixins";
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {
+
+
+    .about-me-block {
+        @include width-height-value(100%, 1500px);
+
+        .content-about-me {
+            @include width-height-value(100%, 715px);
+            padding-top: 150px;
+
+            .about-me-flex-container {
+                padding: 0;
+
+
+                .top-part-about-me-block {
+
+                    .info-about-mentor {
+
+                        .text-info-about-mentor {
+                            padding-left: 30px;
+
+                            .name-mentor {
+                                @include text-styles(36px, 700, $main-color1);
+                                line-height: 40px;
+                            }
+
+                            .mentor-prof {
+                                @include text-styles(18px, 700, rgba(48, 56, 129, 0.78));
+                                line-height: 54px;
+                            }
+                        }
+                    }
+                }
+
+                .welcome-message {
+                    @include text-styles(34px, 800, $main-color1);
+                    line-height: 55px;
+                     padding-left: 10px;
+
+                }
+
+                .read-continue {
+                    @include text-styles(32px, 800, $text-primary-color);
+                }
+
+                .navigation-two {
+                    display: none;
+
+                    .arrow-two {
+                        display: none;
+
+                    }
+                }
+
+                .navigation-three {
+                    display: none;
+
+                    .arrow-three {
+                        display: none;
+
+                    }
+                }
+
+                .facts-blocks {
+
+                    .fact-block {
+                        @include width-height-value(340px, 365px);
+
+                        .title-facts-blocks {
+                            @include text-styles(36px, 800, $text-color-yellow);
+                            line-height: 54px;
+                            margin: 5px 0;
+                        }
+
+                        .facts-list {
+
+                            .facts-item {
+                                @include text-styles(19px, 800, $main-color1);
+                                line-height: 50px;
+                            }
+                        }
+                    }
+
+                    .fact-block-one {
+                        position: relative;
+                        margin-left: 60px;
+                    }
+
+                    .fact-block-two {
+                        position: absolute;
+                        margin: 30px 0 0 515px;
+
+                    }
+
+                    .fact-block-three {
+                        margin-top: 40px;
+                        margin-left: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .about-me-block {
+        @include width-height-value(100%, 1300px);
+
+        .content-about-me {
+            @include width-height-value(100%, 715px);
+            padding-top: 110px;
+
+            .about-me-flex-container {
+                padding: 0 0 0 25px;
+
+
+                .top-part-about-me-block {
+
+                    .info-about-mentor {
+                        padding: 70px 0 0 20px;
+
+                        .text-info-about-mentor {
+                            padding-left: 30px;
+
+                            .name-mentor {
+                                @include text-styles(32px, 700, $main-color1);
+                                line-height: 35px;
+                            }
+
+                            .mentor-prof {
+                                @include text-styles(16px, 700, rgba(48, 56, 129, 0.78));
+                                line-height: 44px;
+                            }
+                        }
+                    }
+                }
+
+                .welcome-message {
+                    @include text-styles(28px, 800, $main-color1);
+                    line-height: 55px;
+
+                }
+
+                .read-continue {
+                    @include text-styles(28px, 800, $text-primary-color);
+                }
+
+                .navigation-two {
+                    display: none;
+
+                    .arrow-two {
+                        display: none;
+
+                    }
+                }
+
+                .navigation-three {
+                    display: none;
+
+                    .arrow-three {
+                        display: none;
+
+                    }
+                }
+
+                .facts-blocks {
+
+                    .fact-block {
+                        @include width-height-value(270px, 300px);
+                        padding: 10px 20px 20px;
+                        border: 6px $text-color-yellow solid;
+v
+                        .title-facts-blocks {
+                            @include text-styles(28px, 800, $text-color-yellow);
+                            line-height: 54px;
+                            margin: 5px 0;
+                        }
+
+                        .facts-list {
+                            padding: 0 0 0 20px;
+                            margin: 0;
+
+                            .facts-item {
+                                @include text-styles(16px, 800, $main-color1);
+                                line-height: 40px;
+                            }
+                        }
+                    }
+
+                    .fact-block-one {
+                        position: relative;
+                        margin-left:20px ;
+                    }
+
+                    .fact-block-two {
+                        position: absolute;
+                        margin: 30px 0 0 365px;
+
+                    }
+
+                    .fact-block-three {
+                        margin-top: 40px;
+                        margin-left:20px ;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .about-me-block {
+        @include width-height-value(100%, 940px);
+
+        .content-about-me {
+            @include width-height-value(100%, 715px);
+            padding-top: 110px;
+
+            .about-me-flex-container {
+               
+
+                .top-part-about-me-block {
+
+                    .info-about-mentor {
+                        padding: 55px 0 0 20px;
+
+                        .icon-di {
+                            @include width-height-value(90px, 90px);
+                            border-radius: 300px;
+                          }
+                
+                        .text-info-about-mentor {
+                            padding-left: 20px;
+
+                            .name-mentor {
+                                @include text-styles(23px, 700, $main-color1);
+                                line-height: 25px;
+                            }
+
+                            .mentor-prof {
+                                @include text-styles(12px, 700, rgba(48, 56, 129, 0.78));
+                                line-height: 35px;
+                            }
+                        }
+                    }
+                }
+
+                .welcome-message {
+                    @include text-styles(20px, 800, $main-color1);
+                    line-height: 35px;
+                    padding: 0;
+
+                }
+
+                .read-continue {
+                    @include text-styles(20px, 800, $text-primary-color);
+                }
+
+                .arrow-one {
+                    @include width-height-value(55px, 52px);
+                  }
+            
+                .navigation-two {
+                    display: none;
+
+                    .arrow-two {
+                        display: none;
+
+                    }
+                }
+
+                .navigation-three {
+                    display: none;
+
+                    .arrow-three {
+                        display: none;
+
+                    }
+                }
+
+                .facts-blocks {
+
+                    .fact-block {
+                        @include width-height-value(160px, 200px);
+                        padding: 10px 20px 20px;
+                        border: 4px $text-color-yellow solid;
+
+
+                        .title-facts-blocks {
+                            @include text-styles(18px, 800, $text-color-yellow);
+                            line-height: 40px;
+                            margin: 5px 0;
+                        }
+
+                        .facts-list {
+                            padding: 0 0 0 20px;
+                            margin: 0;
+
+                            .facts-item {
+                                @include text-styles(10px, 800, $main-color1);
+                                line-height: 20px;
+                            }
+                        }
+                    }
+
+                    .fact-block-one {
+                        position: relative;
+                        margin-top: 20px;
+                    }
+
+                    .fact-block-two {
+                        position: absolute;
+                        margin: 20px 0 0 255px;
+                        @include width-height-value(160px, 200px);
+
+
+                    }
+
+                    .fact-block-three {
+                        margin-top: 20px;
+                        @include width-height-value(160px, 200px);
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    
+    .about-me-block {
+        @include width-height-value(100%, 900px);
+
+        .content-about-me {
+            @include width-height-value(100%, 415px);
+            padding-top: 60px;
+
+            .about-me-flex-container {
+                padding: 0 10px;
+
+
+                .top-part-about-me-block {
+                    margin-bottom: 10px;
+                    
+                    .info-about-mentor {
+                        padding: 20px 5px 5px;
+                        .icon-di {
+                            @include width-height-value(55px, 55px);
+                            border-radius: 300px;
+                          }
+                
+                        .text-info-about-mentor {
+                            padding-left: 10px;
+
+                            .name-mentor {
+                                @include text-styles(14px, 700, $main-color1);
+                                line-height: 25px;
+                            }
+
+                            .mentor-prof {
+                                @include text-styles(8px, 700, rgba(48, 56, 129, 0.78));
+                                line-height: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .welcome-message {
+                    @include text-styles(14px, 800, $main-color1);
+                    line-height: 16px;
+                    margin: 0;
+                   
+                }
+
+                .read-continue {
+                    @include text-styles(14px, 800, $text-primary-color);
+                    padding: 2px 8px;
+                }
+
+                .arrow-one {
+                    @include width-height-value(35px, 32px);
+                    padding: 15px 0px 40px 0;
+
+                  }
+            
+                .navigation-two {
+                    display: none;
+
+                    .arrow-two {
+                        display: none;
+
+                    }
+                }
+
+                .navigation-three {
+                    display: none;
+
+                    .arrow-three {
+                        display: none;
+
+                    }
+                }
+
+                .facts-blocks {
+                    @include flex-container(column, center, center);
+
+                    .fact-block {
+                        @include width-height-value(170px, 170px);
+                        padding: 8px 15px 15px;
+                        border: 3.5px $text-color-yellow solid;
+
+
+                        .title-facts-blocks {
+                            @include text-styles(15px, 800, $text-color-yellow);
+                            line-height: 40px;
+                            margin: 4px 0 0 0;
+                        }
+
+                        .facts-list {
+                            padding: 0 0 0 20px;
+                            margin: 0;
+
+                            .facts-item {
+                                @include text-styles(9px, 800, $main-color1);
+                                line-height: 20px;
+                            }
+                        }
+                    }
+
+                    .fact-block-one {
+                        position: relative;
+                        margin-top: 40px;
+                        margin-left: 0;
+                    }
+
+                    .fact-block-two {
+                        position: relative;
+                        margin: 20px 0 0 0;
+                        @include width-height-value(170px, 170px);
+
+
+                    }
+
+                    .fact-block-three {
+                        margin-top: 20px;
+                        margin-left: 0;
+                        @include width-height-value(170px, 170px);
+
+                    }
+                }
+            }
+        }
+    }
+}

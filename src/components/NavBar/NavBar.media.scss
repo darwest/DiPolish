@@ -1,0 +1,56 @@
+@import "../../scss/common/mixins";
+@import "../../scss/common/reset";
+@import "../../scss/common/variables";
+@media (max-width: 992px) {
+  .navbar-item {
+    margin-right: 18px;
+    @include position(relative);
+
+    &:nth-last-child(2) {
+      margin-right: 13px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .navbar-link {
+      @include position(relative);
+      @include text-styles(14px, 400, $text-primary-color);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-item {
+    margin: 0px;
+
+    .navbar-link {
+      @include position(relative);
+      @include text-styles(14px, 400, $text-primary-color);
+    }
+
+    &:first-child {
+      margin: 0;
+    }
+
+    &:last-child {
+      margin: 0px 0;
+    }
+
+    &:nth-last-child(2) {
+      margin: 0px 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-item {
+    margin: 2px 0 0 0;
+
+    .navbar-link {
+      @include position(relative);
+      @include text-styles(10px, 400, $text-primary-color);
+    }
+  }
+}

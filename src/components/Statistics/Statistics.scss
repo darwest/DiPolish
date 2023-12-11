@@ -1,0 +1,111 @@
+@import "../../scss/common/mixins";
+@import "../../scss/common/reset";
+@import "../../scss/common/variables";
+
+.statistics-block {
+    @include width-height-value(100%, 500px);
+
+    .statistics-flex-container {
+        @include flex-container(row, space-between, center);
+        @include width-height-value(100%, 500px);
+
+        .title-statistics-block {
+            @include flex-container(row, space-between, center);
+
+            .vertical-line {
+                @include width-height-value(4px, 290px);
+                position: relative;
+                background-color: $main-background-orange;
+                margin: 0 20px;
+            }
+
+            .title-statistics {
+                @include text-styles(44px, 800, $main-color2);
+                line-height: 64px;
+                word-wrap: break-word;
+                width: 190px;
+            }
+        }
+.right-statistics-block{
+    @include flex-container(column, center, flex-end);
+
+        .statistics {
+            background-color:#B2BCC8;
+            border-radius: 60px;
+            @include width-height-value(760px, 190px);
+            margin-left: 150px;
+            .statistics-list-number {
+                @include flex-container(row, space-between, center);
+                list-style: none;
+                padding: 35px 20px 0 45px;
+
+                .statistics-list-number-item {
+                    @include text-styles(45px, 700, $main-color1);
+                    line-height: 30px;
+                }
+            }
+
+            .statistics-list-text {
+                @include flex-container(row, space-around, flex-start);
+                padding: 0 10px 0 30px;
+                height: 75%;
+                margin-top: 38px;
+
+               .statistics-list-number-item{
+                @include text-styles(55px, 800, $main-color1);
+            }
+                .statistics-list-text-item{
+                    @include text-styles(20px, 700, $main-color1);
+                    line-height: 20px;
+                    text-align: center
+               }
+            }
+        }
+    }
+    .colors-blocks{
+        @include flex-container(row, center, center);
+        margin-top: 20px;
+        .color-block-one{
+            @include width-height-value(130px, 40px);
+            background-color: #CCDAF2;
+        }
+        .color-block-two{
+            @include width-height-value(125px, 40px);
+            background-color: #B0B8FC;
+        }
+        .color-block-three{
+            @include width-height-value(125px, 40px);
+            background-color:#707EFA;
+        }
+        .color-block-four{
+            @include width-height-value(125px, 40px);
+            background-color: #4B57C5;
+        }
+        .color-block-fifth{
+            @include width-height-value(125px, 40px);
+            background-color: #343C8D;
+        }
+        .color-block-six{
+            @include width-height-value(130px, 40px);
+            background-color: #21264F;
+        }
+    }
+}
+.statistics-item1{
+    @include flex-container(column, center, center);
+
+}
+.statistics-item2{
+    @include flex-container(column, center, center);
+
+}
+.statistics-item3{
+     @include flex-container(column, center, center);
+
+}
+.statistics-item4{
+     @include flex-container(column,center, center);
+
+}
+}
+

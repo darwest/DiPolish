@@ -1,0 +1,154 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.about-me-block {
+  width: 100%;
+  height: 1800px;
+  background-color: #fff;
+}
+.about-me-block .content-about-me {
+  width: 100%;
+  height: 715px;
+  padding-top: 200px;
+  background-color: #B2BCC8;
+}
+.about-me-block .content-about-me .about-me-flex-container {
+  background-color: #fff;
+  border-radius: 30px;
+  height: 100%;
+  padding: 0 10px 0 30px;
+}
+.about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 0 0 20px;
+}
+.about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .icon-di {
+  width: 140px;
+  height: 140px;
+  border-radius: 300px;
+}
+.about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .text-info-about-mentor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+.about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .text-info-about-mentor .name-mentor {
+  font-size: 40px;
+  font-weight: 700;
+  color: #303881;
+  font-style: normal;
+  line-height: 40px;
+  margin: 0;
+}
+.about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .text-info-about-mentor .mentor-prof {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(48, 56, 129, 0.78);
+  font-style: normal;
+  line-height: 64px;
+  margin: 0;
+}
+.about-me-block .content-about-me .about-me-flex-container .welcome-message {
+  font-size: 36px;
+  font-weight: 800;
+  color: #303881;
+  font-style: normal;
+  display: inline;
+  line-height: 55px;
+  padding: 0 10px;
+}
+.about-me-block .content-about-me .about-me-flex-container .read-continue {
+  font-size: 36px;
+  font-weight: 800;
+  color: #fff;
+  padding: 5px 20px 5px 15px;
+  margin: 15px 0;
+  border-radius: 31px;
+  background: #B2BCC8;
+  height: 50px;
+  flex-shrink: 0;
+}
+.about-me-block .content-about-me .about-me-flex-container .arrow-one {
+  width: 65px;
+  height: 72px;
+  transform: scaleX(-1) rotate(44.591deg);
+  position: absolute;
+  padding: 25px 0px 40px 0;
+}
+.about-me-block .content-about-me .about-me-flex-container .navigation-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about-me-block .content-about-me .about-me-flex-container .navigation-two .arrow-two {
+  width: 65px;
+  height: 72px;
+  transform: scaleX(1) rotate(-4.092deg);
+}
+.about-me-block .content-about-me .about-me-flex-container .navigation-three {
+  margin: 910px 0 0 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+}
+.about-me-block .content-about-me .about-me-flex-container .navigation-three .arrow-three {
+  width: 65px;
+  height: 72px;
+  transform: scaleX(-1) rotate(4.092deg);
+  padding: 0;
+}
+.about-me-block .content-about-me .about-me-flex-container .facts-blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block {
+  width: 450px;
+  height: 400px;
+  border: 8px #F6B40B solid;
+  border-radius: 40px;
+  margin-top: 50px;
+  padding: 20px 20px 30px;
+}
+.about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block .title-facts-blocks {
+  font-size: 48px;
+  font-weight: 800;
+  color: #F6B40B;
+  font-style: normal;
+  line-height: 64px;
+  margin: 10px 0;
+}
+.about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block .facts-list .facts-item {
+  font-size: 24px;
+  font-weight: 800;
+  color: #303881;
+  line-height: 55px;
+}
+.about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block-one {
+  position: relative;
+}
+.about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block-two {
+  position: absolute;
+  margin: 300px 0 0 550px;
+}
+.about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block-three {
+  margin-top: 20px;
+}/*# sourceMappingURL=About.css.map */

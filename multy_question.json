@@ -1,0 +1,52 @@
+  [
+    {
+      "id": 1,
+      "question": "Як можемо привітатися з другом?",
+      "answers": [
+        { "option": "A. Hejka", "isCorrect": true },
+        { "option": "Б. Dzień dobry!", "isCorrect": false },
+        { "option": "B. Siema", "isCorrect": true },
+        { "option": "Г. Hejka", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Як запитати «Як у тебе/ у вас справи?»",
+      "answers": [
+        { "option": "A. Co słychać?", "isCorrect": true },
+        { "option": "Б. Jak się masz?", "isCorrect": true },
+        { "option": "В. Nic nowego", "isCorrect": false },
+        { "option": "Г. Jak pan/ pani się ma?", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Як можемо відповісти на питання «Co słychać?»",
+      "answers": [
+        { "option": "A. Wszystko w porządku!", "isCorrect": true },
+        { "option": "Б. Nic nie szkodzi", "isCorrect": false },
+        { "option": "В. Nic nowega", "isCorrect": true },
+        { "option": "Г. Po staremu!", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Як сказати перепрошую/ вибач польською?",
+      "answers": [
+        { "option": "A. Proszę", "isCorrect": false },
+        { "option": "Б. Przepraszam", "isCorrect": true },
+        { "option": "B. Dziękuję", "isCorrect": false },
+        { "option": "Г. Wybacz", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Як попрощатися польською?",
+      "answers": [
+        { "option": "A. Do widzenia!", "isCorrect": true },
+        { "option": "Б. Cześć!", "isCorrect": true },
+        { "option": "В. Dobranoc!", "isCorrect": false },
+        { "option": "Г. Na razie!", "isCorrect": true }
+      ]
+    }
+  ]

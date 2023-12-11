@@ -1,0 +1,73 @@
+@import "../../scss/common/mixins";
+
+.test-module-block {
+  @include width-height-value(100%, 1001px);
+  background: $background-color-grey;
+
+  .reference-text {
+    @include text-styles(36px, 800, $main-color1);
+    font-style: normal;
+    line-height: normal;
+    text-align: right;
+    margin: 0;
+    padding-top: 80px;
+  }
+
+  .test-module-flex-container {
+    position: relative;
+    @include flex-container(row, flex-start, flex-start);
+
+    .photo-test-module {
+      @include width-height-value(486px, 719px);
+      flex-shrink: 0;
+      position: absolute;
+      right: -80px;
+      bottom: 0;
+    }
+
+    .content-test-module-block {
+      @include width-height-value(840px, 690px);
+      border-radius: 40px;
+      background: $main-background-blue;
+      @include flex-container(column, center, center);
+      margin-top: 50px;
+      padding: 15px;
+
+      .title-test-module-block {
+        @include text-styles(60px, 800, $text-primary-color);
+        line-height: 81.6px;
+        letter-spacing: 2.04px;
+        text-align: center;
+        margin: 0 0 15px 0;
+      }
+
+      .subtitle-test-module-block {
+        @include text-styles(24px, 800, $text-color-yellow);
+        text-align: center;
+        margin: 0;
+      }
+
+      .text-test-module-block {
+        @include text-styles(24px, 500, $text-primary-color);
+        text-align: center;
+        width: 85%;
+      }
+
+      .button-try {
+        @include width-height-value(356px, 76px);
+        border-radius: 50px;
+        background: $main-background-orange;
+        margin: 60px 0 0 0;
+        text-decoration: none;
+        @include flex-container(row, center, center);
+
+        .link-button-try {
+          @include text-styles(25px, 800, $text-primary-color);
+          text-align: center;
+          line-height: 16px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+@import "../../scss/common/mixins";
+@import "../../scss/common/reset";
+@import "../../scss/common/variables";
+
+
+
+.about-me-block {
+  @include width-height-value(100%, 1800px);
+  background-color: $main-background-white;
+
+  .content-about-me {
+    @include width-height-value(100%, 715px);
+    padding-top: 200px;
+    background-color: #B2BCC8;
+
+    .about-me-flex-container {
+      background-color: $main-background-white;
+      border-radius: 30px;
+      height: 100%;
+     
+      padding: 0 10px 0 30px;
+
+      .top-part-about-me-block {
+        @include flex-container(row-reverse, flex-end, center);
+        margin-bottom: 20px;
+
+
+        .info-about-mentor {
+          @include flex-container(row, center, center);
+          padding: 90px 0 0 20px;
+
+          .icon-di {
+            @include width-height-value(140px, 140px);
+            border-radius: 300px;
+          }
+
+          .text-info-about-mentor {
+            @include flex-container(column, center, flex-start);
+            padding-left: 30px;
+
+            .name-mentor {
+              @include text-styles(40px, 700, $main-color1);
+              font-style: normal;
+              line-height: 40px;
+              margin: 0;
+            }
+
+            .mentor-prof {
+              @include text-styles(20px, 700,  rgba(48, 56, 129, 0.78));
+              font-style: normal;
+              line-height: 64px;
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      .welcome-message {
+        @include text-styles(36px, 800, $main-color1);
+        font-style: normal;
+        display: inline;
+        line-height: 55px;
+        padding: 0 10px;
+
+      }
+
+      .read-continue {
+        @include text-styles(36px, 800, $text-primary-color);
+        padding: 5px 20px 5px 15px;
+        margin: 15px 0;
+        border-radius: 31px;
+        background: $background-color-grey;
+        height: 50px;
+        flex-shrink: 0;
+      }
+
+      .arrow-one {
+        @include width-height-value(65px, 72px);
+        transform: scaleX(-1) rotate(44.591deg);
+        position: absolute;
+        padding: 25px 0px 40px 0;
+      }
+
+      .navigation-two {
+        @include flex-container(column, center, flex-start);
+
+        .arrow-two {
+          @include width-height-value(65px, 72px);
+          transform: scaleX(1) rotate(-4.092deg);
+        }
+      }
+
+      .navigation-three {
+        margin: 910px 0 0 800px;
+        @include flex-container(column, center, flex-end);
+        position: absolute;
+
+        .arrow-three {
+          @include width-height-value(65px, 72px);
+          transform: scaleX(-1) rotate(4.092deg);
+          padding: 0;
+        }
+      }
+
+      .facts-blocks {
+        @include flex-container(column, center, flex-start);
+
+        .fact-block {
+          @include width-height-value(450px, 400px);
+          border: 8px $text-color-yellow solid;
+          border-radius: 40px;
+          margin-top: 50px;
+          padding: 20px 20px 30px;
+
+          .title-facts-blocks {
+            @include text-styles(48px, 800,  $text-color-yellow);
+            font-style: normal;
+            line-height: 64px;
+            margin: 10px 0;
+          }
+ 
+          .facts-list {
+
+            .facts-item {
+              @include text-styles(24px, 800,  $main-color1);
+              line-height: 55px;
+            }
+          }
+        }
+
+        .fact-block-one {
+          position: relative;
+        }
+
+        .fact-block-two {
+          position: absolute;
+          margin: 300px 0 0 550px;
+
+        }
+
+        .fact-block-three {
+          margin-top:20px;
+        }
+      }
+    }
+  }
+}

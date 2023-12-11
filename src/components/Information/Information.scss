@@ -1,0 +1,69 @@
+@import "../../scss/common/mixins";
+
+.info-block {
+  @include width-height-value(100%, 1000px);
+
+  .info-flex-container {
+    @include width-height-value(100%, 1000px);
+    @include flex-container(column, center, center);
+    .section-info-blocks {
+      @include flex-container(row, stretch, stretch);
+
+      .info-block {
+        @include flex-container(column, space-evenly, center);
+        @include width-height-value(350px, 415px);
+        background-color: $main-background-orange;
+        border-radius: 40px 0 40px 0;
+        margin: 10px;
+
+        .icon-info {
+          @include width-height-value(82px, 85px);
+          flex-shrink: 0;
+        }
+
+        .title-info {
+          @include text-styles(42px, 600, $text-primary-color);
+          margin: 0;
+        }
+
+        .subtitle-info {
+          @include text-styles(24px, 400, $text-primary-color);
+          text-align: center;
+        }
+
+        .block-contact {
+          @include flex-container(column, space-evenly, center);
+        }
+      }
+    }
+
+    .section-waiting-call {
+      margin-top: 80px;
+      @include flex-container(row, space-between, center);
+      border: $main-color2 solid 1px;
+      .block-waiting-call {
+        @include flex-container(row, center, center);
+        @include width-height-value(370px, 152px);
+        align-items: center;
+        flex-shrink: 0;
+
+        .text-block-waiting-call {
+          @include text-styles(42px, 600, $main-color2);
+        }
+      }
+
+      .block2-waiting-call {
+        @include flex-container(row, center, center);
+        @include width-height-value(352px, 152px);
+        align-items: center;
+        flex-shrink: 0;
+        background: $main-background-orange;
+
+        .text2-block-waiting-call {
+          @include text-styles(42px, 600, $text-primary-color);
+        }
+      }
+    }
+  }
+}
+
