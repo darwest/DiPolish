@@ -3,4 +3,5 @@
   publish = "dist" # папка, де знаходиться зібраний проект
 
 [functions]
-  myFunction = "netlify.js"
+  myFunction = "server/server.js"
+
