@@ -4,9 +4,3 @@
 
 [functions]
   directory = "server"  # Шлях до каталогу функцій, в якому знаходиться server.js
-
-  [functions.netlify]
-    external_node_modules = [
-      "module-one",
-      "module-two"
-    ]
