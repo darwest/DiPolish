@@ -5,3 +5,5 @@
 [functions]
   directory = "server" # папка, де знаходиться серверна частина (функції Lambda)
 
+[functions]
+  myFunction = "server/netlify.js"
