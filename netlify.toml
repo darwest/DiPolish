@@ -3,5 +3,10 @@
   publish = "dist" # папка, де знаходиться зібраний проект
 
 [functions]
-  myFunction = "server/server.js"
+  directory = "server"  # Шлях до каталогу функцій, в якому знаходиться server.js
 
+  [functions.netlify]
+    external_node_modules = [
+      "module-one",
+      "module-two"
+    ]
