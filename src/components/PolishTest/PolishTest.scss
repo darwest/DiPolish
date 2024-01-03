@@ -15,11 +15,17 @@
     color: $main-color1;
     font-weight: 900;
     font-size: 2.4rem;
+    margin: 0 0 40px;
 }
 
 .test-description{
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.35rem;
+    width: 70%;
+    line-height: 32px;
+    font-weight: 500;
+    margin-bottom: 50px;
+
 }
 
 
@@ -32,7 +38,9 @@
     border: 3px solid transparent;
     padding: 15px;
     transition: all .4s ease;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: $font;
+    
  }
 
  .test-btn:hover{
@@ -46,10 +54,14 @@
     display: flex;  
     flex-direction: column;
     align-items: center;
+    height: 110%;
 }
  
  .test-element{
-    width: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
  }
 
  .test-variants{
@@ -58,6 +70,7 @@
     gap: 20px;
     margin: 20px 0;
     font-size: 1.2rem;
+    align-items: flex-start;
 
     &  input {
         cursor: pointer;
@@ -67,20 +80,24 @@
  .test-buttons{
     display: flex;  
     gap: 15px;
+    font-family: $font;
 
     & > button {
         background-color: $main-background-orange;
         color: white;
         border: transparent;
+        margin-top: 10px;
         border-radius: 15px;
         font-size: 1rem;
-        padding: 5px 10px;
+        padding: 8px 15px 9px;
         cursor: pointer;
+        font-family: $font;
     }
 
     .test-btn-next{
         background-color: $main-color1;
         color: white;
+        font-family: $font;
      }
  }
 
@@ -146,8 +163,12 @@
 }
 
 .test-target{
-    margin-bottom: 40px;
+    margin-bottom: 45px;
+    font-weight: 600;
+    margin-top: 0;
+    font-size: 20px;
     text-align: center;
+    color: $main-background-orange;
 }
 
 .text-orange{

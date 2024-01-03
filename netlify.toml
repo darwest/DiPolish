@@ -1,6 +1,0 @@
-[build]
-  command = "npm run build" # або команда, яку ви використовуєте для збірки вашого React-проекту
-  publish = "dist" # папка, де знаходиться зібраний проект
-
-[functions]
-  directory = "server"  # Шлях до каталогу функцій, в якому знаходиться server.js

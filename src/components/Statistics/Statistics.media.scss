@@ -164,7 +164,7 @@
             @include width-height-value(100%, 300px);
 
             .title-statistics-block {
-                width: 30%;
+                width: 40%;
 
                 .vertical-line {
                     height: 150px;
@@ -241,9 +241,9 @@
             @include width-height-value(100%, 170px);
 
             .title-statistics-block {
-                width: 35%;
+               
                 .vertical-line {
-                    height: 100px;
+                    height: 90px;
                     width: 4px;
                     margin: 0 10px;
                 }

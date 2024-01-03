@@ -336,7 +336,7 @@ v
 @media (max-width: 576px) {
     
     .about-me-block {
-        @include width-height-value(100%, 900px);
+        @include width-height-value(100%, 940px);
 
         .content-about-me {
             @include width-height-value(100%, 415px);

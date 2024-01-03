@@ -10,15 +10,10 @@ const Statistics = () => {
       <div className="container">
         <div className="statistics-flex-container">
           <div className="title-statistics-block">
-            <motion.div initial={{width: 0}} whileInView={{width: 6}} transition={{delay: .4}} className="vertical-line"></motion.div>
-            <motion.div
-              className="title-statistics"
-              initial={{ x: -200, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration : .4, delay: .4}}
-            >
+            <div className="vertical-line"></div>
+            <div className="title-statistics">
               Чому варто обрати мене?
-            </motion.div>
+            </div>
           </div>
           <div className="right-statistics-block">
             <div className="statistics">

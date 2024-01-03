@@ -157,6 +157,11 @@
             @include width-height-value(100%, 140px);
 
             .logo-socnetwork {
+                .socnetworks-link{.tik-link{
+                    @include width-height-value(24px, 24px);
+                    border-radius: 2px;
+                    margin: 0 5px;
+                }}
                 .logo-footer {
                     width: 100px;
                 }
@@ -186,10 +191,11 @@
 
             .menu-block {
                 .menu-list-footer {
-                    @include flex-container(column, space-between, center);
+                    @include flex-container(column, space-between, flex-end);
 
                     .menu-item {
                         margin: 4px 0 0 0;
+
 
                         &:nth-last-child(2) {
                             margin: 4px 0 0 0;
@@ -223,6 +229,7 @@
                     line-height: 0;
                     padding-bottom: 8px;
                 }
+                
             }
         }
     }

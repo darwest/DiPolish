@@ -1,4 +1,4 @@
-@import "../../scss/common/mixins";
+  @import "../../scss/common/mixins";
 @import "../../scss/common/reset";
 @import "../../scss/common/variables";
 
@@ -18,7 +18,7 @@
       border-radius: 30px;
       height: 100%;
      
-      padding: 0 10px 0 30px;
+      padding: 0 0px 0 40px;
 
       .top-part-about-me-block {
         @include flex-container(row-reverse, flex-end, center);

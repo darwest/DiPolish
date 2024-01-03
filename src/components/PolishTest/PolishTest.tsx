@@ -85,9 +85,11 @@ const PolishTest = ({isTestStarted, setIsTestStarted} : Props) => {
   return (
     <div className="test-container">
       <div className="test-block">
-        <h1 className="test-heading">Пробний модуль</h1>
+       
         {!isTestStarted && !isTestFinished && (
-           <p className="test-description">
+          
+          <p className="test-description">
+          <span> <h1 className="test-heading">Пробний модуль</h1></span>
            Пропонуємо Вам закріпити свої знання пройшовши невеличкий тест. Сам
            тест складатиметься із 3 частин:
            <span className="text-orange"> Квізу, </span>
