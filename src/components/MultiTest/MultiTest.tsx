@@ -3,93 +3,99 @@ import MessageModal from "../MessageModal/MessageModal";
 import { IQuizQuestion } from "../../types/IQuizQuestion";
 import { ResultAnswerType } from "../../types/ResultAnswerType";
 
-// Оголошення пропсів для компонента MultiTest
 type MultiTestProps = {
   onFinish: (results: ResultAnswerType[]) => void;
 };
 
-// Основний компонент MultiTest
 const MultiTest = ({ onFinish }: MultiTestProps) => {
-  // Стан для збереження списку питань
-  const [multiQuestionsList, setMultiQuestionsList] = useState<IQuizQuestion[]>(
-    []
-  );
-  
-  // Стан для відстеження поточного питання
-  const [currentQuestion, setCurrentQuestion] = useState<number>(0);
-  
-  // Стан для відстеження обраних відповідей для кожного питання
-  const [selectedAnswers, setSelectedAnswers] = useState<Array<number[]>>([]);
+  const [multiQuestionsList, setMultiQuestionsList] = useState<IQuizQuestion[]>([
+    {
+      "id": 1,
+      "question": "Як можемо привітатися з другом?",
+      "answers": [
+        { "option": "A. Hejka", "isCorrect": true },
+        { "option": "Б. Dzień dobry!", "isCorrect": false },
+        { "option": "B. Siema", "isCorrect": true },
+        { "option": "Г. Hejka", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Як запитати «Як у тебе/ у вас справи?»",
+      "answers": [
+        { "option": "A. Co słychać?", "isCorrect": true },
+        { "option": "Б. Jak się masz?", "isCorrect": true },
+        { "option": "В. Nic nowego", "isCorrect": false },
+        { "option": "Г. Jak pan/ pani się ma?", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Як можемо відповісти на питання «Co słychać?»",
+      "answers": [
+        { "option": "A. Wszystko w porządku!", "isCorrect": true },
+        { "option": "Б. Nic nie szkodzi", "isCorrect": false },
+        { "option": "В. Nic nowega", "isCorrect": true },
+        { "option": "Г. Po staremu!", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Як сказати перепрошую/ вибач польською?",
+      "answers": [
+        { "option": "A. Proszę", "isCorrect": false },
+        { "option": "Б. Przepraszam", "isCorrect": true },
+        { "option": "B. Dziękuję", "isCorrect": false },
+        { "option": "Г. Wybacz", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Як попрощатися польською?",
+      "answers": [
+        { "option": "A. Do widzenia!", "isCorrect": true },
+        { "option": "Б. Cześć!", "isCorrect": true },
+        { "option": "В. Dobranoc!", "isCorrect": false },
+        { "option": "Г. Na razie!", "isCorrect": true }
+      ]
+    }
+  ]);
 
-  // Стан для відстеження відкриття чи закриття модального вікна підтвердження
+  const [currentQuestion, setCurrentQuestion] = useState<number>(0);
+  const [selectedAnswers, setSelectedAnswers] = useState<Array<number[]>>([]); 
   const [isConfirmationModalOpen, setIsConfirmationModalOpen] = useState(false);
 
-  // Ефект викликається при завантаженні компонента
   useEffect(() => {
-    // Функція для отримання списку питань з сервера
-    const fetchMultiQuestions = async () => {
-      try {
-        const response = await fetch("http://localhost:3001/api/multi");
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
+    const initialSelectedAnswers = multiQuestionsList.map(() => []);
+    setSelectedAnswers(initialSelectedAnswers);
+  }, [multiQuestionsList]);
 
-        const data = await response.json();
-        setMultiQuestionsList(data);
-
-        // Початковий стан обраної відповіді для кожного питання
-        const initialSelectedAnswers = data.map(() => []);
-        setSelectedAnswers(initialSelectedAnswers);
-      } catch (error) {
-        console.error("Error fetching multi questions:", error);
-      }
-    };
-
-    // Виклик функції для отримання списку питань
-    fetchMultiQuestions();
-  }, []);
-
-  // Функція для переходу до наступного питання
   const nextQuestion = () => {
     setCurrentQuestion((prev) => prev + 1);
   };
 
-  // Функція для переходу до попереднього питання
   const prevQuestion = () => {
     setCurrentQuestion((prev) => prev - 1);
   };
 
-// Функція handleAnswerChange відповідає за зміну стану обраних відповідей при виборі/знятті відмітки в checkbox.
+  const handleAnswerChange = (index: number) => {
+    setSelectedAnswers((prev) => {
+      const newSelectedAnswers = [...prev];
+      const currentSelected = newSelectedAnswers[currentQuestion];
 
-const handleAnswerChange = (index: number) => {
-  // setSelectedAnswers - функція для оновлення стану обраних відповідей
-  // (prev) => - отримує попередній стан і використовує його для оновлення
-  setSelectedAnswers((prev) => {
-    // Створення копії попереднього стану
-    const newSelectedAnswers = [...prev];
-    // Отримання обраних відповідей для поточного питання
-    const currentSelected = newSelectedAnswers[currentQuestion];
+      if (currentSelected.includes(index)) {
+        newSelectedAnswers[currentQuestion] = currentSelected.filter(
+          (i) => i !== index
+        );
+      } else {
+        newSelectedAnswers[currentQuestion] = [...currentSelected, index];
+      }
 
-    // Перевірка, чи вже обрано відповідь для даного варіанту (index)
-    if (currentSelected.includes(index)) {
-      // Якщо обрано, видаляємо відповідь
-      newSelectedAnswers[currentQuestion] = currentSelected.filter(
-        (i) => i !== index
-      );
-    } else {
-      // Якщо не обрано, додаємо відповідь
-      newSelectedAnswers[currentQuestion] = [...currentSelected, index];
-    }
+      return newSelectedAnswers;
+    });
+  };
 
-    // Повертаємо оновлений стан
-    return newSelectedAnswers;
-  });
-};
-
-
-  // Функція для завершення тесту
   const handleFinishTest = () => {
-    // Перевірка, чи обрано відповіді на всі питання
     if (selectedAnswers.length !== multiQuestionsList.length) {
       alert("Ви не відповіли на всі питання");
       return;
@@ -98,15 +104,12 @@ const handleAnswerChange = (index: number) => {
     setIsConfirmationModalOpen(true);
   };
 
-  // Функція для підтвердження завершення тесту
   const confirmFinishTest = () => {
     const results: Array<ResultAnswerType> = [];
 
-    // Ітерація по списку питань
     multiQuestionsList.forEach((question, index) => {
       const selectedAnswer = selectedAnswers[index];
 
-      // Перевірка, чи обрано відповіді для поточного питання
       if (selectedAnswer.length > 0) {
         const correctAnswers = question.answers
           .filter((a) => a.isCorrect)
@@ -132,20 +135,16 @@ const handleAnswerChange = (index: number) => {
       }
     });
 
-    // Виклик функції завершення тесту та закриття модального вікна
     onFinish(results);
     setIsConfirmationModalOpen(false);
   };
 
-  // Отримання поточного питання зі списку
   const question = multiQuestionsList[currentQuestion];
 
-  // Відображення "Loading..." при завантаженні питань з сервера
   if (multiQuestionsList.length === 0) {
     return <div>Loading...</div>;
   }
 
-  // Повернення JSX-структури компонента MultiTest
   return (
     <div className="test-element">
       <h3>
@@ -197,5 +196,4 @@ const handleAnswerChange = (index: number) => {
   );
 };
 
-// Експорт компонента MultiTest
 export default MultiTest;
