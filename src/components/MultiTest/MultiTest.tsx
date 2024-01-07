@@ -8,7 +8,7 @@ type MultiTestProps = {
 };
 
 const MultiTest = ({ onFinish }: MultiTestProps) => {
-  const [multiQuestionsList, setMultiQuestionsList] = useState<IQuizQuestion[]>([
+  const [multiQuestionsList] = useState<IQuizQuestion[]>([
     {
       "id": 1,
       "question": "Як можемо привітатися з другом?",

@@ -8,7 +8,7 @@ type QuizTestProps = {
 };
 
 const QuizTest = ({ onFinish }: QuizTestProps) => {
-  const [quizQuestionsList, setQuizQuestionsList] = useState<IQuizQuestion[]>([
+  const [quizQuestionsList] = useState<IQuizQuestion[]>([
     {
       "id": 1,
       "question": "Виберіть слово, що означає «добрий день!»",

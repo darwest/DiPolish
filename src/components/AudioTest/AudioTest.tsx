@@ -19,7 +19,7 @@ type AudioTestProps = {
 };
 
 const AudioTest: React.FC<AudioTestProps> = ({ onFinish }) => {
-  const [audioQuestionsList, setAudioQuestionsList] = useState<AudioQuestion[]>([
+const [audioQuestionsList] = useState<AudioQuestion[]>([
     { "id": 1, "correctAnswer": "się" },
     { "id": 2, "correctAnswer": "pan" },
     { "id": 3, "correctAnswer": "w porządku" },
