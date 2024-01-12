@@ -49,23 +49,30 @@ const WordMatchTest: React.FC<WordMatchTestProps> = ({ onFinish }) => {
     }
     setIsConfirmationModalOpen(true);
   };
-
   const confirmFinishTest = () => {
-    const results = wordMatchQuestionsList.map((question, index) => {
-      const isCorrect = question.correctAnswer === selectedAnswers[index];
-      return {
-        id: question.id,
-        correctAnswer: question.correctAnswer,
-        inCorrectAnswer: isCorrect ? "" : selectedAnswers[index],
-        className: isCorrect ? "result-correct" : "result-incorrect",
-        type: "word-match",
-      };
+    const results: Array<ResultAnswerType> = [];
+  
+    wordMatchQuestionsList.forEach((question, index) => {
+      const userAnswer = selectedAnswers[index];
+  
+      // Ця перевірка гарантує, що userAnswer не є null
+      if (userAnswer !== null) {
+        const isCorrect = question.correctAnswer === userAnswer;
+  
+        results.push({
+          id: question.id,
+          correctAnswer: question.correctAnswer,
+          inCorrectAnswer: isCorrect ? "" : userAnswer,
+          className: isCorrect ? "result-correct" : "result-incorrect",
+          type: "word-match",
+        });
+      }
     });
-
+  
     onFinish(results);
-    setIsConfirmationModalOpen(false);
+    setIsConfirmationModalOpen(false); // Закриття модального вікна після завершення тесту
   };
-
+  
   return (
     <div className="test-e">
       <div>

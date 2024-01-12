@@ -1,4 +1,3 @@
-import Logo from "../../assets/img/logo.png";
 //Імпорт компонента для створення навігаційних посилань у застосунку React Router.
 import { Link } from "react-router-dom";
 //Імпорт компоненту навігації
