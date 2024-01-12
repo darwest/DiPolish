@@ -1,139 +1,94 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import MessageModal from "../MessageModal/MessageModal";
 import { ResultAnswerType } from "../../types/ResultAnswerType";
 
-import AudioFile1 from "../../assets/audio/file_41252.mp3";
-import AudioFile2 from "../../assets/audio/file_41253.mp3";
-import AudioFile3 from "../../assets/audio/file_41254.mp3";
-import AudioFile4 from "../../assets/audio/file_41255.mp3";
+import ImageWithWords from "../../assets/img/test.jpg";
 
-const AudioArr = [AudioFile1, AudioFile2, AudioFile3, AudioFile4];
-
-type AudioQuestion = {
+type WordMatchQuestion = {
   id: number;
   correctAnswer: string;
 };
 
-type AudioTestProps = {
+type WordMatchTestProps = {
   onFinish: (results: ResultAnswerType[]) => void;
 };
 
-const AudioTest: React.FC<AudioTestProps> = ({ onFinish }) => {
-const [audioQuestionsList] = useState<AudioQuestion[]>([
-    { "id": 1, "correctAnswer": "się" },
-    { "id": 2, "correctAnswer": "pan" },
-    { "id": 3, "correctAnswer": "w porządku" },
-    { "id": 4, "correctAnswer": "nazywa" },
+const WordMatchTest: React.FC<WordMatchTestProps> = ({ onFinish }) => {
+  const [wordMatchQuestionsList] = useState<WordMatchQuestion[]>([
+    { id: 1, correctAnswer: "Г" },
+    { id: 2, correctAnswer: "А" },
+    { id: 3, correctAnswer: "З" },
+    { id: 4, correctAnswer: "Ж" },
+    { id: 5, correctAnswer: "В" },
+    { id: 6, correctAnswer: "Є" },
+    { id: 7, correctAnswer: "Б" },
+    { id: 8, correctAnswer: "Е" },
+    { id: 9, correctAnswer: "Д" },
+    
   ]);
 
-  const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const [selectedAnswers, setSelectedAnswers] = useState<Array<string | null>>(
-    Array(audioQuestionsList.length).fill(null)
+    Array(wordMatchQuestionsList.length).fill(null)
   );
   const [isConfirmationModalOpen, setIsConfirmationModalOpen] = useState(false);
 
-  const audioRef = React.createRef<HTMLAudioElement>();
-
-  useEffect(() => {
-    // Немає потреби викликати сервер для отримання питань, оскільки дані вже включені в код
-  }, []);
-
-  const nextQuestion = () => {
-    setCurrentQuestion((prev) => prev + 1);
-  };
-
-  const prevQuestion = () => {
-    setCurrentQuestion((prev) => prev - 1);
-  };
-
-  const handleAnswerChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const answer = event.target.value;
+  const handleAnswerChange = (event: React.ChangeEvent<HTMLInputElement>, index: number) => {
+    const newAnswer = event.target.value.toUpperCase();
     setSelectedAnswers((prev) => {
-      const newSelectedAnswers = [...prev];
-      newSelectedAnswers[currentQuestion] = answer;
-      return newSelectedAnswers;
+      const newAnswers = [...prev];
+      newAnswers[index] = newAnswer;
+      return newAnswers;
     });
   };
 
   const handleFinishTest = () => {
-    if (selectedAnswers.length !== audioQuestionsList.length) {
+    const isAllAnswered = selectedAnswers.every((answer) => answer !== null);
+    if (!isAllAnswered) {
       alert("Ви не відповіли на всі питання");
       return;
     }
-
     setIsConfirmationModalOpen(true);
   };
 
   const confirmFinishTest = () => {
-    const results: Array<ResultAnswerType> = [];
-
-    audioQuestionsList.forEach((el, index) => {
-      const selectedAnswerIndex = selectedAnswers[index];
-
-      if (selectedAnswerIndex !== null) {
-        const isCorrect = el.correctAnswer === selectedAnswerIndex;
-
-        results.push({
-          id: el.id,
-          correctAnswer: el.correctAnswer,
-          inCorrectAnswer: isCorrect ? "" : selectedAnswerIndex,
-          className: isCorrect ? "result-correct" : "result-incorrect",
-          type: "audio",
-        });
-      }
+    const results = wordMatchQuestionsList.map((question, index) => {
+      const isCorrect = question.correctAnswer === selectedAnswers[index];
+      return {
+        id: question.id,
+        correctAnswer: question.correctAnswer,
+        inCorrectAnswer: isCorrect ? "" : selectedAnswers[index],
+        className: isCorrect ? "result-correct" : "result-incorrect",
+        type: "word-match",
+      };
     });
 
     onFinish(results);
     setIsConfirmationModalOpen(false);
   };
 
-  const question = audioQuestionsList[currentQuestion];
-  const audioPath = AudioArr[currentQuestion];
-
-  if (audioQuestionsList.length === 0) {
-    return <div>Loading...</div>;
-  }
-
   return (
-    <div className="test-element">
+    <div className="test-e">
       <div>
-        <audio key={question.id} ref={audioRef} controls={true}>
-          <source src={audioPath} type="audio/mp3" />
-        </audio>
-
-        <div className="test-audio-text">
-          <label htmlFor="testAudio">{question.id})</label>
-          <input
-            className="test-audio-input"
-            id="testAudio"
-            type="text"
-            value={selectedAnswers[currentQuestion] || ""}
-            onChange={handleAnswerChange}
-          />
+        <img className="test" src={ImageWithWords} alt="Words" />
+        <div className="test-word-match-questions">
+          {wordMatchQuestionsList.map((question, index) => (
+            <div key={question.id} className="test-word-match-text">
+              <label htmlFor={`testWordMatch${question.id}`}>{question.id})</label>
+              <input
+                className="test-word-match-input"
+                id={`testWordMatch${question.id}`}
+                type="text"
+                value={selectedAnswers[index] || ""}
+                onChange={(e) => handleAnswerChange(e, index)}
+              />
+            </div>
+          ))}
         </div>
       </div>
 
-      <div className="test-buttons">
-        <button onClick={prevQuestion} disabled={currentQuestion === 0}>
-          Попереднє
-        </button>
-
-        {currentQuestion + 1 !== audioQuestionsList.length ? (
-          <button
-            onClick={() => {
-              audioRef.current?.pause();
-              nextQuestion();
-            }}
-            disabled={currentQuestion === audioQuestionsList.length - 1}
-          >
-            Наступне
-          </button>
-        ) : (
-          <button className="test-btn-next" onClick={handleFinishTest}>
-            Завершити тест
-          </button>
-        )}
-      </div>
+      <button className="test-btn-finish" onClick={handleFinishTest}>
+        Завершити тест
+      </button>
 
       <MessageModal
         isOpen={isConfirmationModalOpen}
@@ -147,4 +102,4 @@ const [audioQuestionsList] = useState<AudioQuestion[]>([
   );
 };
 
-export default AudioTest;
+export default WordMatchTest;

@@ -7,14 +7,18 @@ import "./Review.media.scss";
 //Імпорт компонента Слайдер
 import {Swiper, SwiperSlide} from "swiper/react"
 //Імпорт зображень для слайдів у слайдері
-import ReviewImg1 from "../../assets/img/reviews/review1.jpg";
-import ReviewImg2 from "../../assets/img/reviews/review2.jpg";
-import ReviewImg3 from "../../assets/img/reviews/review3.jpg";
-import ReviewImg4 from "../../assets/img/reviews/review4.jpg";
-import ReviewImg5 from "../../assets/img/reviews/review5.jpg";
-import ReviewImg6 from "../../assets/img/reviews/review6.jpg";
-import ReviewImg7 from "../../assets/img/reviews/review7.jpg";
-import ReviewImg8 from "../../assets/img/reviews/review8.jpg";
+import ReviewImg1 from "../../assets/reviews/1.jpg";
+import ReviewImg2 from "../../assets/reviews/2.jpg";
+import ReviewImg3 from "../../assets/reviews/3.jpg";
+import ReviewImg4 from "../../assets/reviews/4.jpg";
+import ReviewImg5 from "../../assets/reviews/5.jpg";
+import ReviewImg7 from "../../assets/reviews/7.jpg";
+import ReviewImg8 from "../../assets/reviews/8.jpg";
+import ReviewImg9 from "../../assets/reviews/9.jpg";
+import ReviewImg10 from "../../assets/reviews/10.jpg";
+import ReviewImg11 from "../../assets/reviews/11.jpg";
+import ReviewImg12 from "../../assets/reviews/12.jpg";
+
 
 const Review = () => {
   //reviews - масив даних
@@ -24,9 +28,12 @@ const Review = () => {
     ReviewImg3,
     ReviewImg4,
     ReviewImg5,
-    ReviewImg6,
     ReviewImg7,
     ReviewImg8,
+    ReviewImg9,
+    ReviewImg10,
+    ReviewImg11,
+    ReviewImg12,
   ];
 
   return (
@@ -71,7 +78,7 @@ const Review = () => {
               </div>
             </div>
             <p className="bottom-title-reviews-block">
-                SWIPE RIGHT!
+                SWIPE LEFT!
               </p>
           </div>
         </div>
@@ -83,9 +90,3 @@ const Review = () => {
 
 export default Review;
 
-/*
-slidesPerView={1} вказує, що один слайд буде видимим одночасно.
-{reviews.map((r, i) => ( ... ))}: це JS-вираз, який мапить (перетворює) кожен елемент з масиву reviews на відповідний SwiperSlide. 
-r - це конкретний елемент (зображення відгуку),
-i - індекс цього елемента.
- */

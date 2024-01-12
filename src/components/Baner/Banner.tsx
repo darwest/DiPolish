@@ -8,7 +8,7 @@ const Banner = () => {
 
 
   return (
-    <section
+    <section id="1"
       className="banner-block">
       <div className="container">
         <div className="banner-flex-container">
@@ -35,7 +35,7 @@ const Banner = () => {
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1, transition: { duration: .4, delay: 1.3 } }}
               >
-                FEEDBACK
+                ЗАЯВКА
               </motion.a>
             </motion.div>
             <motion.div className="banner-image-block">
@@ -53,15 +53,13 @@ const Banner = () => {
       <motion.div className="banner-block-two">
         <div className="container">
           <motion.div className="banner-flex-container-two">
-            <motion.h2
+            <h2
               className="banner-title-two"
-              initial={{ y: 100, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
               
             >
               ВІТАЄМО ТЕБЕ З НАВЧАННЯМ, ЯКЕ ПРИНОСИТЬ ЗАДОВОЛЕННЯ І ГАРНЕ
               ВОЛОДІННЯ МОВОЮ{" "}
-            </motion.h2>
+            </h2>
           </motion.div>
         </div>
       </motion.div>

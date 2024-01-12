@@ -1,7 +1,7 @@
 @import "../../scss/common/mixins";
 @import "../../scss/common/reset";
 @import "../../scss/common/variables";
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .navbar-item {
     margin-right: 18px;
     @include position(relative);
@@ -16,7 +16,26 @@
 
     .navbar-link {
       @include position(relative);
-      @include text-styles(14px, 400, $text-primary-color);
+      @include text-styles(16px, 400, $text-primary-color);
+    }
+  }
+}
+@media (max-width: 992px) {
+  .navbar-item {
+    margin-right: 12px;
+    @include position(relative);
+
+    &:nth-last-child(2) {
+      margin-right: 13px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .navbar-link {
+      @include position(relative);
+      @include text-styles(13px, 400, $text-primary-color);
     }
   }
 }
@@ -27,7 +46,7 @@
 
     .navbar-link {
       @include position(relative);
-      @include text-styles(14px, 400, $text-primary-color);
+      @include text-styles(12px, 400, $text-primary-color);
     }
 
     &:first-child {

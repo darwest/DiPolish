@@ -15,7 +15,7 @@
             .banner-text-block {
 
                 .banner-title {
-                    @include text-styles(24px, 700, $text-primary-color);
+                    @include text-styles(22px, 700, $text-primary-color);
                     line-height: 30px;
                 }
 
@@ -25,8 +25,8 @@
                 }
 
                 .banner-button {
-                    @include button-style($main-background-orange, 20px, 30px, 12px 16px);
-                    width: 120px;
+                    @include button-style($main-background-orange, 16px, 30px, 10px 16px);
+                    width: 100px;
 
                     .banner-button-link {
                         @include link-style(none, $main-background-white, 20px, 700);
@@ -47,14 +47,14 @@
     }
 
     .banner-block-two {
-        @include width-height-value(100%, 300px);
+        @include width-height-value(100%, 220px);
 
         .banner-flex-container-two {
-            @include width-height-value(100%, 300px);
+            @include width-height-value(100%, 220px);
 
             .banner-title-two {
                 margin: 0;
-                @include text-styles(24px, 700, $text-primary-color);
+                @include text-styles(22px, 700, $text-primary-color);
                 line-height: 30px;
                 width: 60%;
             }
@@ -76,7 +76,7 @@
                 .banner-text-block {
     
                     .banner-title {
-                        @include text-styles(22px, 700, $text-primary-color);
+                        @include text-styles(20px, 700, $text-primary-color);
                         line-height: 25px;
                     }
     
@@ -100,7 +100,7 @@
     
                 .banner-title-two {
                     margin: 0;
-                    @include text-styles(22px, 700, $text-primary-color);
+                    @include text-styles(20px, 700, $text-primary-color);
                     line-height: 30px;
                     width: 70%;
                 }

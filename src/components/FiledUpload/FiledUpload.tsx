@@ -19,7 +19,7 @@ const FileUpload = () => {
 
   return (
     <div>
-      <button className="test-btn" onClick={handleUpload}>Завантажити</button>
+      <button className="hint-btn" onClick={handleUpload}>Завантажити</button>
     </div>
   );
 };

@@ -151,7 +151,7 @@ const QuizTest = ({ onFinish }: QuizTestProps) => {
 
   return (
     <div className="test-element">
-      <h3>
+      <h3 className="question">
         {quizQuestionsList[currentQuestion]?.id}){" "}
         {quizQuestionsList[currentQuestion]?.question}
       </h3>

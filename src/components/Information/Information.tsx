@@ -26,7 +26,7 @@ const Information = () => {
                     <img src={CtaPhone} alt="loading" className="icon-info"/>
                     <h3 className="title-info">Контакти</h3>
                     <div className="block-contact">
-                        <a href="tel:+380777777777" className="subtitle-info">+(380) 77-77-777</a>
+                        <a href="tel:+380688896135" className="subtitle-info">+(380) 68-889-61-35</a>
                         <a href="mailto:info@name.ua" className="subtitle-info">gacikdp@gmail.com</a>
                     </div>
                 </div>

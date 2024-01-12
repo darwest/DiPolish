@@ -11,7 +11,22 @@
   .header-flex-container {
     @include flex-container(row, space-between, center);
     @include width-height-value(100%,120px);
-
+    .logo-block1{
+      border-left: 3.5px solid #fff;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 10px;
+      .logo-block
+      {text-decoration:dotted;}
+      .logo{
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        
+      }
+    }
     .burger-menu {
       display: none
     }
@@ -23,7 +38,7 @@
 
      
       .menu-item-button {
-        @include button-style($main-background-orange, 21px, 26px, 12px 20px);
+        @include button-style($main-background-orange, 18px, 26px, 12px 20px);
         z-index: 3;
 
         .menu-link-button {

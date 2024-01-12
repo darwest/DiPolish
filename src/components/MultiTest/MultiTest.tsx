@@ -147,7 +147,7 @@ const MultiTest = ({ onFinish }: MultiTestProps) => {
 
   return (
     <div className="test-element">
-      <h3>
+      <h3 className="question">
         {question.id}) {question.question}
       </h3>
 

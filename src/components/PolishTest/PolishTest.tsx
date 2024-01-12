@@ -59,8 +59,8 @@ const PolishTest = ({isTestStarted, setIsTestStarted} : Props) => {
     },
     {
       id: 3,
-      name: "Аудіо тест",
-      description: "Прослухайте аудіодоріжку та впишіть пропущене слово",
+      name: "Встановіть відповідність",
+      description: "Встановіть відповідність між словосполученнями",
       element: <AudioTest onFinish={handleFinishTest} />,
     },
   ];
@@ -94,7 +94,7 @@ const PolishTest = ({isTestStarted, setIsTestStarted} : Props) => {
            тест складатиметься із 3 частин:
            <span className="text-orange"> Квізу, </span>
            <span className="text-orange">Мульти</span> та
-           <span className="text-orange"> Аудіо</span>.
+           <span className="text-orange"> Відповідності</span>.
            <br />
            Після проходження одного блоку ви зможете перейти до наступного, коли
            всі блоки будуть пройдені тест буде завершений і ви отримаєте свій
@@ -115,7 +115,7 @@ const PolishTest = ({isTestStarted, setIsTestStarted} : Props) => {
 
         {isTestStarted && (
           <div className="test-body">
-            <h1>{typesTests[currentTest].name}</h1>
+            <h1 className="title">{typesTests[currentTest].name}</h1>
             <p className="test-target">{typesTests[currentTest].description}</p>
             {typesTests[currentTest].element}
           </div>
@@ -124,7 +124,7 @@ const PolishTest = ({isTestStarted, setIsTestStarted} : Props) => {
         {isTestFinished && (
           <div className="test-result">
             <h3 className="test-result-heading">Ви відповіли правильно на <span className="text-orange">{correctAnswersCount}</span> питань</h3>
-              <h4>Ваш рівень - { getLevel(correctAnswersCount)}</h4>
+              <h4 className="level">Ваш рівень - { getLevel(correctAnswersCount)}</h4>
             <ul className="test-result-list">
               {resultAnswers.map((result, index) => (
                 <li

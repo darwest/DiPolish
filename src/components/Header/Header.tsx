@@ -20,9 +20,11 @@ const Header = () => {
     <header className={`header ${isMenuOpen && "active"}`}>
       <div className="container">
         <div className="header-flex-container">
+        <div className="logo-block1">
           <Link to={"/"} className="logo-block">
-            <img src={Logo} alt="loading" className="logo" width="172px" />
-          </Link>
+          <h1 className="logo" >Hatsyk.polish</h1>
+           </Link>
+          </div>
           <div onClick={() => {setisMenuOpen(prev => !prev)}} className={`burger-menu ${isMenuOpen && "active"}`}>
             <div className={`menu-burger-block ${isMenuOpen && "active"}`}>
               <span></span>
@@ -39,7 +41,7 @@ const Header = () => {
                   className="menu-link-button"
                   target="_blank"
                 >
-                  FEEDBACK
+                  ЗАЛИШИТИ ЗАЯВКУ
                 </a>
               </li>
             </ul>

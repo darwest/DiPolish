@@ -15,7 +15,24 @@
 
         .footer-content {
             @include width-height-value(100%, 140px);
-
+            .logo-block1{
+                border-left: 3px solid #fff;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: 8px;
+                margin-bottom: 15px;
+                .block
+                {text-decoration:dotted;}
+                .logo{
+                  color: #fff;
+                  font-weight: 600;
+                  text-decoration: none;
+                  font-size: 22px;
+                  
+                }
+              }
             .logo-socnetwork {
                 .logo-footer {
                     width: 140px;
@@ -23,7 +40,7 @@
 
                 .socnetworks-link {
                     @include flex-container(row, space-between, flex-start);
-                    width: 75%;
+                    width: 65%;
 
                 }
             }
@@ -89,7 +106,24 @@
 
         .footer-content {
             @include width-height-value(100%, 140px);
-
+            .logo-block1{
+                border-left: 3px solid #fff;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: 8px;
+                margin-bottom: 15px;
+                .block
+                {text-decoration:dotted;}
+                .logo{
+                  color: #fff;
+                  font-weight: 600;
+                  text-decoration: none;
+                  font-size: 22px;
+                  
+                }
+              }
             .logo-socnetwork {
                 .logo-footer {
                     width: 120px;
@@ -97,15 +131,16 @@
 
                 .socnetworks-link {
                     @include flex-container(row, space-between, flex-start);
-                    width: 85%;
+                    width: 70%;
 
                 }
             }
 
             .menu-block {
                 .menu-list-footer {
-                    @include flex-container(row, space-between, center);
-
+                    @include flex-container(column, flex-end, flex-end);
+                    padding-right: 5px;
+                    border-right: 1px solid #fff;
                     .menu-item {
                         margin-right: 18px;
 
@@ -118,7 +153,7 @@
                         }
 
                         .menu-link {
-                            @include text-styles(11px, 400, $text-primary-color);
+                            @include text-styles(8px, 400, $text-primary-color);
 
                         }
                     }
@@ -155,7 +190,24 @@
 
         .footer-content {
             @include width-height-value(100%, 140px);
-
+            .logo-block1{
+                border-left: 2px solid #fff;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: 5px;
+                margin-bottom: 15px;
+                .block
+                {text-decoration:dotted;}
+                .logo{
+                  color: #fff;
+                  font-weight: 600;
+                  text-decoration: none;
+                  font-size: 15px;
+                  
+                }
+              }
             .logo-socnetwork {
                 .socnetworks-link{.tik-link{
                     @include width-height-value(24px, 24px);
@@ -168,7 +220,7 @@
 
                 .socnetworks-link {
                     @include flex-container(row, space-between, flex-start);
-                    width: 70%;
+                    width: 50%;
 
                     .facebook-icon {
                         width: 20px;
@@ -192,7 +244,8 @@
             .menu-block {
                 .menu-list-footer {
                     @include flex-container(column, space-between, flex-end);
-
+                    padding-right: 5px;
+                    border-right: 1px solid #fff;
                     .menu-item {
                         margin: 4px 0 0 0;
 

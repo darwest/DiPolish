@@ -6,6 +6,29 @@
     margin-bottom:-10px;
 }
 
+.dev-block {
+    @include width-height-value(100%, 15px);
+    background: #222;        padding-bottom: 7px;
+
+
+    .dev-flex-container {
+        @include width-height-value(100%, 18px);
+        padding-bottom: 10px;
+        @include flex-container(row, space-between, baseline);
+
+        .name-dev {
+            @include text-styles(6px, 400, #B6C1CE);
+            line-height: 7px;
+        }
+
+        .link-dev {
+            @include text-styles(6px, 400, #B6C1CE);
+            line-height: 7px;
+            text-decoration: none;
+
+        }
+    }
+}
 .footer {
     @include width-height-value(100%, 170px);
     background-color: $main-background-blue;
@@ -13,13 +36,29 @@
     .footer-content {
         @include width-height-value(100%, 170px);
         @include flex-container(row, space-between, center);
-
+        .logo-block1{
+            border-left: 3.5px solid #fff;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 10px;
+            margin-bottom: 15px;
+            .logo-block
+            {text-decoration:dotted;}
+            .logo{
+              color: #fff;
+              font-weight: 600;
+              text-decoration: none;
+              
+            }
+          }
         .logo-socnetwork {
             @include flex-container(column, flex-start, flex-start);
 
             .socnetworks-link {
                 @include flex-container(row, space-between, flex-start);
-                width: 65%;
+                width: 45%;
 
                 .telegram-link {
                     background-color: $main-background-white;
@@ -39,7 +78,7 @@
                 @include flex-container(row, space-between, center);
                 list-style: none;
                 @extend %reset-margin-padding;
-
+              
                 .menu-item {
                     margin-right: 38px;
                     @include position(relative);
@@ -68,26 +107,5 @@
         }
     }
 
-    .dev-block {
-        @include width-height-value(100%, 50px);
-        background: #222;
-
-        .dev-flex-container {
-            @include width-height-value(100%, 50px);
-            @include flex-container(row, space-between, center);
-
-            .name-dev {
-                @include text-styles(14px, 400, #B6C1CE);
-                line-height: 16px;
-            }
-
-            .link-dev {
-                @include text-styles(14px, 400, #B6C1CE);
-                line-height: 16px;
-                text-decoration: none
-
-            }
-        }
-    }
 }
 

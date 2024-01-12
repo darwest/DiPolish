@@ -28,12 +28,11 @@ const Footer = () => {
         <div className="container">
           <div className="footer-content">
             <div className="logo-socnetwork">
-              <img
-                src={Logo}
-                alt="loading"
-                width="170px"
-                className="logo-footer"
-              />
+            <div className="logo-block1">
+          <a href="#1" className="logo-block">
+          <h1 className="logo">Hatsyk.polish</h1>
+           </a>
+          </div>
               <div className="socnetworks-link">
         
                 <a href="http://t.me/d_hatsykk" className="telegram-link">
@@ -67,27 +66,24 @@ const Footer = () => {
               </ul>
             </nav>
           </div>
-        </div>
-
-        <div className="dev-block">
+        </div>   
+      </div>
+      <div className="dev-block">
           <div className="container">
             <div className="dev-flex-container">
               <p className="name-dev">
                 Design and development by Vasiuta Dariia © 2023.
               </p>
               <div>
-                <a href="#" className="link-dev">
-                  Telegram |{" "}
-                </a>
-                <a href="#" className="link-dev">
+                <a href="https://www.instagram.com/dariinnaaa?igsh=ZGhuMWNlNG9lanV0" className="link-dev">
                   Instagram
                 </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </footer>
+    
   );
 };
 

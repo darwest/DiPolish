@@ -15,7 +15,7 @@ const TestModule = () => {
           <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: .8, delay: .2}} className="content-test-module-block">
             <h2 className="title-test-module-block">ПРОБНИЙ МОДУЛЬ</h2>
             <h3 className="subtitle-test-module-block">
-              УЯВИ ЩО В НАС З ТОБОЮ ПЕРШЕ ЗАНЯТТЯ
+              УЯВИ, ЩО В НАС З ТОБОЮ ПЕРШЕ ЗАНЯТТЯ
             </h3>
             <p className="text-test-module-block">
               Пройди пробний модуль, щоб зрозуміти усі аспекти навчання за моєю

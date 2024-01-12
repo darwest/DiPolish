@@ -14,7 +14,7 @@ const About = () => {
 //Створюємо масиви даних
   const educationList = [
     "Волинський національний університет імені Лесі Українки",
-    "Humanistyczny uniwersytet imienia Jana Długosza w Częstochowie",
+    "Uniwersytet Humanistyczno-Przyrodniczy im. Jana Długosza w Częstochowie",
   ];
 
   const hardList = [
