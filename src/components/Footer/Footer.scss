@@ -17,12 +17,12 @@
         @include flex-container(row, space-between, baseline);
 
         .name-dev {
-            @include text-styles(6px, 400, #B6C1CE);
+            @include text-styles(10px, 400, #B6C1CE);
             line-height: 7px;
         }
 
         .link-dev {
-            @include text-styles(6px, 400, #B6C1CE);
+            @include text-styles(10px, 400, #B6C1CE);
             line-height: 7px;
             text-decoration: none;
 

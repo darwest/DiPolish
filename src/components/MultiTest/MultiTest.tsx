@@ -16,7 +16,7 @@ const MultiTest = ({ onFinish }: MultiTestProps) => {
         { "option": "A. Hejka", "isCorrect": true },
         { "option": "Б. Dzień dobry!", "isCorrect": false },
         { "option": "B. Siema", "isCorrect": true },
-        { "option": "Г. Hejka", "isCorrect": true }
+        { "option": "Г. Cześć", "isCorrect": true }
       ]
     },
     {

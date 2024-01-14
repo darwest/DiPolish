@@ -18,26 +18,27 @@ const Statistics = () => {
           <div className="right-statistics-block">
             <div className="statistics">
               <div className="statistics-list-text">
-                <motion.div initial={{y: -100, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: .5, delay: 1}} className="statistics-item1">
+                <motion.div initial={{y: -100, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: .5, delay: 0.2}} className="statistics-item1">
                   <div className="statistics-list-number-item">50+</div>
-                  <div className="statistics-list-text-item">учнів</div>
+                  <div className="statistics-list-text-item text-left">талановитих учнів</div>
                 </motion.div>
-                <motion.div initial={{y: -100, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: .5, delay: 1.1}} className="statistics-item2">
-                  <div className="statistics-list-number-item">2+</div>
-                  <div className="statistics-list-text-item">
+                <motion.div initial={{y: -100, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: .5, delay: 0.3}} className="statistics-item2">
+                  <div className="statistics-list-number-item ">2.5+</div>
+                  <div className="statistics-list-text-item text-right">
                     роки досвіду роботи
                   </div>
                 </motion.div>
-                <motion.div initial={{y: -100, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: .5, delay: 1.2}} className="statistics-item3">
-                  <div className="statistics-list-number-item">B2+</div>
-                  <div className="statistics-list-text-item">рівень знань</div>
-                </motion.div>
-                <motion.div initial={{y: -100, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: .5, delay: 1.3}} className="statistics-item4">
+                <motion.div initial={{y: -100, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: .5, delay: 0.4}} className="statistics-item4">
                   <div className="statistics-list-number-item">3160+</div>
-                  <div className="statistics-list-text-item">
+                  <div className="statistics-list-text-item text-left">
                     годин проведених занять
                   </div>
                 </motion.div>
+                <motion.div initial={{y: -100, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: .5, delay: 0.5}} className="statistics-item3">
+                  <div className="statistics-list-number-item ">B2+</div>
+                  <div className="statistics-list-text-item text-right">рівень знань</div>
+                </motion.div>
+                
               </div>
             </div>
 

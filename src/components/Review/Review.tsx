@@ -78,7 +78,7 @@ const Review = () => {
               </div>
             </div>
             <p className="bottom-title-reviews-block">
-                SWIPE LEFT!
+                ГОРТАЙ ВЛІВО!
               </p>
           </div>
         </div>

@@ -48,7 +48,7 @@ const About = () => {
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.9, delay: 0.5 }}
+              transition={{ duration: 0.9, delay: 0.3 }}
               className="welcome-message"
             >
               Hejka! Хочу розказати декілька фактів про себе. Мені 20 років,
@@ -57,7 +57,7 @@ const About = () => {
             <img src={Arrow} alt="loading" className="arrow-one" />
 
             <div className="facts-blocks">
-              <motion.div  className="fact-block fact-block-one" initial={{x: -100, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: .3, delay: .7}}>
+              <motion.div  className="fact-block fact-block-one" initial={{x: -100, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: .3, delay: .2}}>
                 <h2 className="title-facts-blocks">EDUCATION:</h2>
                 <ul className="facts-list">
                 {educationList.map((el, i) => (
@@ -71,7 +71,7 @@ const About = () => {
                 <span className="read-continue">читай далі</span>
                 <img src={Arrow} alt="loading" className="arrow-two" />
               </div>
-              <motion.div className="fact-block fact-block-two" initial={{x: 100, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: .3, delay: .9}}>
+              <motion.div className="fact-block fact-block-two" initial={{x: 100, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: .3, delay: .3}}>
                 <h2 className="title-facts-blocks">HARD SKILLS:</h2>
                 <ul className="facts-list">
                 {hardList.map((el, i) => (
@@ -85,7 +85,7 @@ const About = () => {
                 <span className="read-continue">читай далі</span>
                 <img src={Arrow} alt="loading" className="arrow-three" />
               </div>
-              <motion.div className="fact-block fact-block-three" initial={{x: -100, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: .3, delay: 1.1}}>
+              <motion.div className="fact-block fact-block-three" initial={{x: -100, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: .3, delay: 0.4}}>
                 <h2 className="title-facts-blocks">SOFT SKILLS:</h2>
                 <ul className="facts-list">
                   {softList.map((el, i) => (

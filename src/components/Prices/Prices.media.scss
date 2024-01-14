@@ -145,9 +145,29 @@
     @include width-height-value(100%, 750px);
     .price-flex-container{
       @include width-height-value(100%, 100%);
-  
+      position: relative;
+        .sm{
+          display: block;
+          position: absolute;
+         
+      
+        }
+        .sm1{
+          margin:140px 0 0 160px;
+        }
+        .g{
+          margin:121px 0 0 140px;
+          position: absolute;
+
+        }
+        .sm2{
+          margin: 350px 0  0 60px;
+        }
+        .sm3{
+          margin: 580px 0 0 160px;
+        }
       .title-price-section{
-        @include text-styles(20px, 700, $main-color2);
+        @include text-styles(22px, 700, $main-color2);
         margin: 40px 0 0;
       }
       .subtitle-price-section{
@@ -156,8 +176,10 @@
       }
       .price-blocks-container{
         padding: 0 10px;
-        @include flex-container(column, space-between, center);
-
+        @include flex-container(column, space-between, flex-start);
+        .price-block2{
+          margin-left: 110px;
+        }
         .price-block{
           margin-bottom: 15px;
 

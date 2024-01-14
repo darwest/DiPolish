@@ -35,7 +35,7 @@
 
 
                     .statistics-list-text {
-                        padding: 0 10px 0 40px;
+                        padding: 0 10px 0 20px;
                         margin-top: 30px;
 
                         .statistics-list-number-item {
@@ -105,12 +105,12 @@
 
                 .statistics {
                     border-radius: 30px;
-                    @include width-height-value(450px, 100px);
+                    @include width-height-value(450px, 110px);
                     margin-left: 40px;
 
 
                     .statistics-list-text {
-                        padding: 0 10px 0 25px;
+                        padding: 0 10px 0 10px;
                         margin-top: 24px;
 
                         .statistics-list-number-item {
@@ -183,12 +183,12 @@
                 .statistics {
                     border-radius: 30px;
                     @include width-height-value(330px, 100px);
-                    margin-left: 20px;
+                    margin-left: 4px;
 
 
                     .statistics-list-text {
                         margin-top: 24px;
-                        padding: 0 0 0 20px;
+                        padding: 0 0 0 5px;
 
                         .statistics-list-number-item {
                             @include text-styles(22px, 800, $main-color1);
@@ -235,21 +235,46 @@
 
 @media (max-width: 576px) {
     .statistics-block {
-        @include width-height-value(100%, 170px);
+        @include width-height-value(100%, 190px);
 
+        .statistics-item1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 50px;
+        }
+        .statistics-item2 {
+            width: 60px;
+            display: flex;
+            align-items: flex-end;
+            width: 50px;
+        }
+        .statistics-item4{
+            width: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+           
+        }
+     
+        .statistics-item3{
+            width: 40px;
+        }
         .statistics-flex-container {
-            @include width-height-value(100%, 170px);
+            @include width-height-value(100%, 190px);
 
             .title-statistics-block {
                
                 .vertical-line {
-                    height: 90px;
-                    width: 4px;
+                    height: 100px;
+                    width: 6px;
                     margin: 0 10px;
                 }
 
                 .title-statistics {
-                    font-size: 15px;
+                    font-size: 18px;
                     line-height: 20px;
                 }
             }
@@ -259,21 +284,34 @@
 
                 .statistics {
                     border-radius: 15px;
-                    @include width-height-value(160px, 50px);
+                    @include width-height-value(150px, 130px);
                     margin-left: 0;
 
 
                     .statistics-list-text {
-                        margin-top: 10px;
-                        padding: 0 0 0 10px;
-
+                        margin-top: 15px;
+                        padding: 0 5px 0 5px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        height: 100px;
                         .statistics-list-number-item {
-                            @include text-styles(12px, 800, $main-color1);
+                            @include text-styles(18px, 800, $main-color1);
+                            padding: 5px 5px 0 ;
                         }
 
                         .statistics-list-text-item {
-                            @include text-styles(5px, 700, $main-color1);
-                            line-height: 6px;
+                            @include text-styles(7px, 700, $main-color1);
+                            line-height: 8px;
+                            
+                        }
+                        .text-left{
+                            text-align: left;
+                            padding-left: 5px;
+                        }
+                        .text-right{
+                            text-align: right;
+                            padding-right: 6px;
+
                         }
                     }
                 }
@@ -284,7 +322,7 @@
                 @include flex-container(row, center, center);
 
                 .color-block-one {
-                    @include width-height-value(30px, 10px);
+                    @include width-height-value(25px, 10px);
                 }
 
                 .color-block-two {
@@ -304,7 +342,7 @@
                 }
 
                 .color-block-six {
-                    @include width-height-value(30px, 10px);
+                    @include width-height-value(25px, 10px);
                 }
             }
         }

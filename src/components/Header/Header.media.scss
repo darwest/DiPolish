@@ -119,7 +119,7 @@
 @media (max-width: 768px) {
   .header {
     @include z-index(999);
-    @include height-value(120px);
+    @include height-value(110px);
 
 
     & .active {
@@ -127,8 +127,8 @@
     }
 
     .header-flex-container {
-      @include flex-container(column, center, flex-end);
-      padding-top: 10px;
+      @include flex-container(column, flex-start, flex-end);
+      padding-top: 20px;
       .logo-block1{
         border-left: 3px solid #fff;
         height: 30px;
@@ -263,6 +263,7 @@
 
     .header-flex-container {
       @include height-value(80%);
+      padding-top:10px ;
       .logo-block1{
         border-left: 2.5px solid #fff;
         height: 20px;

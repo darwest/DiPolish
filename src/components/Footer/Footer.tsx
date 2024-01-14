@@ -28,9 +28,9 @@ const Footer = () => {
           <div className="footer-content">
             <div className="logo-socnetwork">
             <div className="logo-block1">
-          <a href="#1" className="logo-block">
+          <p className="logo-block">
           <h1 className="logo">Hatsyk.polish</h1>
-           </a>
+           </p>
           </div>
               <div className="socnetworks-link">
         
@@ -75,7 +75,7 @@ const Footer = () => {
               </p>
               <div>
                 <a href="https://www.instagram.com/dariinnaaa?igsh=ZGhuMWNlNG9lanV0" className="link-dev">
-                  Instagram
+                  Inst.
                 </a>
               </div>
             </div>

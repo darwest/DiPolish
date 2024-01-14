@@ -134,19 +134,19 @@
     .reviews-flex-container {
         @include width-height-value(100%, 700px);
         .bottom-title-reviews-block{
-            @include text-styles(16px, 700, $main-color1);
+            @include text-styles(18px, 700, $main-color1);
             text-align: center;
-            margin: 10px 0 0  25px;
+            margin: 10px 0 0  5px;
         }
         .title-block {
 
             .title-reviews-block {
-                @include text-styles(20px, 700, $main-color1);
+                @include text-styles(25px, 700, $main-color1);
 
             }
 
             .subtitle-reviews-block {
-                @include text-styles(10px, 300,  #2F2F2F);
+                @include text-styles(12px, 300,  #2F2F2F);
                 margin: 8px 0 40px;
 
             }
@@ -155,19 +155,22 @@
             @include flex-container(column, center, center);
         
             .banner-flex-container {
-                @include flex-container(column, center, center);
+                @include flex-container(column, center, flex-start);
         
                 .back-photo {
                     background-image: url('../../assets/img/tel.png');
                     background-size: cover;
                     background-position: center;
-                    @include width-height-value(193px, 400px); /* Орієнтовно зменшено на 20-30% */
+                    @include width-height-value(197px, 410px); /* Орієнтовно зменшено на 20-30% */
                     flex-shrink: 0;
                     @include flex-container(row, center, center);
                 }
                 
                 .swiper {
                     .swiper-slide {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
                         .image-slider {
 
                             height: 360px; /* Орієнтовно зменшено на 20% */
@@ -183,8 +186,7 @@
         }
     }
     .blue-line{
-height: 140px;
-    }   
+display: none;    }   
 }  
       
 

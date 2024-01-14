@@ -156,6 +156,7 @@
 
     .test {
         width: 250px !important;
+        margin-left: 40px !important;
     }
 
     .test-word-match-text {
@@ -192,8 +193,8 @@
     }
 
     .hint {
-        margin-top: 40px !important;
-        padding: 10px !important;
+        margin-top: 135px !important;
+        padding: 10px 10px 50px 10px!important;
     }
 
     .hint-text {
@@ -210,7 +211,7 @@
     }
 
     .test-wrapper {
-        padding: 20px 0 !important;
+        padding: 20px 0 0 0 !important;
     }
 
     .test-target {
