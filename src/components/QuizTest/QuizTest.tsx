@@ -54,8 +54,8 @@ const QuizTest = ({ onFinish }: QuizTestProps) => {
       "question": "Як запитати правильно: «як у вас справи?»",
       "answers": [
         { "option": "A. Jak się masz?", "isCorrect": false },
-        { "option": "Б. Co słychać?", "isCorrect": true },
-        { "option": "В. Jak pani/ pan się ma?", "isCorrect": false },
+        { "option": "Б. Co słychać?", "isCorrect": false },
+        { "option": "В. Jak pani/ pan się ma?", "isCorrect": true },
         { "option": "Г. Co nowega?", "isCorrect": false }
       ]
     },

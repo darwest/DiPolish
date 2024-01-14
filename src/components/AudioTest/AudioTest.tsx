@@ -15,14 +15,14 @@ type WordMatchTestProps = {
 
 const WordMatchTest: React.FC<WordMatchTestProps> = ({ onFinish }) => {
   const [wordMatchQuestionsList] = useState<WordMatchQuestion[]>([
-    { id: 1, correctAnswer: "Г" },
-    { id: 2, correctAnswer: "А" },
-    { id: 3, correctAnswer: "З" },
-    { id: 4, correctAnswer: "Ж" },
-    { id: 5, correctAnswer: "В" },
-    { id: 6, correctAnswer: "Є" },
-    { id: 7, correctAnswer: "Б" },
-    { id: 8, correctAnswer: "Е" },
+    { id: 1, correctAnswer: "А" },
+    { id: 2, correctAnswer: "В" },
+    { id: 3, correctAnswer: "Г" },
+    { id: 4, correctAnswer: "З" },
+    { id: 5, correctAnswer: "Ж" },
+    { id: 6, correctAnswer: "Е" },
+    { id: 7, correctAnswer: "Є" },
+    { id: 8, correctAnswer: "Б" },
     { id: 9, correctAnswer: "Д" },
     
   ]);

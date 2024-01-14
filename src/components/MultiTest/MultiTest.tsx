@@ -35,7 +35,7 @@ const MultiTest = ({ onFinish }: MultiTestProps) => {
       "answers": [
         { "option": "A. Wszystko w porządku!", "isCorrect": true },
         { "option": "Б. Nic nie szkodzi", "isCorrect": false },
-        { "option": "В. Nic nowega", "isCorrect": true },
+        { "option": "В. Nic nowego", "isCorrect": true },
         { "option": "Г. Po staremu!", "isCorrect": true }
       ]
     },
