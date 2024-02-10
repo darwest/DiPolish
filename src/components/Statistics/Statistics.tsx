@@ -6,13 +6,13 @@ import "./Statistics.media.scss";
 //Створюємо функціональний компонент Statistics
 const Statistics = () => {
   return (
-    <section id="1" className="statistics-block">
+    <section className="statistics-block">
       <div className="container">
         <div className="statistics-flex-container">
           <div className="title-statistics-block">
             <div className="vertical-line"></div>
-            <div className="title-statistics">
-              Чому варто обрати мене?
+            <div  className="title-statistics">
+              ЧОМУ ВАРТО ОБРАТИ МЕНЕ?
             </div>
           </div>
           <div className="right-statistics-block">
@@ -42,7 +42,7 @@ const Statistics = () => {
               </div>
             </div>
 
-            <div className="colors-blocks">
+            <div  className="colors-blocks">
               <div className="color-block-one"></div>
               <div className="color-block-two"></div>
               <div className="color-block-three"></div>

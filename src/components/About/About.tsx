@@ -6,7 +6,6 @@ import "./About.scss";
 import "./About.media.scss";
 
 //Імпорт стрілки та іконки(типу аватарки) в змінні
-import Arrow from "../../assets/img/arrow.png";
 import IconDi from "../../assets/img/icon-di.png";
 
 //Створюємо функціональний компонент About
@@ -32,14 +31,14 @@ const About = () => {
   ];
 
   return (
-    <section id="2" className="about-me-block">
+    <section  className="about-me-block">
       <div className="content-about-me">
-        <div className="container">
+        <div  id="2" className="container">
           <div className="about-me-flex-container">
             <div className="top-part-about-me-block">
               <div className="info-about-mentor">
                 <img src={IconDi} alt="loading" className="icon-di" />
-                <div className="text-info-about-mentor">
+                <div  className="text-info-about-mentor">
                   <h2 className="name-mentor">Гацик Діана</h2>
                   <p className="mentor-prof">ВЧИТЕЛЬ ПОЛЬСЬКОЇ МОВИ</p>
                 </div>
@@ -52,9 +51,7 @@ const About = () => {
               className="welcome-message"
             >
               Hejka! Хочу розказати декілька фактів про себе. Мені 20 років,
-              <span className="read-continue">читай далі</span>
             </motion.p>
-            <img src={Arrow} alt="loading" className="arrow-one" />
 
             <div className="facts-blocks">
               <motion.div  className="fact-block fact-block-one" initial={{x: -100, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: .3, delay: .2}}>
@@ -67,10 +64,7 @@ const About = () => {
                   ))}
                 </ul>
               </motion.div>
-              <div className="navigation-two">
-                <span className="read-continue">читай далі</span>
-                <img src={Arrow} alt="loading" className="arrow-two" />
-              </div>
+             
               <motion.div className="fact-block fact-block-two" initial={{x: 100, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: .3, delay: .3}}>
                 <h2 className="title-facts-blocks">HARD SKILLS:</h2>
                 <ul className="facts-list">
@@ -81,10 +75,7 @@ const About = () => {
                   ))}
                 </ul>
               </motion.div>
-              <div className="navigation-three">
-                <span className="read-continue">читай далі</span>
-                <img src={Arrow} alt="loading" className="arrow-three" />
-              </div>
+            
               <motion.div className="fact-block fact-block-three" initial={{x: -100, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: .3, delay: 0.4}}>
                 <h2 className="title-facts-blocks">SOFT SKILLS:</h2>
                 <ul className="facts-list">

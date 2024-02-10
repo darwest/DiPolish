@@ -28,18 +28,14 @@ const Header = () => {
           </div>
           <nav className={`menu-block ${isMenuOpen && "active"}`}>
             <ul className="menu-list">
-              
               <NavBar/>
-
-              <li className="menu-item-button">
-                <a
+             
+               <a 
                   href="https://docs.google.com/forms/d/e/1FAIpQLSft29BqYNoGaUdZSBBs-58PuJ-YEhK0BUnxFsm3qJDHN5CrNg/viewform?usp=sf_link"
                   className="menu-link-button"
-                  target="_blank"
-                >
-                  ЗАЛИШИТИ ЗАЯВКУ
+                  target="_blank">ЗАЛИШИТИ ЗАЯВКУ
                 </a>
-              </li>
+              
             </ul>
           </nav>
         </div>
@@ -48,8 +44,3 @@ const Header = () => {
   );
 };
 export default Header;
-/*onClick обробник подій, який викликається при кліку на елемент. setisMenuOpen - це функція, яка встановлює новий стан для isMenuOpen.
-Використовується стрілкова функція з короткою формою, де prev - поточний стан isMenuOpen.
-!prev - це логічне заперечення поточного стану, що дозволяє перемикати його значення між true та false
-Якщо isMenuOpen = true, то додається клас active
-*/

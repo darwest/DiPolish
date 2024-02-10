@@ -5,28 +5,35 @@
 
 .header {
   background-color: $main-background-blue;
-  @include width-height-value(100%,120px);
-  box-shadow: 0 0 15px 8px $box-shadow-color;
+  @include width-height-value(100%, 70px);
+  box-shadow: 0 0 20px 2px $box-shadow-color;
+  position: fixed;
+  z-index: 999;
 
   .header-flex-container {
     @include flex-container(row, space-between, center);
-    @include width-height-value(100%,120px);
-    .logo-block1{
+    @include width-height-value(100%, 70px);
+
+    .logo-block1 {
       border-left: 3.5px solid #fff;
-      height: 50px;
+      height: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
       padding-left: 10px;
-      .logo-block
-      {text-decoration:dotted;}
-      .logo{
+
+      .logo-block {
+        text-decoration: dotted;
+      }
+
+      .logo {
         color: #fff;
         font-weight: 600;
         text-decoration: none;
-        
+
       }
     }
+
     .burger-menu {
       display: none
     }
@@ -36,29 +43,28 @@
       list-style: none;
       @extend %reset-margin-padding;
 
-     
-      .menu-item-button {
-        @include button-style($main-background-orange, 18px, 26px, 12px 20px);
-        z-index: 3;
+
+      
 
         .menu-link-button {
-          text-decoration: none;
+          text-decoration: none;  
           color: $text-primary-color;
+          font-weight: 700;
           transition: color 0.3s ease;
+          @include button-style($main-background-orange, 18px, 26px, 9px 20px);
+          z-index: 3;
+  
         }
 
         .menu-link-button:hover {
+          background-color: #ffffff;
+          transition: background-color 0.3s ease;
           color: $hover-color;
           transition: color 0.3s ease, background-color 0.3s ease;
         }
-      }
+      
 
-      .menu-item-button:hover {
-        background-color: $main-background-white;
-        transition: background-color 0.3s ease;
-        color: $hover-color;
-        transition: color 0.3s ease, background-color 0.3s ease;
-      }
+    
 
     }
   }

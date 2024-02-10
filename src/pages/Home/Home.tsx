@@ -7,17 +7,25 @@ import Review from "../../components/Review/Review";
 import Video from "../../components/Video/Video";
 import Information from "../../components/Information/Information";
 import Footer from "../../components/Footer/Footer";
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
+import { useLocation } from 'react-router-dom'; // Імпортуйте useLocation
 
-//створюємо компонент Home
 const Home = () => {
-
-  // Код, який викликається після відображення компонента
-  // window.scrollTo(0, 0) - прокручує сторінку вверx
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [])
-  //відображення компонентів на сторінці
+  const location = useLocation(); 
+  useLayoutEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const scrollToId = searchParams.get("scrollTo");
+  
+    if (scrollToId) {
+      setTimeout(() => {
+        const element = document.getElementById(scrollToId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100); 
+    }
+  }, [location.search]);
+  
   return (
     <>
       <Banner />
@@ -25,13 +33,12 @@ const Home = () => {
       <About />
       <TestModule />
       <Prices />
-      <Review/>
-      <Video/>
-      <Information/>
-      <Footer/>
+      <Review />
+      <Video />
+      <Information />
+      <Footer />
     </>
   );
 };
 
 export default Home;
-

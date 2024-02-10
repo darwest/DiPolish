@@ -53,11 +53,11 @@ const Banner = () => {
       <motion.div className="banner-block-two">
         <div className="container">
           <motion.div className="banner-flex-container-two">
-            <h2
+            <h2 id="7" 
               className="banner-title-two"
               
             >
-              ВІТАЄМО ТЕБЕ НА НАВЧАННІ, ЯКЕ ПРИНОСИТЬ ЗАДОВОЛЕННЯ І ГАРНЕ
+              ВІТАЮ ТЕБЕ НА НАВЧАННІ, ЯКЕ ПРИНОСИТЬ ЗАДОВОЛЕННЯ І ГАРНЕ
               ВОЛОДІННЯ МОВОЮ{" "}
             </h2>
           </motion.div>

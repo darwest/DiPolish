@@ -33,12 +33,13 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 538px;
+    max-width: 638px;
   }
 }
 
 @media (max-width: 576px) {
   .container {
-    max-width: 280px;
+    max-width: 420px;
+    @include padding-margin(0 5px, 0 auto);
   }
 }

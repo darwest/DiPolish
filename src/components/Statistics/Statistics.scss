@@ -13,14 +13,14 @@
             @include flex-container(row, space-between, center);
 
             .vertical-line {
-                @include width-height-value(4px, 290px);
+                @include width-height-value(5px, 290px);
                 position: relative;
                 background-color: $main-background-orange;
                 margin: 0 20px;
             }
 
             .title-statistics {
-                @include text-styles(44px, 800, $main-color2);
+                @include text-styles(40px, 800, $main-color2);
                 line-height: 64px;
                 word-wrap: break-word;
                 width: 190px;
@@ -47,7 +47,7 @@
 
             .statistics-list-text {
                 @include flex-container(row, space-around, flex-start);
-                padding: 0 10px 0 20px;
+                padding: 0 10px 0 10px;
                 height: 75%;
                 margin-top: 38px;
 

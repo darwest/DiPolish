@@ -9,8 +9,9 @@
         content: "";
         position: absolute;
         top: 0;
-        left: 0;
-        @include width-height-value(100%, 98%);
+        left: -20px;
+        width: 110%;
+        height: 98%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
             linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
             linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
@@ -37,7 +38,7 @@
                 .banner-title {
                     margin-bottom: 8px;
                     @include text-styles(34px, 700, $text-primary-color);
-                    line-height: 48px;
+                    line-height: 45px;
                     word-wrap: break-word;
 
                 }
@@ -50,7 +51,7 @@
 
                 .banner-button {
                     text-align: center;
-                    @include button-style($main-background-orange, 21px, 50px, 18px 28px);
+                    @include button-style($main-background-orange, 21px, 50px, 14px 28px);
                     width: 180px;
                     color: $main-background-white;
                     text-decoration: none;
@@ -69,7 +70,7 @@
 
         .banner-image-block {
             @include width-height-value(520px, 720px);
-            margin-top: 120px;
+            margin-top: 195px;
 
             .main-photo {
                 @include width-height-value(520px, 720px);
@@ -78,7 +79,7 @@
     }
 
     .banner-block-two {
-        @include width-height-value(100%, 400px);
+        @include width-height-value(100%, 300px);
         background-color: $main-background-blue;
         transform: skewY(-5deg);
         overflow: hidden;
@@ -86,13 +87,13 @@
 
         .banner-flex-container-two {
             @include flex-container(row, flex-end, center);
-            @include width-height-value(100%, 400px);
+            @include width-height-value(100%, 300px);
             z-index: 5;
 
             .banner-title-two {
                 margin: 0;
                 padding-right: 10px;
-                @include text-styles(34px, 700, $text-primary-color);
+                @include text-styles(32px, 700, $text-primary-color);
                 line-height: 48px;
                 width: 60%;
                 text-align: right;

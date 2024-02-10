@@ -3,28 +3,32 @@
 @import "../../scss/common/variables";
 
 @media (max-width: 1200px) {
-  .logo-block1{
+  .logo-block1 {
     border-left: 3.5px solid #fff;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 10px;
-    .logo-block
-    {text-decoration:dotted;}
-    .logo{
+
+    .logo-block {
+      text-decoration: dotted;
+    }
+
+    .logo {
       color: #fff;
       font-weight: 600;
       text-decoration: none;
       font-size: 25px;
-      
+
     }
   }
+
   .header {
-    height: 100px;
+    height: 70px;
 
     .header-flex-container {
-      height: 100px;
+      height: 70px;
 
       .menu-list {
 
@@ -37,7 +41,7 @@
           }
 
           &:last-child {
-            margin-right: 0;
+            margin-right: 13px;
           }
 
           .menu-link {
@@ -46,42 +50,47 @@
           }
         }
 
-        .menu-item-button {
-          @include button-style($main-background-orange, 15px, 20px, 8px 16px);
 
-          .menu-link-button {
-            font-size: 17px;
-          }
+        .menu-link-button {
+          font-size: 14px;
+          @include button-style($main-background-orange, 15px, 20px, 10px 16px);
+
         }
+
       }
     }
   }
 }
+
 @media (max-width: 992px) {
-  
+
   .header {
-    height: 100px;
+    height: 55px;
 
     .header-flex-container {
-      height: 100px;
+      height: 55px;
 
-      .logo-block1{
+      .logo-block1 {
         border-left: 3.5px solid #fff;
         height: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
         padding-left: 10px;
-        .block
-        {text-decoration:dotted;}
-        .logo{
+
+        .block {
+          text-decoration: dotted;
+        }
+
+        .logo {
           color: #fff;
           font-weight: 600;
           text-decoration: none;
           font-size: 20px;
-          
+
         }
       }
+
       .menu-list {
 
         .menu-item {
@@ -102,24 +111,23 @@
           }
         }
 
-        .menu-item-button {
+
+        .menu-link-button {
+          font-size: 13px;
           @include button-style($main-background-orange, 10px, 20px, 8px 16px);
 
-          .menu-link-button {
-            font-size: 13px;
-          }
         }
       }
     }
   }
 
-  
+
 }
 
 @media (max-width: 768px) {
   .header {
     @include z-index(999);
-    @include height-value(110px);
+    @include height-value(50px);
 
 
     & .active {
@@ -127,24 +135,30 @@
     }
 
     .header-flex-container {
-      @include flex-container(column, flex-start, flex-end);
-      padding-top: 20px;
-      .logo-block1{
+      @include flex-container(row, flex-end, flex-start);
+      padding-top: 15px;
+      @include height-value(60px);
+
+      .logo-block1 {
         border-left: 3px solid #fff;
-        height: 30px;
+        height: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
         padding-left: 7px;
-        margin-bottom: 10px;
-        .block
-        {text-decoration:dotted;}
-        .logo{
+        margin-bottom: 8px;
+
+        .block {
+          text-decoration: dotted;
+        }
+
+        .logo {
           color: #fff;
           font-weight: 600;
           text-decoration: none;
-          font-size: 20px;
-          
+          font-size: 18px;
+          margin-right: 10px;
+
         }
       }
 
@@ -154,7 +168,7 @@
         transition: all 0.5s ease;
         z-index: 1;
         background-color: $main-background-blue;
-        padding: 20px;
+        padding: 20px 40px;
         border-radius: 10px;
         opacity: 0.95;
 
@@ -162,8 +176,8 @@
           transition: all 0.5s ease;
           display: block;
           visibility: visible;
-          z-index: 20;
-          display: block;
+          position: absolute;
+          margin-top: 28px;
         }
 
         .menu-list {
@@ -179,16 +193,17 @@
             }
 
 
-           
+
           }
-           .menu-item-button {
-              @include button-style($main-background-orange, 15px, 20px, 8px 16px);
 
-              .menu-link-button {
-                font-size: 15px;
-              }
+          .menu-link-button {
+            display: none;
+            font-size: 15px;
+            @include button-style($main-background-orange, 15px, 20px, 8px 16px);
 
-            }
+          }
+
+
         }
       }
 
@@ -254,36 +269,44 @@
     }
   }
 
-  
+
 }
 
 @media (max-width: 576px) {
   .header {
-    @include height-value(80px);
+    @include height-value(40px);
 
     .header-flex-container {
-      @include height-value(80%);
-      padding-top:10px ;
-      .logo-block1{
-        border-left: 2.5px solid #fff;
-        height: 20px;
+      @include height-value(40px);
+      padding-top: 0;
+      align-items: center;
+
+      .logo-block1 {
+        border-left: 2px solid #fff;
+        height: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-left: 6px;
-        margin-top: 8px;
-        .block
-        {text-decoration:dotted;  display: flex;
-        align-items: center;
-        justify-content: center;}
-        .logo{
+        padding-left: 4px;
+        margin-bottom: 0;
+
+        .block {
+
+          text-decoration: dotted;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .logo {
           color: #fff;
           font-weight: 600;
           text-decoration: none;
-          font-size: 18px;
-          
+          font-size: 15px;
+
         }
       }
+
       .burger-menu {
         display: block;
         position: relative;
@@ -292,8 +315,15 @@
         @include button-style($main-background-orange, 21px, 6px, 3px 2px);
         @include z-index(99);
       }
-      .menu-block {
 
+      .menu-block {
+        &.active {
+          transition: all 0.5s ease;
+          display: block;
+          visibility: visible;
+          position: absolute;
+          margin-top: 241px;
+        }
         .menu-list {
 
           .menu-item {
@@ -303,20 +333,19 @@
               @include position(relative);
               @include text-styles(10px, 400, $text-primary-color);
             }
-            }
+          }
 
-            .menu-item-button {
-              @include button-style($main-background-orange, 11px, 20px, 8px 16px);
 
-              .menu-link-button {
-                font-size: 11px;
-              }
-            
+          .menu-link-button {
+            font-size: 11px;
+            @include button-style($main-background-orange, 11px, 20px, 8px 16px);
+
+
           }
         }
       }
 
- 
+
     }
   }
 }
