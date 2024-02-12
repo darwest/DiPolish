@@ -3,9 +3,7 @@ import "./Footer.scss"
 import "./Footer.media.scss"
 
 //Імпорт іконок
-import TikTokIcon from "../../assets/img/free-icon-tik-tok-4782345.png"
-import TelegramIcon from "../../assets/img/icon-telegram.png"
-import InstIcon from "../../assets/img/inst-icon.png"
+
 import NavBar from "../NavBar/NavBarFoot"
 
 //Створюємо функціональний компонент
