@@ -1,6 +1,7 @@
 @import "../../scss/common/mixins";
 
 .info-block {
+  display: none;
   @include width-height-value(100%, 1000px);
 
   .info-flex-container {

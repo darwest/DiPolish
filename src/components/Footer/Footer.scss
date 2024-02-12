@@ -2,9 +2,6 @@
 @import "../../scss/common/variables";
 @import "../../scss/common/reset";
 
-.google-maps{
-    margin-bottom:-10px;
-}
 
 .dev-block {
     @include width-height-value(100%, 15px);
@@ -30,12 +27,13 @@
     }
 }
 .footer {
-    @include width-height-value(100%, 170px);
+    @include width-height-value(100%, 300px);
     background-color: $main-background-blue;
 
     .footer-content {
-        @include width-height-value(100%, 170px);
-        @include flex-container(row, space-between, center);
+        @include width-height-value(100%, 270px);
+        padding-top: 30px;
+        @include flex-container(row, space-between, flex-start);
         .logo-block1{
             border-left: 3.5px solid #fff;
             height: 50px;
@@ -74,28 +72,42 @@
         }
 
         .menu-block {
+            display: flex;
+            width: 60%;
+            justify-content: flex-end;
+            .block-info{
+                margin-left: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .link{
+                    color: #d1d1d1;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                }
+                .info-title{
+                    @include position(relative);
+                    @include text-styles(20px, 400, $text-primary-color);
+
+                    text-decoration: none;
+                }
+
+            }
             .menu-list-footer {
-                @include flex-container(row, space-between, center);
+                @include flex-container(column, space-between, flex-start);
                 list-style: none;
                 @extend %reset-margin-padding;
               
                 .menu-item {
-                    margin-right: 38px;
-                    @include position(relative);
-
-                    &:nth-last-child(2) {
-                        margin-right: 26px;
-                    }
-
-                    &:last-child {
-                        margin-right: 0;
-                    }
+                    color: #d1d1d1;
+                    text-decoration: none;
+                    margin-bottom: 10px;
 
                     .menu-link {
-                        @include position(relative);
-                        @include text-styles(20px, 400, $text-primary-color);
-
-                        text-decoration: none;
+                        color: #d1d1d1;
+                    text-decoration: none;
+                    margin-bottom: 10px;
 
                         &:hover {
                             color: $hover-color;

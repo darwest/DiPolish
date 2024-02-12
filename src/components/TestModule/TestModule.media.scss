@@ -139,7 +139,7 @@
     .test-module-flex-container {
       .photo-test-module {
         @include width-height-value(220px, 330px);
-        right: -5px;
+        right: -20px;
       }
 
       .content-test-module-block {

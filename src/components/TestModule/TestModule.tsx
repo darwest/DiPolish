@@ -15,19 +15,18 @@ const TestModule = () => {
           <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: .8, delay: .2}} className="content-test-module-block">
             <h2 className="title-test-module-block">ПРОБНИЙ МОДУЛЬ</h2>
             <h3 className="subtitle-test-module-block">
-              УЯВИ, ЩО В НАС З ТОБОЮ ПЕРШЕ ЗАНЯТТЯ
+             ХОЧЕШ ЗРОЗУМІТИ ЯКИЙ Я ВИКЛАДАЧ?
             </h3>
             <p className="text-test-module-block">
-              Пройди пробний модуль, щоб зрозуміти усі аспекти навчання за моєю
-              технологією. Передивись пробний урок і пройди тестування по
-              вивченому матеріалу.І тоді ти зрозумієш, що вивчення мови може
-              принести тобі не тільки знання, а й класний настрій!
+              Тоді уяви, що в нас з тобою перше заняття. Розпочнемо з теорії. Спробуй подивитись відеоурок до кінця:) Після вивчення матеріалу, на тебе чекає тестування, яке допоможе закріпити нові знання. І на завершення модуля ти вже побачиш перші результати!
             </p>
+            <h5 className="link-button-try">
             <Link className="button-try" to={"/test"}>
-              <h5 className="link-button-try">
-                СПРОБУВАТИ
-              </h5>
+              
+                ХОЧУ ПРОБНИЙ
+              
             </Link>
+            </h5>
           </motion.div>
           <img src={DiTest} className="photo-test-module" />
         </div>
