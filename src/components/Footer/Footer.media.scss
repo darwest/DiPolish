@@ -1,106 +1,241 @@
 @import "../../scss/common/mixins";
 
 @media (max-width: 1200px) {
-    .maps{
-        height: 380px;
+    
+.footer {
+    @include width-height-value(100%, 300px);
+    background-color: $main-background-blue;
+
+    .footer-content {
+        @include width-height-value(100%, 270px);
+        padding-top: 30px;
+        @include flex-container(row-reverse, space-between, flex-start);
+
+        .logo-socnetwork {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .banner-button {
+                text-align: center;
+                @include button-style($main-background-orange, 18px, 50px, 14px 28px);
+                width: 220px;
+                color: $main-background-white;
+                text-decoration: none;
+                font-weight: 700;
+            }
+
+            .banner-button:hover {
+                background-color: $main-background-white;
+                transition: background-color 0.3s ease;
+                color: $hover-color;
+                transition: color 0.3s ease, background-color 0.3s ease;
+            }
+
+            .logo-block1 {
+                border-left: 0;
+                border-right: 3.5px solid #fff;
+                padding-right: 10px;
+                margin-bottom: 15px;
+                height: 30px;
+                text-decoration: dotted;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-end;
+                
+
+                .logo-block {
+                    height: 100%;
+                    text-decoration: dotted;
+                    
+                }
+
+                .logo {
+                    margin-top: 0px;
+                    color: #fff;
+                    font-weight: 600;
+                    text-decoration: none;
+
+                }
+            }
+
+        }
+
+        .menu-block {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 60%;
+            justify-content: flex-end;
+
+            .block-info {
+                margin-right: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .link {
+                    color: #d1d1d1;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                }
+
+                .info-title {
+                    @include position(relative);
+                    @include text-styles(18px, 400, $text-primary-color);
+
+                    text-decoration: none;
+                }
+
+            }
+
+            .menu-list-footer {
+                @include flex-container(column, space-between, flex-start);
+                list-style: none;
+
+                .menu-item {
+                    color: #d1d1d1;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+
+                    .menu-link {
+                        color: #d1d1d1;
+                        text-decoration: none;
+                        margin-bottom: 10px;
+
+                        &:hover {
+                            color: $hover-color;
+                            transition: color 0.3s ease;
+                        }
+                    }
+                }
+            }
+        }
     }
+
+}
 }
 
 @media (max-width:992px) {
-    .maps{
-        height: 340px;
-    }
-    .footer {
-        @include width-height-value(100%, 140px);
+   
+.footer {
+    @include width-height-value(100%, 250px);
+    background-color: $main-background-blue;
 
-        .footer-content {
-            @include width-height-value(100%, 140px);
-            .logo-block1{
-                border-left: 3px solid #fff;
-                height: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding-left: 8px;
+    .footer-content {
+        @include width-height-value(100%, 250px);
+        padding-top: 30px;
+        @include flex-container(row-reverse, space-between, flex-start);
+
+        .logo-socnetwork {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .banner-button {
+                text-align: center;
+                @include button-style($main-background-orange, 14px, 40px, 10px 20px);
+                width: 180px;
+                color: $main-background-white;
+                text-decoration: none;
+                font-weight: 700;
+            }
+
+            .banner-button:hover {
+                background-color: $main-background-white;
+                transition: background-color 0.3s ease;
+                color: $hover-color;
+                transition: color 0.3s ease, background-color 0.3s ease;
+            }
+
+            .logo-block1 {
+                border-right: 3px solid #fff;
+                padding-left: 10px;
                 margin-bottom: 15px;
-                .block
-                {text-decoration:dotted;}
-                .logo{
-                  color: #fff;
-                  font-weight: 600;
-                  text-decoration: none;
-                  font-size: 22px;
-                  
-                }
-              }
-            .logo-socnetwork {
-                .logo-footer {
-                    width: 140px;
+                height: 25px;
+                text-decoration: dotted;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-end;
+                
+
+                .logo-block {
+                    height: 100%;
+                    text-decoration: dotted;
+                    
                 }
 
-                .socnetworks-link {
-                    @include flex-container(row, space-between, flex-start);
-                    width: 65%;
+                .logo {
+                    margin-top: 0px;
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 20px;
+                    text-decoration: none;
 
                 }
             }
 
-            .menu-block {
-                .menu-list-footer {
-                    .menu-item {
-                        margin-right: 25px;
+        }
 
-                        &:nth-last-child(2) {
-                            margin-right: 25px;
-                        }
+        .menu-block {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 60%;
+            justify-content: flex-end;
 
-                        &:last-child {
-                            margin-right: 0;
-                        }
+            .block-info {
+                margin-right: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
 
-                        .menu-link {
-                            @include text-styles(16px, 400, $text-primary-color);
+                .link {
+                    font-size: 12px;
+                    color: #d1d1d1;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                }
 
-                            text-decoration: none;
+                .info-title {
+                    @include position(relative);
+                    @include text-styles(14px, 400, $text-primary-color);
 
-                            &:hover {
-                                color: $hover-color;
-                                transition: color 0.3s ease;
-                            }
+                    text-decoration: none;
+                }
+
+            }
+
+            .menu-list-footer {
+                @include flex-container(column, space-between, flex-start);
+                list-style: none;
+
+                .menu-item {
+                    color: #d1d1d1;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+
+                    .menu-link {
+                        color: #d1d1d1;
+                        text-decoration: none;
+                        margin-bottom: 10px;
+
+                        &:hover {
+                            color: $hover-color;
+                            transition: color 0.3s ease;
                         }
                     }
-
-                }
-            }
-        }
-
-        .dev-block {
-            @include width-height-value(100%, 50px);
-            background: #222;
-
-            .dev-flex-container {
-                @include width-height-value(100%, 50px);
-                @include flex-container(row, space-between, center);
-
-                .name-dev {
-                    @include text-styles(14px, 400, #B6C1CE);
-                    line-height: 16px;
-                }
-
-                .link-dev {
-                    @include text-styles(14px, 400, #B6C1CE);
-                    line-height: 16px;
-                    text-decoration: none
                 }
             }
         }
     }
+
 }
+    }
+
 
 @media (max-width: 768px) {
-    .maps{
-        height: 300px;
-    }
+    
     .dev-block {
         @include width-height-value(100%, 15px);
         background: #222;        padding-bottom: 7px;
@@ -123,190 +258,262 @@
     
             }
         }
-    }
-    .footer {
-        @include width-height-value(100%, 140px);
-
+    }.footer {
+        @include width-height-value(100%, 220px);
+        background-color: $main-background-blue;
+    
         .footer-content {
-            @include width-height-value(100%, 140px);
-            .logo-block1{
-                border-left: 3px solid #fff;
-                height: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding-left: 8px;
-                margin-bottom: 15px;
-                .block
-                {text-decoration:dotted;}
-                .logo{
-                  color: #fff;
-                  font-weight: 600;
-                  text-decoration: none;
-                  font-size: 22px;
-                  
-                }
-              }
+            @include width-height-value(100%, 220px);
+            padding-top: 20px;
+            @include flex-container(row-reverse, space-between, flex-start);
+    
             .logo-socnetwork {
-                .logo-footer {
-                    width: 120px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .banner-button {
+                    text-align: center;
+                    @include button-style($main-background-orange, 10px, 30px, 8px 18px);
+                    width: 150px;
+                    color: $main-background-white;
+                    text-decoration: none;
+                    font-weight: 700;
                 }
-
-                .socnetworks-link {
-                    @include flex-container(row, space-between, flex-start);
-                    width: 70%;
-
+    
+                .banner-button:hover {
+                    background-color: $main-background-white;
+                    transition: background-color 0.3s ease;
+                    color: $hover-color;
+                    transition: color 0.3s ease, background-color 0.3s ease;
                 }
+    
+                .logo-block1 {
+                    border-right: 3px solid #fff;
+                    padding-left: 10px;
+                    margin-bottom: 15px;
+                    height: 25px;
+                    text-decoration: dotted;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-end;
+                    
+    
+                    .logo-block {
+                        height: 100%;
+                        text-decoration: dotted;
+                        
+                    }
+    
+                    .logo {
+                        margin-top: 0px;
+                        color: #fff;
+                        font-weight: 600;
+                        font-size: 20px;
+                        text-decoration: none;
+    
+                    }
+                }
+    
             }
-
+    
             .menu-block {
+                display: flex;
+                flex-direction: row-reverse;
+                width: 60%;
+                justify-content: flex-end;
+    
+                .block-info {
+                    margin-right: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+    
+                    .link {
+                        font-size: 10px;
+                        color: #d1d1d1;
+                        text-decoration: none;
+                        margin-bottom: 10px;
+                    }
+    
+                    .info-title {
+                        @include position(relative);
+                        @include text-styles(12px, 400, $text-primary-color);
+    
+                        text-decoration: none;
+                    }
+    
+                }
+    
                 .menu-list-footer {
-                    @include flex-container(column, flex-end, flex-end);
-                    padding-right: 5px;
-                    border-right: 1px solid #fff;
+                    @include flex-container(column, space-between, flex-start);
+                    list-style: none;
+    
                     .menu-item {
-                        margin-right: 18px;
-
-                        &:nth-last-child(2) {
-                            margin-right: 18px;
-                        }
-
-                        &:last-child {
-                            margin-right: 0;
-                        }
-
+                        color: #d1d1d1;
+                        text-decoration: none;
+                        margin-bottom: 10px;
+    
                         .menu-link {
-                            @include text-styles(8px, 400, $text-primary-color);
-
+                            color: #d1d1d1;
+                            text-decoration: none;
+                            margin-bottom: 10px;
+    
+                            &:hover {
+                                color: $hover-color;
+                                transition: color 0.3s ease;
+                            }
                         }
                     }
-
                 }
             }
         }
-
-        .dev-block {
-            @include width-height-value(100%, 40px);
-            background: #222;
-
-            .dev-flex-container {
-                @include width-height-value(100%, 40px);
-
-                .name-dev {
-                    @include text-styles(10px, 400, #B6C1CE);
-                }
-
-                .link-dev {
-                    @include text-styles(10px, 400, #B6C1CE);
-                }
-            }
-        }
+    
     }
 }
 
 @media (max-width: 576px) {
-    .maps{
-        height: 150px;
-    }
     .footer {
-        @include width-height-value(100%, 140px);
-
+        @include width-height-value(100%, 280px);
+        background-color: $main-background-blue;
+    
         .footer-content {
-            @include width-height-value(100%, 140px);
-            .logo-block1{
-                border-left: 2px solid #fff;
-                height: 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding-left: 5px;
-                margin-bottom: 15px;
-                .block
-                {text-decoration:dotted;}
-                .logo{
-                  color: #fff;
-                  font-weight: 600;
-                  text-decoration: none;
-                  font-size: 15px;
-                  
-                }
-              }
+            @include width-height-value(100%, 280px);
+            padding-top: 15px;
+            @include flex-container(column-reverse, space-between, flex-start);
+    
             .logo-socnetwork {
-                .socnetworks-link{.tik-link{
-                    @include width-height-value(24px, 24px);
-                    border-radius: 2px;
-                    margin: 0 5px;
-                }}
-                .logo-footer {
-                    width: 100px;
+                height: 125px;
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-end;
+                .banner-button {
+                    text-align: center;
+                    @include button-style($main-background-orange, 10px, 30px, 8px 18px);
+                    width: 150px;
+                    color: $main-background-white;
+                    text-decoration: none;
+                    font-weight: 700;
                 }
-
-                .socnetworks-link {
-                    @include flex-container(row, space-between, flex-start);
-                    width: 50%;
-
-                    .facebook-icon {
-                        width: 20px;
+    
+                .banner-button:hover {
+                    background-color: $main-background-white;
+                    transition: background-color 0.3s ease;
+                    color: $hover-color;
+                    transition: color 0.3s ease, background-color 0.3s ease;
+                }
+    
+                .logo-block1 {
+                    margin-right: 5px;
+                    border-right: 3px solid #fff;
+                    padding-left: 7px;
+                    margin-bottom: 0px;
+                    height: 20px;
+                    text-decoration: dotted;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-end;
+                    
+    
+                    .logo-block {
+                        height: 100%;
+                        text-decoration: dotted;
+                        
                     }
-
-                    .inst-icon {
-                        width: 20px
-                    }
-
-                    .telegram-link {
-                        width: 20px;
-                        height: 20px;
-                    }
-
-                    .telegram-icon {
-                        width: 20px;
+    
+                    .logo {
+                        margin-top: 0px;
+                        color: #fff;
+                        font-weight: 600;
+                        font-size: 14px;
+                        text-decoration: none;
+    
                     }
                 }
+    
             }
-
+    
             .menu-block {
+                display: flex;
+                flex-direction: row-reverse;
+                width: 100%;
+                justify-content: center;
+    
+                .block-info {
+                    margin-right: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    &:first-child{
+                        margin-right: 0px;
+                    }
+                    .link {
+                        font-size: 10px;
+                        color: #d1d1d1;
+                        text-decoration: none;
+                        margin-bottom: 10px;
+                    }
+    
+                    .info-title {
+                        @include position(relative);
+                        @include text-styles(12px, 400, $text-primary-color);
+    
+                        text-decoration: none;
+                    }
+    
+                }
+    
                 .menu-list-footer {
-                    @include flex-container(column, space-between, flex-end);
-                    padding-right: 5px;
-                    border-right: 1px solid #fff;
+                    @include flex-container(column, space-between, flex-start);
+                    list-style: none;
+    
                     .menu-item {
-                        margin: 4px 0 0 0;
-
-
-                        &:nth-last-child(2) {
-                            margin: 4px 0 0 0;
-                        }
-
+                        color: #d1d1d1;
+                        text-decoration: none;
+                        margin-bottom: 10px;
+    
                         .menu-link {
-                            @include text-styles(9px, 400, $text-primary-color);
-
+                            color: #d1d1d1;
+                            text-decoration: none;
+                            margin-bottom: 10px;
+    
+                            &:hover {
+                                color: $hover-color;
+                                transition: color 0.3s ease;
+                            }
                         }
                     }
-
                 }
             }
         }
+    
+    
 
-        .dev-block {
-            @include width-height-value(100%, 25px);
+        
+    }
+    .dev-block {
+        @include width-height-value(100%, 20px);
 
-            .dev-flex-container {
-                @include width-height-value(100%, 25px);
-                @include flex-container(row, space-between, baseline);
+        .dev-flex-container {
+            @include width-height-value(100%, 20px);
+            @include flex-container(row, space-between, baseline);
 
-                .name-dev {
-                    @include text-styles(6px, 400, #B6C1CE);
-                    line-height: 10px;
-                    margin: 0;
-                }
-
-                .link-dev {
-                    @include text-styles(6px, 400, #B6C1CE);
-                    line-height: 0;
-                    padding-bottom: 8px;
-                }
-                
+            .name-dev {
+                @include text-styles(6px, 400, #B6C1CE);
+                line-height: 10px;
+                margin: 0;
             }
+
+            .link-dev {
+                @include text-styles(6px, 400, #B6C1CE);
+                line-height: 0;
+                padding-bottom: 8px;
+            }
+            
         }
     }
 }

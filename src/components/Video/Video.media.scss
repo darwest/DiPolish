@@ -11,10 +11,10 @@
         margin: 0 0 10px 90px;
 
         .video-title {
-          @include text-styles(45px, 800, $text-primary-color);
+          @include text-styles(32px, 700, $text-primary-color);
 
           span {
-            @include text-styles(45px, 800, $main-color1);
+            @include text-styles(32px, 700, $main-color1);
           }
         }
 
@@ -47,17 +47,17 @@
         margin: 0 0 10px 90px;
 
         .video-title {
-          @include text-styles(36px, 800, $text-primary-color);
+          @include text-styles(28px, 700, $text-primary-color);
 
           span {
-            @include text-styles(36px, 800, $main-color1);
+            @include text-styles(28px, 700, $main-color1);
           }
         }
 
         .video-text {
-          @include text-styles(18px, 300, $text-primary-color);
+          @include text-styles(15px, 300, $text-primary-color);
           text-align: left;
-          margin: 0 0 35px;
+          margin: 1px 0 35px;
         }
       }
 
@@ -80,18 +80,18 @@
       @include width-height-value(100%, 450px);
 
       .title-block {
-        margin: 0 0 5px 90px;
+        margin: 0 0 5px 65px;
 
         .video-title {
-          @include text-styles(30px, 800, $text-primary-color);
+          @include text-styles(22px, 800, $text-primary-color);
 
           span {
-            @include text-styles(30px, 800, $main-color1);
+            @include text-styles(22px, 800, $main-color1);
           }
         }
 
         .video-text {
-          @include text-styles(16px, 300, $text-primary-color);
+          @include text-styles(15px, 300, $text-primary-color);
           text-align: left;
           margin: 0 0 25px;
         }
@@ -116,13 +116,13 @@
       @include width-height-value(100%, 300px);
 
       .title-block {
-        margin: 0 0 0 45px;
+        margin: 0 0 0 25px;
         text-align: center;
         .video-title {
-          @include text-styles(20px, 800, $text-primary-color);
+          @include text-styles(18px, 700, $text-primary-color);
 
           span {
-            @include text-styles(20px, 800, $main-color1);
+            @include text-styles(18px, 700, $main-color1);
           }
         }
 

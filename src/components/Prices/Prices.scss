@@ -16,14 +16,14 @@
     }
 
     .title-price-section {
-      @include text-styles(55px, 700, $main-color2);
+      @include text-styles(42px, 700, $main-color2);
       margin: 60px 0 5px;
-      text-align: right;
+      text-align: left;
     }
 
     .subtitle-price-section {
-      @include text-styles(28px, 300, #2F2F2F);
-      text-align: right;
+      @include text-styles(22px, 300, #2F2F2F);
+      text-align: left;
       margin: 2px 0 80px;
     }
 
@@ -37,7 +37,7 @@
         background: $main-background-blue;
 
         .title-price-block {
-          @include text-styles(36px, 500, $text-primary-color);
+          @include text-styles(33px, 500, $text-primary-color);
         }
 
         .icon-price-block {
@@ -48,14 +48,14 @@
         .price {
           @include flex-container(column, center, center);
           @include width-height-value(240px, 90px);
-          @include text-styles(32px, 500, $main-color3);
+          @include text-styles(32px, 400, $main-color3);
           border-radius: 60px;
           background: #ffffff;
           margin: 0;
         }
 
         .description-price {
-          @include text-styles(24px, 500, $text-primary-color);
+          @include text-styles(24px, 400, $text-primary-color);
           margin-top: 80px;
         }
       }

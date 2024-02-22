@@ -135,10 +135,10 @@
         }
 
         .banner-block-two {
-            @include width-height-value(100%, 220px);
+            @include width-height-value(100%, 200px);
 
             .banner-flex-container-two {
-                @include width-height-value(100%, 220px);
+                @include width-height-value(100%, 200px);
 
                 .banner-title-two {
                     margin: 0;

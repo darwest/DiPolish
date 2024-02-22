@@ -1,461 +1,381 @@
 @import "../../scss/common/mixins";
+@import "../../scss/common/reset";
+@import "../../scss/common/variables";
 
-@media (max-width: 1400px) {}
+
+@import "../../scss/common/mixins";
 
 @media (max-width: 1200px) {
+.about-me-block {
+  @include width-height-value(100%, 930px);
+  background-color: #fff;
+  padding-bottom: 0px;
 
 
-    .about-me-block {
-        @include width-height-value(100%, 1500px);
+  .about-me-flex-container {
+    background-color: $main-background-white;
+    border-radius: 30px;
+    @include width-height-value(100%, 930px);
+    @include flex-container(row, space-between, center);
 
-        .content-about-me {
-            @include width-height-value(100%, 715px);
-            padding-top: 150px;
+    .photo-about {
+        width: 50%;
+        .icon-di {
+            width: 100%;
+            margin-left: 20px;
+            margin-top: 60px;
+          }
+      
+        .text-info2 {
+          display: none;
 
-            .about-me-flex-container {
-                padding: 0;
-
-
-                .top-part-about-me-block {
-
-                    .info-about-mentor {
-
-                        .text-info-about-mentor {
-                            padding-left: 30px;
-
-                            .name-mentor {
-                                @include text-styles(36px, 700, $main-color1);
-                                line-height: 40px;
-                            }
-
-                            .mentor-prof {
-                                @include text-styles(18px, 700, rgba(48, 56, 129, 0.78));
-                                line-height: 54px;
-                            }
-                        }
-                    }
-                }
-
-                .welcome-message {
-                    @include text-styles(34px, 800, $main-color1);
-                    line-height: 55px;
-                     padding-left: 10px;
-
-                }
-
-                .read-continue {
-                    @include text-styles(32px, 800, $text-primary-color);
-                }
-
-                .navigation-two {
-                    display: none;
-
-                    .arrow-two {
-                        display: none;
-
-                    }
-                }
-
-                .navigation-three {
-                    display: none;
-
-                    .arrow-three {
-                        display: none;
-
-                    }
-                }
-
-                .facts-blocks {
-
-                    .fact-block {
-                        @include width-height-value(340px, 365px);
-
-                        .title-facts-blocks {
-                            @include text-styles(36px, 800, $text-color-yellow);
-                            line-height: 54px;
-                            margin: 5px 0;
-                        }
-
-                        .facts-list {
-
-                            .facts-item {
-                                @include text-styles(19px, 800, $main-color1);
-                                line-height: 50px;
-                            }
-                        }
-                    }
-
-                    .fact-block-one {
-                        position: relative;
-                        margin-left: 60px;
-                    }
-
-                    .fact-block-two {
-                        position: absolute;
-                        margin: 30px 0 0 515px;
-
-                    }
-
-                    .fact-block-three {
-                        margin-top: 40px;
-                        margin-left: 60px;
-                    }
-                }
-            }
+        
         }
+      }
+   
+    .text-info {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+
+      width: 44%;
+      .p {
+        margin: 0;
+        .hejka {
+          font-size: 32px;
+          font-weight: 700;
+          color: $main-color1
+        }
+      }
+
+      .welcome-message {
+        font-size: 20px;
+        font-weight: 300;
+        color: #2F2F2F;
+        margin: 5px 0 0 0;
+      }
+
+      .facts {
+        text-align: left;
+        @include flex-container(column, center, flex-end);
+        width: 100%;
+        .fact-block {
+          width: 95%;
+          border: 5px $text-color-yellow solid;
+          border-radius: 35px;
+          margin-top: 30px;
+
+          .title-facts-blocks {
+            @include text-styles(30px, 700, $text-color-yellow);
+            font-style: normal;
+            line-height: 44px;
+            margin: 15px 0 0 15px;
+          }
+
+          .facts-list {
+
+            .facts-item {
+              @include text-styles(16px, 700, $main-color1);
+              line-height: 30px;
+            }
+          }
+        }
+      }
     }
+  }
+}
 }
 
 @media (max-width: 992px) {
-
     .about-me-block {
-        @include width-height-value(100%, 1300px);
+      @include width-height-value(100%, 650px);
+      background-color: #fff;
+      padding-bottom: 0px;
+    
+    
+      .about-me-flex-container {
+        background-color: $main-background-white;
+        border-radius: 30px;
+        @include width-height-value(100%, 650px);
+        @include flex-container(row, space-between, center);
+    
+    
+       
+    .photo-about {
+        width: 50%;
+        .icon-di {
+            width: 100%;
+            margin-left: 20px;
+            margin-top: 60px;
+          }
+      
+        .text-info2 {
+          display: none;
 
-        .content-about-me {
-            @include width-height-value(100%, 715px);
-            padding-top: 110px;
-
-            .about-me-flex-container {
-                padding: 0 0 0 25px;
-
-
-                .top-part-about-me-block {
-
-                    .info-about-mentor {
-                        padding: 70px 0 0 20px;
-
-                        .text-info-about-mentor {
-                            padding-left: 30px;
-
-                            .name-mentor {
-                                @include text-styles(32px, 700, $main-color1);
-                                line-height: 35px;
-                            }
-
-                            .mentor-prof {
-                                @include text-styles(16px, 700, rgba(48, 56, 129, 0.78));
-                                line-height: 44px;
-                            }
-                        }
-                    }
-                }
-
-                .welcome-message {
-                    @include text-styles(28px, 800, $main-color1);
-                    line-height: 55px;
-
-                }
-
-                .read-continue {
-                    @include text-styles(28px, 800, $text-primary-color);
-                }
-
-                .navigation-two {
-                    display: none;
-
-                    .arrow-two {
-                        display: none;
-
-                    }
-                }
-
-                .navigation-three {
-                    display: none;
-
-                    .arrow-three {
-                        display: none;
-
-                    }
-                }
-
-                .facts-blocks {
-
-                    .fact-block {
-                        @include width-height-value(270px, 300px);
-                        padding: 10px 20px 20px;
-                        border: 6px $text-color-yellow solid;
-v
-                        .title-facts-blocks {
-                            @include text-styles(28px, 800, $text-color-yellow);
-                            line-height: 54px;
-                            margin: 5px 0;
-                        }
-
-                        .facts-list {
-                            padding: 0 0 0 20px;
-                            margin: 0;
-
-                            .facts-item {
-                                @include text-styles(16px, 800, $main-color1);
-                                line-height: 40px;
-                            }
-                        }
-                    }
-
-                    .fact-block-one {
-                        position: relative;
-                        margin-left:20px ;
-                    }
-
-                    .fact-block-two {
-                        position: absolute;
-                        margin: 30px 0 0 365px;
-
-                    }
-
-                    .fact-block-three {
-                        margin-top: 40px;
-                        margin-left:20px ;
-                    }
-                }
-            }
+        
         }
+      }
+   
+    
+        .text-info {
+          display: flex;
+          flex-direction: column;
+          text-align: right;
+    
+          width: 44%;
+          .p {
+            margin: 0;
+            .hejka {
+              font-size: 28px;
+              font-weight: 700;
+              color: $main-color1
+            }
+          }
+    
+          .welcome-message {
+            font-size: 15px;
+            font-weight: 300;
+            color: #2F2F2F;
+            margin: 5px 0 0 0;
+          }
+    
+          .facts {
+            text-align: left;
+            @include flex-container(column, center, flex-end);
+            width: 100%;
+            .fact-block {
+              width: 100%;
+              border: 4px $text-color-yellow solid;
+              border-radius: 30px;
+              margin-top: 30px;
+    
+              .title-facts-blocks {
+                @include text-styles(24px, 700, $text-color-yellow);
+                font-style: normal;
+                line-height: 1px;
+                margin: 25px 0 0 15px;
+              }
+    
+              .facts-list {
+    
+                .facts-item {
+                  @include text-styles(12px, 700, $main-color1);
+                  line-height: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
-}
-
+    }
+    
 @media (max-width: 768px) {
-    
     .about-me-block {
-        @include width-height-value(100%, 940px);
-
-        .content-about-me {
-            @include width-height-value(100%, 715px);
-            padding-top: 110px;
-
-            .about-me-flex-container {
-               
-
-                .top-part-about-me-block {
-
-                    .info-about-mentor {
-                        padding: 55px 0 0 20px;
-
-                        .icon-di {
-                            @include width-height-value(90px, 90px);
-                            border-radius: 300px;
-                          }
-                
-                        .text-info-about-mentor {
-                            padding-left: 20px;
-
-                            .name-mentor {
-                                @include text-styles(23px, 700, $main-color1);
-                                line-height: 25px;
-                            }
-
-                            .mentor-prof {
-                                @include text-styles(12px, 700, rgba(48, 56, 129, 0.78));
-                                line-height: 35px;
-                            }
-                        }
-                    }
-                }
-
-                .welcome-message {
-                    @include text-styles(20px, 800, $main-color1);
-                    line-height: 35px;
-                    padding: 0;
-
-                }
-
-                .read-continue {
-                    @include text-styles(20px, 800, $text-primary-color);
-                }
-
-                .arrow-one {
-                    @include width-height-value(55px, 52px);
-                  }
-            
-                .navigation-two {
-                    display: none;
-
-                    .arrow-two {
-                        display: none;
-
-                    }
-                }
-
-                .navigation-three {
-                    display: none;
-
-                    .arrow-three {
-                        display: none;
-
-                    }
-                }
-
-                .facts-blocks {
-
-                    .fact-block {
-                        @include width-height-value(160px, 200px);
-                        padding: 10px 20px 20px;
-                        border: 4px $text-color-yellow solid;
-
-
-                        .title-facts-blocks {
-                            @include text-styles(18px, 800, $text-color-yellow);
-                            line-height: 40px;
-                            margin: 5px 0;
-                        }
-
-                        .facts-list {
-                            padding: 0 0 0 20px;
-                            margin: 0;
-
-                            .facts-item {
-                                @include text-styles(10px, 800, $main-color1);
-                                line-height: 20px;
-                            }
-                        }
-                    }
-
-                    .fact-block-one {
-                        position: relative;
-                        margin-top: 20px;
-                    }
-
-                    .fact-block-two {
-                        position: absolute;
-                        margin: 20px 0 0 255px;
-                        @include width-height-value(160px, 200px);
-
-
-                    }
-
-                    .fact-block-three {
-                        margin-top: 20px;
-                        @include width-height-value(160px, 200px);
-
-                    }
-                }
+      @include width-height-value(100%, 570px);
+      background-color: #fff;
+      padding-bottom: 0px;
+    
+    
+      .about-me-flex-container {
+        background-color: $main-background-white;
+        border-radius: 30px;
+        @include width-height-value(100%, 570px);
+        @include flex-container(row, space-between, center);
+    
+        
+       
+    .photo-about {
+        width: 50%;
+        .icon-di {
+            width: 100%;
+            margin-left: 0px;
+            margin-top: 20px;
+          }
+      
+        .text-info2 {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+    
+          width: 100%;
+          .p {
+            margin: 0;
+            .hejka {
+              font-size: 22px;
+              font-weight: 700;
+              color: $main-color1
             }
+          }
+    
+          .welcome-message {
+            font-size: 12px;
+            font-weight: 300;
+            color: #2F2F2F;
+            margin: 5px 0 0 0;
+          }
+        
         }
+      }
+   
+        
+        .text-info {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+    
+          width: 47%;
+          .p {
+            display: none;
+            margin: 0;
+            .hejka {
+              font-size: 22px;
+              font-weight: 700;
+              color: $main-color1
+            }
+          }
+    
+          .welcome-message {
+            display: none;
+            font-size: 12px;
+            font-weight: 300;
+            color: #2F2F2F;
+            margin: 5px 0 0 0;
+          }
+    
+          .facts {
+            text-align: left;
+            @include flex-container(column, center, flex-end);
+            width: 100%;
+            .fact-block {
+              width: 100%;
+              border: 3px $text-color-yellow solid;
+              border-radius: 30px;
+              margin-top: 15px;
+    
+              .title-facts-blocks {
+                @include text-styles(20px, 700, $text-color-yellow);
+                font-style: normal;
+                line-height: 1px;
+                margin: 25px 0 0 15px;
+              }
+    
+              .facts-list {
+    
+                .facts-item {
+                  @include text-styles(10px, 700, $main-color1);
+                  line-height: 17px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
-}
-
+    }
+    
 @media (max-width: 576px) {
-    
     .about-me-block {
-        @include width-height-value(100%, 940px);
-
-        .content-about-me {
-            @include width-height-value(100%, 415px);
-            padding-top: 60px;
-
-            .about-me-flex-container {
-                padding: 0 10px;
-
-
-                .top-part-about-me-block {
-                    margin-bottom: 10px;
-                    
-                    .info-about-mentor {
-                        padding: 20px 5px 5px;
-                        .icon-di {
-                            @include width-height-value(55px, 55px);
-                            border-radius: 300px;
-                          }
-                
-                        .text-info-about-mentor {
-                            padding-left: 10px;
-
-                            .name-mentor {
-                                @include text-styles(14px, 700, $main-color1);
-                                line-height: 25px;
-                            }
-
-                            .mentor-prof {
-                                @include text-styles(8px, 700, rgba(48, 56, 129, 0.78));
-                                line-height: 10px;
-                            }
-                        }
-                    }
-                }
-
-                .welcome-message {
-                    @include text-styles(14px, 800, $main-color1);
-                    line-height: 16px;
-                    margin: 0;
-                   
-                }
-
-                .read-continue {
-                    @include text-styles(14px, 800, $text-primary-color);
-                    padding: 2px 8px;
-                }
-
-                .arrow-one {
-                    @include width-height-value(35px, 32px);
-                    padding: 15px 0px 40px 0;
-
-                  }
-            
-                .navigation-two {
-                    display: none;
-
-                    .arrow-two {
-                        display: none;
-
-                    }
-                }
-
-                .navigation-three {
-                    display: none;
-
-                    .arrow-three {
-                        display: none;
-
-                    }
-                }
-
-                .facts-blocks {
-                    @include flex-container(column, center, center);
-
-                    .fact-block {
-                        @include width-height-value(170px, 170px);
-                        padding: 8px 15px 15px;
-                        border: 3.5px $text-color-yellow solid;
-
-
-                        .title-facts-blocks {
-                            @include text-styles(15px, 800, $text-color-yellow);
-                            line-height: 40px;
-                            margin: 4px 0 0 0;
-                        }
-
-                        .facts-list {
-                            padding: 0 0 0 20px;
-                            margin: 0;
-
-                            .facts-item {
-                                @include text-styles(9px, 800, $main-color1);
-                                line-height: 20px;
-                            }
-                        }
-                    }
-
-                    .fact-block-one {
-                        position: relative;
-                        margin-top: 40px;
-                        margin-left: 0;
-                    }
-
-                    .fact-block-two {
-                        position: relative;
-                        margin: 20px 0 0 0;
-                        @include width-height-value(170px, 170px);
-
-
-                    }
-
-                    .fact-block-three {
-                        margin-top: 20px;
-                        margin-left: 0;
-                        @include width-height-value(170px, 170px);
-
-                    }
-                }
+      @include width-height-value(100%, 370px);
+      background-color: #fff;
+      padding-bottom: 0px;
+    
+    
+      .about-me-flex-container {
+        background-color: $main-background-white;
+        border-radius: 30px;
+        @include width-height-value(100%, 370px);
+        @include flex-container(row-reverse, space-between, center);
+    
+        
+       
+    .photo-about {
+        width: 50%;
+        .icon-di {
+            width: 100%;
+            margin-left: 0px;
+            margin-top: 20px;
+          }
+      
+        .text-info2 {
+          display: flex;
+          flex-direction: column;
+          text-align: right;
+    
+          width: 100%;
+          .p {
+            margin: 0;
+            .hejka {
+              font-size: 18px;
+              font-weight: 700;
+              color: $main-color1
             }
+          }
+    
+          .welcome-message {
+            font-size: 10px;
+            font-weight: 300;
+            color: #2F2F2F;
+            margin: 5px 0 0 0;
+          }
+        
         }
+      }
+   
+        
+        .text-info {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+    
+          width: 47%;
+          .p {
+            display: none;
+            margin: 0;
+            .hejka {
+              font-size: 22px;
+              font-weight: 700;
+              color: $main-color1
+            }
+          }
+    
+          .welcome-message {
+            display: none;
+            font-size: 12px;
+            font-weight: 300;
+            color: #2F2F2F;
+            margin: 5px 0 0 0;
+          }
+    
+          .facts {
+            margin-top: 55px;
+            text-align: left;
+            @include flex-container(column, center, flex-end);
+            width: 100%;
+            .fact-block {
+              width: 95%;
+              border: 2px $text-color-yellow solid;
+              border-radius: 20px;
+              margin-top: 8px;
+    
+              .title-facts-blocks {
+                @include text-styles(12px, 700, $text-color-yellow);
+                font-style: normal;
+                line-height: 1px;
+                margin: 15px 0 0 15px;
+              }
+    
+              .facts-list {
+                 padding: 0 0 0 15px;
+                 margin: 10px 0;
+                .facts-item {
+                  @include text-styles(6px, 700, $main-color1);
+                  line-height: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
-}
+    }

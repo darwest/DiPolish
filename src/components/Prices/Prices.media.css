@@ -8,13 +8,13 @@
     height: 100%;
   }
   .price-section .price-flex-container .title-price-section {
-    font-size: 45px;
+    font-size: 32px;
     font-weight: 700;
     color: #F66E0B;
     margin-bottom: 5px;
   }
   .price-section .price-flex-container .subtitle-price-section {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 300;
     color: #2F2F2F;
     margin: 2px 0 70px;
@@ -29,14 +29,14 @@
     background: #303881;
   }
   .price-section .price-flex-container .price-blocks-container .price-block .title-price-block {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     color: #fff;
     margin: 50px 0 30px;
   }
   .price-section .price-flex-container .price-blocks-container .price-block .icon-price-block {
     width: 100px;
-    height: 86px;
+    height: 90px;
   }
   .price-section .price-flex-container .price-blocks-container .price-block .price {
     display: flex;
@@ -44,9 +44,9 @@
     justify-content: center;
     align-items: center;
     width: 220px;
-    height: 90px;
-    font-size: 32px;
-    font-weight: 500;
+    height: 70px;
+    font-size: 30px;
+    font-weight: 400;
     color: #000;
     border-radius: 60px;
     background: #D9D9D9;
@@ -54,7 +54,7 @@
   }
   .price-section .price-flex-container .price-blocks-container .price-block .description-price {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     color: #fff;
     margin-top: 70px;
   }
@@ -69,7 +69,7 @@
     height: 100%;
   }
   .price-section .price-flex-container .title-price-section {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 700;
     color: #F66E0B;
     margin: 55px 0 0;
@@ -85,12 +85,12 @@
   }
   .price-section .price-flex-container .price-blocks-container .price-block {
     width: 230px;
-    height: 300px;
-    border-radius: 40px;
+    height: 290px;
+    border-radius: 30px;
     background: #303881;
   }
   .price-section .price-flex-container .price-blocks-container .price-block .title-price-block {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 500;
     color: #fff;
     margin: 50px 0 30px;
@@ -107,7 +107,7 @@
     width: 160px;
     height: 80px;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 400;
     color: #000;
     border-radius: 60px;
     background: #D9D9D9;
@@ -115,7 +115,7 @@
   }
   .price-section .price-flex-container .price-blocks-container .price-block .description-price {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     color: #fff;
     margin-top: 40px;
   }
@@ -123,14 +123,14 @@
 @media (max-width: 768px) {
   .price-section {
     width: 100%;
-    height: 380px;
+    height: 400px;
   }
   .price-section .price-flex-container {
     width: 100%;
     height: 100%;
   }
   .price-section .price-flex-container .title-price-section {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
     color: #F66E0B;
     margin: 50px 0 0;
@@ -164,7 +164,7 @@
     width: 110px;
     height: 30px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     color: #000;
     border-radius: 60px;
     background: #D9D9D9;
@@ -172,7 +172,7 @@
   }
   .price-section .price-flex-container .price-blocks-container .price-block .description-price {
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
     color: #fff;
     margin-top: 20px;
   }
@@ -180,61 +180,87 @@
 @media (max-width: 576px) {
   .price-section {
     width: 100%;
-    height: 170px;
+    height: 780px;
   }
   .price-section .price-flex-container {
     width: 100%;
-    height: 100%;
+    height: 780px;
+    position: relative;
+  }
+  .price-section .price-flex-container .sm {
+    display: block;
+    position: absolute;
+  }
+  .price-section .price-flex-container .sm1 {
+    margin: 140px 0 0 160px;
+  }
+  .price-section .price-flex-container .g {
+    margin: 121px 0 0 140px;
+    position: absolute;
+  }
+  .price-section .price-flex-container .sm2 {
+    margin: 350px 0 0 60px;
+  }
+  .price-section .price-flex-container .sm3 {
+    margin: 580px 0 0 160px;
   }
   .price-section .price-flex-container .title-price-section {
     font-size: 18px;
     font-weight: 700;
     color: #F66E0B;
-    margin: 30px 0 0;
+    margin: 40px 0 0;
   }
   .price-section .price-flex-container .subtitle-price-section {
     font-size: 10px;
     font-weight: 300;
     color: #2F2F2F;
-    margin: 2px 0 20px;
+    margin: 2px 0 30px;
   }
   .price-section .price-flex-container .price-blocks-container {
     padding: 0 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+  }
+  .price-section .price-flex-container .price-blocks-container .price-block2 {
+    margin-left: 110px;
   }
   .price-section .price-flex-container .price-blocks-container .price-block {
-    width: 80px;
-    height: 90px;
-    border-radius: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    width: 150px;
+    height: 200px;
+    border-radius: 25px;
+    background: #303881;
   }
   .price-section .price-flex-container .price-blocks-container .price-block .title-price-block {
-    font-size: 8px;
+    font-size: 14px;
     font-weight: 500;
     color: #fff;
-    margin: 15px 0 5px;
+    margin: 20px 0 20px;
   }
   .price-section .price-flex-container .price-blocks-container .price-block .icon-price-block {
-    width: 20px;
-    height: 20px;
+    width: 52px;
+    height: 50px;
   }
   .price-section .price-flex-container .price-blocks-container .price-block .price {
-    width: 50px;
-    height: 15px;
-    font-size: 7px;
-    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 400;
     color: #000;
-    border-radius: 60px;
+    border-radius: 40px;
     background: #D9D9D9;
     margin: 0;
   }
   .price-section .price-flex-container .price-blocks-container .price-block .description-price {
-    font-size: 6px;
-    font-weight: 500;
+    font-size: 8px;
+    font-weight: 400;
     color: #fff;
-    margin-top: 10px;
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=Prices.media.css.map */

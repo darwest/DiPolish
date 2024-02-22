@@ -1,388 +1,356 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 @media (max-width: 1200px) {
   .about-me-block {
     width: 100%;
-    height: 1500px;
+    height: 930px;
+    background-color: #fff;
+    padding-bottom: 0px;
   }
-  .about-me-block .content-about-me {
+  .about-me-block .about-me-flex-container {
+    background-color: #fff;
+    border-radius: 30px;
     width: 100%;
-    height: 715px;
-    padding-top: 150px;
+    height: 930px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
-  .about-me-block .content-about-me .about-me-flex-container {
-    padding: 0;
+  .about-me-block .about-me-flex-container .photo-about {
+    width: 50%;
   }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .text-info-about-mentor {
-    padding-left: 30px;
+  .about-me-block .about-me-flex-container .photo-about .icon-di {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 60px;
   }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .text-info-about-mentor .name-mentor {
-    font-size: 36px;
-    font-weight: 700;
-    color: #303881;
-    line-height: 40px;
+  .about-me-block .about-me-flex-container .photo-about .text-info2 {
+    display: none;
   }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .text-info-about-mentor .mentor-prof {
-    font-size: 18px;
-    font-weight: 700;
-    color: rgba(48, 56, 129, 0.78);
-    line-height: 54px;
+  .about-me-block .about-me-flex-container .text-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 44%;
   }
-  .about-me-block .content-about-me .about-me-flex-container .welcome-message {
-    font-size: 34px;
-    font-weight: 800;
-    color: #303881;
-    line-height: 55px;
-    padding-left: 10px;
+  .about-me-block .about-me-flex-container .text-info .p {
+    margin: 0;
   }
-  .about-me-block .content-about-me .about-me-flex-container .read-continue {
+  .about-me-block .about-me-flex-container .text-info .p .hejka {
     font-size: 32px;
-    font-weight: 800;
-    color: #fff;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-two {
-    display: none;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-two .arrow-two {
-    display: none;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-three {
-    display: none;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-three .arrow-three {
-    display: none;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block {
-    width: 340px;
-    height: 365px;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block .title-facts-blocks {
-    font-size: 36px;
-    font-weight: 800;
-    color: #F6B40B;
-    line-height: 54px;
-    margin: 5px 0;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block .facts-list .facts-item {
-    font-size: 19px;
-    font-weight: 800;
+    font-weight: 700;
     color: #303881;
-    line-height: 50px;
   }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block-one {
-    position: relative;
-    margin-left: 60px;
+  .about-me-block .about-me-flex-container .text-info .welcome-message {
+    font-size: 20px;
+    font-weight: 300;
+    color: #2F2F2F;
+    margin: 5px 0 0 0;
   }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block-two {
-    position: absolute;
-    margin: 30px 0 0 515px;
+  .about-me-block .about-me-flex-container .text-info .facts {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
   }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block-three {
-    margin-top: 40px;
-    margin-left: 60px;
+  .about-me-block .about-me-flex-container .text-info .facts .fact-block {
+    width: 95%;
+    border: 5px #F6B40B solid;
+    border-radius: 35px;
+    margin-top: 30px;
+  }
+  .about-me-block .about-me-flex-container .text-info .facts .fact-block .title-facts-blocks {
+    font-size: 30px;
+    font-weight: 700;
+    color: #F6B40B;
+    font-style: normal;
+    line-height: 44px;
+    margin: 15px 0 0 15px;
+  }
+  .about-me-block .about-me-flex-container .text-info .facts .fact-block .facts-list .facts-item {
+    font-size: 16px;
+    font-weight: 700;
+    color: #303881;
+    line-height: 30px;
   }
 }
 @media (max-width: 992px) {
   .about-me-block {
     width: 100%;
-    height: 1300px;
+    height: 650px;
+    background-color: #fff;
+    padding-bottom: 0px;
   }
-  .about-me-block .content-about-me {
+  .about-me-block .about-me-flex-container {
+    background-color: #fff;
+    border-radius: 30px;
     width: 100%;
-    height: 715px;
-    padding-top: 110px;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
-  .about-me-block .content-about-me .about-me-flex-container {
-    padding: 0 0 0 25px;
+  .about-me-block .about-me-flex-container .photo-about {
+    width: 50%;
   }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor {
-    padding: 70px 0 0 20px;
+  .about-me-block .about-me-flex-container .photo-about .icon-di {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 60px;
   }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .text-info-about-mentor {
-    padding-left: 30px;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .text-info-about-mentor .name-mentor {
-    font-size: 32px;
-    font-weight: 700;
-    color: #303881;
-    line-height: 35px;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .text-info-about-mentor .mentor-prof {
-    font-size: 16px;
-    font-weight: 700;
-    color: rgba(48, 56, 129, 0.78);
-    line-height: 44px;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .welcome-message {
-    font-size: 28px;
-    font-weight: 800;
-    color: #303881;
-    line-height: 55px;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .read-continue {
-    font-size: 28px;
-    font-weight: 800;
-    color: #fff;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-two {
+  .about-me-block .about-me-flex-container .photo-about .text-info2 {
     display: none;
   }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-two .arrow-two {
-    display: none;
+  .about-me-block .about-me-flex-container .text-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 44%;
   }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-three {
-    display: none;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-three .arrow-three {
-    display: none;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block {
-    width: 270px;
-    height: 300px;
-    padding: 10px 20px 20px;
-    border: 6px #F6B40B solid;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block v .title-facts-blocks {
-    font-size: 28px;
-    font-weight: 800;
-    color: #F6B40B;
-    line-height: 54px;
-    margin: 5px 0;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block .facts-list {
-    padding: 0 0 0 20px;
+  .about-me-block .about-me-flex-container .text-info .p {
     margin: 0;
   }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block .facts-list .facts-item {
-    font-size: 16px;
-    font-weight: 800;
+  .about-me-block .about-me-flex-container .text-info .p .hejka {
+    font-size: 28px;
+    font-weight: 700;
     color: #303881;
-    line-height: 40px;
   }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block-one {
-    position: relative;
-    margin-left: 20px;
+  .about-me-block .about-me-flex-container .text-info .welcome-message {
+    font-size: 15px;
+    font-weight: 300;
+    color: #2F2F2F;
+    margin: 5px 0 0 0;
   }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block-two {
-    position: absolute;
-    margin: 30px 0 0 365px;
+  .about-me-block .about-me-flex-container .text-info .facts {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
   }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block-three {
-    margin-top: 40px;
-    margin-left: 20px;
+  .about-me-block .about-me-flex-container .text-info .facts .fact-block {
+    width: 100%;
+    border: 4px #F6B40B solid;
+    border-radius: 30px;
+    margin-top: 30px;
+  }
+  .about-me-block .about-me-flex-container .text-info .facts .fact-block .title-facts-blocks {
+    font-size: 24px;
+    font-weight: 700;
+    color: #F6B40B;
+    font-style: normal;
+    line-height: 1px;
+    margin: 25px 0 0 15px;
+  }
+  .about-me-block .about-me-flex-container .text-info .facts .fact-block .facts-list .facts-item {
+    font-size: 12px;
+    font-weight: 700;
+    color: #303881;
+    line-height: 20px;
   }
 }
 @media (max-width: 768px) {
   .about-me-block {
     width: 100%;
-    height: 940px;
+    height: 570px;
+    background-color: #fff;
+    padding-bottom: 0px;
   }
-  .about-me-block .content-about-me {
+  .about-me-block .about-me-flex-container {
+    background-color: #fff;
+    border-radius: 30px;
     width: 100%;
-    height: 715px;
-    padding-top: 110px;
+    height: 570px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor {
-    padding: 55px 0 0 20px;
+  .about-me-block .about-me-flex-container .photo-about {
+    width: 50%;
   }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .icon-di {
-    width: 90px;
-    height: 90px;
-    border-radius: 300px;
+  .about-me-block .about-me-flex-container .photo-about .icon-di {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 20px;
   }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .text-info-about-mentor {
-    padding-left: 20px;
+  .about-me-block .about-me-flex-container .photo-about .text-info2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
   }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .text-info-about-mentor .name-mentor {
-    font-size: 23px;
-    font-weight: 700;
-    color: #303881;
-    line-height: 25px;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .text-info-about-mentor .mentor-prof {
-    font-size: 12px;
-    font-weight: 700;
-    color: rgba(48, 56, 129, 0.78);
-    line-height: 35px;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .welcome-message {
-    font-size: 20px;
-    font-weight: 800;
-    color: #303881;
-    line-height: 35px;
-    padding: 0;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .read-continue {
-    font-size: 20px;
-    font-weight: 800;
-    color: #fff;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .arrow-one {
-    width: 55px;
-    height: 52px;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-two {
-    display: none;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-two .arrow-two {
-    display: none;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-three {
-    display: none;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-three .arrow-three {
-    display: none;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block {
-    width: 160px;
-    height: 200px;
-    padding: 10px 20px 20px;
-    border: 4px #F6B40B solid;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block .title-facts-blocks {
-    font-size: 18px;
-    font-weight: 800;
-    color: #F6B40B;
-    line-height: 40px;
-    margin: 5px 0;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block .facts-list {
-    padding: 0 0 0 20px;
+  .about-me-block .about-me-flex-container .photo-about .text-info2 .p {
     margin: 0;
   }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block .facts-list .facts-item {
-    font-size: 10px;
-    font-weight: 800;
+  .about-me-block .about-me-flex-container .photo-about .text-info2 .p .hejka {
+    font-size: 22px;
+    font-weight: 700;
     color: #303881;
-    line-height: 20px;
   }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block-one {
-    position: relative;
-    margin-top: 20px;
+  .about-me-block .about-me-flex-container .photo-about .text-info2 .welcome-message {
+    font-size: 12px;
+    font-weight: 300;
+    color: #2F2F2F;
+    margin: 5px 0 0 0;
   }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block-two {
-    position: absolute;
-    margin: 20px 0 0 255px;
-    width: 160px;
-    height: 200px;
+  .about-me-block .about-me-flex-container .text-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 47%;
   }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block-three {
-    margin-top: 20px;
-    width: 160px;
-    height: 200px;
+  .about-me-block .about-me-flex-container .text-info .p {
+    display: none;
+    margin: 0;
+  }
+  .about-me-block .about-me-flex-container .text-info .p .hejka {
+    font-size: 22px;
+    font-weight: 700;
+    color: #303881;
+  }
+  .about-me-block .about-me-flex-container .text-info .welcome-message {
+    display: none;
+    font-size: 12px;
+    font-weight: 300;
+    color: #2F2F2F;
+    margin: 5px 0 0 0;
+  }
+  .about-me-block .about-me-flex-container .text-info .facts {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+  }
+  .about-me-block .about-me-flex-container .text-info .facts .fact-block {
+    width: 100%;
+    border: 3px #F6B40B solid;
+    border-radius: 30px;
+    margin-top: 15px;
+  }
+  .about-me-block .about-me-flex-container .text-info .facts .fact-block .title-facts-blocks {
+    font-size: 20px;
+    font-weight: 700;
+    color: #F6B40B;
+    font-style: normal;
+    line-height: 1px;
+    margin: 25px 0 0 15px;
+  }
+  .about-me-block .about-me-flex-container .text-info .facts .fact-block .facts-list .facts-item {
+    font-size: 10px;
+    font-weight: 700;
+    color: #303881;
+    line-height: 17px;
   }
 }
 @media (max-width: 576px) {
   .about-me-block {
     width: 100%;
-    height: 900px;
+    height: 370px;
+    background-color: #fff;
+    padding-bottom: 0px;
   }
-  .about-me-block .content-about-me {
+  .about-me-block .about-me-flex-container {
+    background-color: #fff;
+    border-radius: 30px;
     width: 100%;
-    height: 415px;
-    padding-top: 60px;
+    height: 370px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
   }
-  .about-me-block .content-about-me .about-me-flex-container {
-    padding: 0 10px;
+  .about-me-block .about-me-flex-container .photo-about {
+    width: 50%;
   }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block {
-    margin-bottom: 10px;
+  .about-me-block .about-me-flex-container .photo-about .icon-di {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 20px;
   }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor {
-    padding: 20px 5px 5px;
+  .about-me-block .about-me-flex-container .photo-about .text-info2 {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 100%;
   }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .icon-di {
-    width: 55px;
-    height: 55px;
-    border-radius: 300px;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .text-info-about-mentor {
-    padding-left: 10px;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .text-info-about-mentor .name-mentor {
-    font-size: 14px;
-    font-weight: 700;
-    color: #303881;
-    line-height: 25px;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .top-part-about-me-block .info-about-mentor .text-info-about-mentor .mentor-prof {
-    font-size: 8px;
-    font-weight: 700;
-    color: rgba(48, 56, 129, 0.78);
-    line-height: 10px;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .welcome-message {
-    font-size: 14px;
-    font-weight: 800;
-    color: #303881;
-    line-height: 16px;
+  .about-me-block .about-me-flex-container .photo-about .text-info2 .p {
     margin: 0;
   }
-  .about-me-block .content-about-me .about-me-flex-container .read-continue {
-    font-size: 14px;
-    font-weight: 800;
-    color: #fff;
-    padding: 2px 8px;
+  .about-me-block .about-me-flex-container .photo-about .text-info2 .p .hejka {
+    font-size: 18px;
+    font-weight: 700;
+    color: #303881;
   }
-  .about-me-block .content-about-me .about-me-flex-container .arrow-one {
-    width: 35px;
-    height: 32px;
-    padding: 15px 0px 40px 0;
+  .about-me-block .about-me-flex-container .photo-about .text-info2 .welcome-message {
+    font-size: 10px;
+    font-weight: 300;
+    color: #2F2F2F;
+    margin: 5px 0 0 0;
   }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-two {
+  .about-me-block .about-me-flex-container .text-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 47%;
+  }
+  .about-me-block .about-me-flex-container .text-info .p {
     display: none;
+    margin: 0;
   }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-two .arrow-two {
+  .about-me-block .about-me-flex-container .text-info .p .hejka {
+    font-size: 22px;
+    font-weight: 700;
+    color: #303881;
+  }
+  .about-me-block .about-me-flex-container .text-info .welcome-message {
     display: none;
+    font-size: 12px;
+    font-weight: 300;
+    color: #2F2F2F;
+    margin: 5px 0 0 0;
   }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-three {
-    display: none;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .navigation-three .arrow-three {
-    display: none;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks {
+  .about-me-block .about-me-flex-container .text-info .facts {
+    margin-top: 55px;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    width: 100%;
   }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block {
-    width: 170px;
-    height: 170px;
-    padding: 8px 15px 15px;
-    border: 3.5px #F6B40B solid;
+  .about-me-block .about-me-flex-container .text-info .facts .fact-block {
+    width: 95%;
+    border: 2px #F6B40B solid;
+    border-radius: 20px;
+    margin-top: 8px;
   }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block .title-facts-blocks {
-    font-size: 15px;
-    font-weight: 800;
+  .about-me-block .about-me-flex-container .text-info .facts .fact-block .title-facts-blocks {
+    font-size: 12px;
+    font-weight: 700;
     color: #F6B40B;
-    line-height: 40px;
-    margin: 4px 0 0 0;
+    font-style: normal;
+    line-height: 1px;
+    margin: 15px 0 0 15px;
   }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block .facts-list {
-    padding: 0 0 0 20px;
-    margin: 0;
+  .about-me-block .about-me-flex-container .text-info .facts .fact-block .facts-list {
+    padding: 0 0 0 15px;
+    margin: 10px 0;
   }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block .facts-list .facts-item {
-    font-size: 9px;
-    font-weight: 800;
+  .about-me-block .about-me-flex-container .text-info .facts .fact-block .facts-list .facts-item {
+    font-size: 6px;
+    font-weight: 700;
     color: #303881;
-    line-height: 20px;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block-one {
-    position: relative;
-    margin-top: 40px;
-    margin-left: 0;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block-two {
-    position: relative;
-    margin: 20px 0 0 0;
-    width: 170px;
-    height: 170px;
-  }
-  .about-me-block .content-about-me .about-me-flex-container .facts-blocks .fact-block-three {
-    margin-top: 20px;
-    margin-left: 0;
-    width: 170px;
-    height: 170px;
+    line-height: 10px;
   }
 }/*# sourceMappingURL=About.media.css.map */

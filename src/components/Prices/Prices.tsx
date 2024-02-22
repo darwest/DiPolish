@@ -16,7 +16,7 @@ const Prices = () => {
                 <div className="price-flex-container">
                     <motion.h2
                         className="title-price-section"
-                        initial={{ x: 100, opacity: 0 }}
+                        initial={{ x: -100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.2 }}
                     >

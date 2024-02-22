@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .navbar-item {
     margin-right: 18px;
     position: relative;
@@ -12,13 +12,53 @@ body {
     margin-right: 13px;
   }
   .navbar-item:last-child {
-    margin-right: 0;
+    margin-right: 13px;
   }
   .navbar-item .navbar-link {
     position: relative;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     color: #fff;
+  }
+  .menu-list-footer .navbar-item-f {
+    color: #d1d1d1;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  .menu-list-footer .navbar-item-f .navbar-link-f {
+    color: #d1d1d1;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-item {
+    margin-right: 12px;
+    position: relative;
+  }
+  .navbar-item:nth-last-child(2) {
+    margin-right: 13px;
+  }
+  .navbar-item:last-child {
+    margin-right: 13px;
+  }
+  .navbar-item .navbar-link {
+    position: relative;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .menu-list-footer .navbar-item-f {
+    color: #d1d1d1;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  .menu-list-footer .navbar-item-f .navbar-link-f {
+    color: #d1d1d1;
+    text-decoration: none;
+    margin-bottom: 0px;
+    font-size: 12px;
   }
 }
 @media (max-width: 768px) {
@@ -27,7 +67,7 @@ body {
   }
   .navbar-item .navbar-link {
     position: relative;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     color: #fff;
   }
@@ -40,6 +80,17 @@ body {
   .navbar-item:nth-last-child(2) {
     margin: 0px 0;
   }
+  .menu-list-footer .navbar-item-f {
+    color: #d1d1d1;
+    text-decoration: none;
+    margin-bottom: 0px;
+  }
+  .menu-list-footer .navbar-item-f .navbar-link-f {
+    color: #d1d1d1;
+    text-decoration: none;
+    margin-bottom: 0px;
+    font-size: 10px;
+  }
 }
 @media (max-width: 576px) {
   .navbar-item {
@@ -50,5 +101,16 @@ body {
     font-size: 10px;
     font-weight: 400;
     color: #fff;
+  }
+  .menu-list-footer .navbar-item-f {
+    color: #d1d1d1;
+    text-decoration: none;
+    margin-bottom: 0px;
+  }
+  .menu-list-footer .navbar-item-f .navbar-link-f {
+    color: #d1d1d1;
+    text-decoration: none;
+    margin-bottom: 0px;
+    font-size: 10px;
   }
 }/*# sourceMappingURL=NavBar.media.css.map */

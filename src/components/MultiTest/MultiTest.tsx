@@ -167,7 +167,7 @@ const MultiTest = ({ onFinish }: MultiTestProps) => {
 
       <div className="test-buttons">
         <button onClick={prevQuestion} disabled={currentQuestion === 0}>
-          Попереднє
+          ПОПЕРЕДНЄ
         </button>
 
         {currentQuestion + 1 !== multiQuestionsList.length ? (
@@ -175,11 +175,11 @@ const MultiTest = ({ onFinish }: MultiTestProps) => {
             onClick={nextQuestion}
             disabled={currentQuestion === multiQuestionsList.length - 1}
           >
-            Наступне
+            НАСТУПНЕ
           </button>
         ) : (
           <button className="test-btn-next" onClick={handleFinishTest}>
-            Перейти до наступного
+            ПЕРЕЙТИ ДО НАСТУПНОГО
           </button>
         )}
       </div>

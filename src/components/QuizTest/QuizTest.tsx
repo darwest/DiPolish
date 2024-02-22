@@ -175,7 +175,7 @@ const QuizTest = ({ onFinish }: QuizTestProps) => {
 
       <div className="test-buttons">
         <button onClick={prevQuestion} disabled={currentQuestion === 0}>
-          Попереднє
+          ПОПЕРЕДНЄ
         </button>
 
         {currentQuestion + 1 !== quizQuestionsList.length ? (
@@ -183,11 +183,11 @@ const QuizTest = ({ onFinish }: QuizTestProps) => {
             onClick={nextQuestion}
             disabled={currentQuestion === quizQuestionsList.length - 1}
           >
-            Наступне
+            НАСТУПНЕ
           </button>
         ) : (
           <button className="test-btn-next" onClick={handleFinishTest}>
-            Перейти до наступного
+            ПЕРЕЙТИ ДО НАСТУПНОГО
           </button>
         )}
       </div>

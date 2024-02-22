@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (max-width: 1200px) {
   .reviews-block {
     background-image: url("../../assets/img/gradient.png");
@@ -12,12 +13,12 @@
     height: 1000px;
   }
   .reviews-block .reviews-flex-container .title-block .title-reviews-block {
-    font-size: 45px;
+    font-size: 32px;
     font-weight: 700;
-    color: #303881;
+    color: #F66E0B;
   }
   .reviews-block .reviews-flex-container .title-block .subtitle-reviews-block {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     color: #2F2F2F;
     margin: 8px 0 60px;
@@ -29,20 +30,27 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 1000px;
+    height: 850px;
     z-index: 1;
   }
   .reviews-block .reviews-flex-container {
     width: 100%;
-    height: 1000px;
+    height: 800px;
   }
-  .reviews-block .reviews-flex-container .title-block .title-reviews-block {
-    font-size: 36px;
+  .reviews-block .reviews-flex-container .bottom-title-reviews-block {
+    font-size: 24px;
     font-weight: 700;
     color: #303881;
+    text-align: center;
+    margin: 10px 0 0 30px;
+  }
+  .reviews-block .reviews-flex-container .title-block .title-reviews-block {
+    font-size: 28px;
+    font-weight: 700;
+    color: #F66E0B;
   }
   .reviews-block .reviews-flex-container .title-block .subtitle-reviews-block {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 300;
     color: #2F2F2F;
     margin: 8px 0 40px;
@@ -54,30 +62,31 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 800px;
+    height: 730px;
     z-index: 1;
   }
   .reviews-block .reviews-flex-container {
     width: 100%;
-    height: 800px;
+    height: 730px;
+    justify-content: flex-start;
   }
   .reviews-block .reviews-flex-container .bottom-title-reviews-block {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 700;
     color: #303881;
     text-align: center;
     margin: 10px 0 0 25px;
   }
   .reviews-block .reviews-flex-container .title-block .title-reviews-block {
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 700;
-    color: #303881;
+    color: #F66E0B;
   }
   .reviews-block .reviews-flex-container .title-block .subtitle-reviews-block {
     font-size: 12px;
     font-weight: 300;
     color: #2F2F2F;
-    margin: 8px 0 40px;
+    margin: 8px 0 30px;
   }
   .reviews-block .reviews-flex-container .banner-reviews-block {
     display: flex;
@@ -103,8 +112,11 @@
     justify-content: center;
     align-items: center;
   }
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .swiper {
+    margin-bottom: 5px;
+  }
   .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .swiper .swiper-slide .image-slider {
-    height: 475px;
+    height: 470px;
   }
   .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .swiper .swiper-slide img {
     height: 105%;
@@ -119,30 +131,32 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 500px;
+    height: 600px;
     z-index: 1;
   }
   .reviews-block .reviews-flex-container {
     width: 100%;
-    height: 500px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
   }
   .reviews-block .reviews-flex-container .bottom-title-reviews-block {
     font-size: 15px;
     font-weight: 700;
     color: #303881;
     text-align: center;
-    margin: 10px 0 0 25px;
+    margin: 10px 0 0 8px;
   }
   .reviews-block .reviews-flex-container .title-block .title-reviews-block {
     font-size: 18px;
     font-weight: 700;
-    color: #303881;
+    color: #F66E0B;
   }
   .reviews-block .reviews-flex-container .title-block .subtitle-reviews-block {
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 300;
     color: #2F2F2F;
-    margin: 0 0 20px;
+    margin: 8px 0 30px;
   }
   .reviews-block .reviews-flex-container .banner-reviews-block {
     display: flex;
@@ -154,41 +168,42 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .back-photo {
     background-image: url("../../assets/img/tel.png");
     background-size: cover;
     background-position: center;
-    width: 152px;
-    height: 311px;
+    width: 200px;
+    height: 410px;
+    /* Орієнтовно зменшено на 20-30% */
     flex-shrink: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .back-photo .swiper-slide {
-    width: 100%;
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .swiper {
+    margin-bottom: 30px;
+    border-radius: 20px;
   }
-  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .back-photo .swiper-slide .image-slider {
-    border-radius: 15px;
-    width: 100%;
-    overflow: hidden;
-    height: 265px;
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .swiper .swiper-slide {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
   }
-  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .back-photo .swiper-slide .image-slider img {
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .swiper .swiper-slide .image-slider {
+    border-radius: 20px;
+    height: 370px; /* Орієнтовно зменшено на 20% */
+  }
+  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .swiper .swiper-slide img {
+    height: 100%;
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .swiper-button-prev {
-    display: none;
-  }
-  .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .swiper-button-next {
-    display: none;
-  }
-  .blue-line {
+  .reviews-block .blue-line {
     display: none;
   }
 }/*# sourceMappingURL=Review.media.css.map */

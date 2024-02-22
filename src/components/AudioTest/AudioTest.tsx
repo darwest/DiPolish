@@ -94,7 +94,7 @@ const WordMatchTest: React.FC<WordMatchTestProps> = ({ onFinish }) => {
       </div>
 
       <button className="test-btn-finish" onClick={handleFinishTest}>
-        Завершити тест
+        ЗАВЕРШИТИ ТЕСТ
       </button>
 
       <MessageModal

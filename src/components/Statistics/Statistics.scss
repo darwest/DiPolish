@@ -20,92 +20,105 @@
             }
 
             .title-statistics {
-                @include text-styles(40px, 800, $main-color2);
+                @include text-styles(42px, 700, $main-color2);
                 line-height: 64px;
                 word-wrap: break-word;
                 width: 190px;
             }
         }
-.right-statistics-block{
-    @include flex-container(column, center, flex-end);
 
-        .statistics {
-            background-color:#B2BCC8;
-            border-radius: 60px;
-            @include width-height-value(760px, 190px);
-            margin-left: 150px;
-            .statistics-list-number {
-                @include flex-container(row, space-between, center);
-                list-style: none;
-                padding: 35px 20px 0 45px;
+        .right-statistics-block {
+            @include flex-container(column, center, flex-end);
 
-                .statistics-list-number-item {
-                    @include text-styles(45px, 700, $main-color1);
-                    line-height: 30px;
+            .statistics {
+                background-color: #B2BCC8;
+                border-radius: 60px;
+                @include width-height-value(760px, 190px);
+                margin-left: 150px;
+
+                .statistics-list-number {
+                    @include flex-container(row, space-between, center);
+                    list-style: none;
+                    padding: 35px 20px 0 45px;
+
+                    .statistics-list-number-item {
+                        @include text-styles(45px, 700, $main-color1);
+                        line-height: 30px;
+                    }
+                }
+
+                .statistics-list-text {
+                    @include flex-container(row, space-around, flex-start);
+                    padding: 0 10px 0 10px;
+                    height: 75%;
+                    margin-top: 38px;
+
+                    .statistics-list-number-item {
+                        @include text-styles(55px, 700, $main-color1);
+                    }
+
+                    .statistics-list-text-item {
+                        @include text-styles(20px, 700, $main-color1);
+                        line-height: 20px;
+                        text-align: center
+                    }
                 }
             }
+        }
 
-            .statistics-list-text {
-                @include flex-container(row, space-around, flex-start);
-                padding: 0 10px 0 10px;
-                height: 75%;
-                margin-top: 38px;
+        .colors-blocks {
+            @include flex-container(row, center, center);
+            margin-top: 20px;
 
-               .statistics-list-number-item{
-                @include text-styles(55px, 800, $main-color1);
+            .color-block-one {
+                @include width-height-value(130px, 40px);
+                background-color: #CCDAF2;
             }
-                .statistics-list-text-item{
-                    @include text-styles(20px, 700, $main-color1);
-                    line-height: 20px;
-                    text-align: center
-               }
+
+            .color-block-two {
+                @include width-height-value(125px, 40px);
+                background-color: #B0B8FC;
+            }
+
+            .color-block-three {
+                @include width-height-value(125px, 40px);
+                background-color: #707EFA;
+            }
+
+            .color-block-four {
+                @include width-height-value(125px, 40px);
+                background-color: #4B57C5;
+            }
+
+            .color-block-fifth {
+                @include width-height-value(125px, 40px);
+                background-color: #343C8D;
+            }
+
+            .color-block-six {
+                @include width-height-value(130px, 40px);
+                background-color: #21264F;
             }
         }
     }
-    .colors-blocks{
-        @include flex-container(row, center, center);
-        margin-top: 20px;
-        .color-block-one{
-            @include width-height-value(130px, 40px);
-            background-color: #CCDAF2;
-        }
-        .color-block-two{
-            @include width-height-value(125px, 40px);
-            background-color: #B0B8FC;
-        }
-        .color-block-three{
-            @include width-height-value(125px, 40px);
-            background-color:#707EFA;
-        }
-        .color-block-four{
-            @include width-height-value(125px, 40px);
-            background-color: #4B57C5;
-        }
-        .color-block-fifth{
-            @include width-height-value(125px, 40px);
-            background-color: #343C8D;
-        }
-        .color-block-six{
-            @include width-height-value(130px, 40px);
-            background-color: #21264F;
-        }
+
+    .statistics-item1 {
+        @include flex-container(column, center, center);
+
+    }
+
+    .statistics-item2 {
+        @include flex-container(column, center, center);
+
+    }
+
+    .statistics-item3 {
+        @include flex-container(column, center, center);
+
+    }
+
+    .statistics-item4 {
+        @include flex-container(column, center, center);
+
     }
 }
-.statistics-item1{
-    @include flex-container(column, center, center);
-
-}
-.statistics-item2{
-    @include flex-container(column, center, center);
-
-}
-.statistics-item3{
-     @include flex-container(column, center, center);
-
-}
-.statistics-item4{
-     @include flex-container(column,center, center);
-
-}
-}
-

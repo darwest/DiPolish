@@ -6,7 +6,7 @@
   margin-right: 24px;
 }
 .navbar-item:last-child {
-  margin-right: 0;
+  margin-right: 15px;
 }
 .navbar-item .navbar-link {
   position: relative;
@@ -17,6 +17,21 @@
   cursor: pointer;
 }
 .navbar-item .navbar-link:hover {
+  color: #F66E0B;
+  transition: color 0.3s ease;
+}
+
+.menu-list-footer .navbar-item-f {
+  color: #d1d1d1;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.menu-list-footer .navbar-item-f .navbar-link-f {
+  color: #d1d1d1;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.menu-list-footer .navbar-item-f .navbar-link-f:hover {
   color: #F66E0B;
   transition: color 0.3s ease;
 }/*# sourceMappingURL=NavBar.css.map */

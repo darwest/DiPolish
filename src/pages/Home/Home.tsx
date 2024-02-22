@@ -31,9 +31,10 @@ const Home = () => {
       <Banner />
       <Statistics />
       <About />
+      <Review />
       <TestModule />
       <Prices />
-      <Review />
+      
       <Video />
       <Information />
       <Footer />

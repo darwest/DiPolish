@@ -2,6 +2,7 @@
 
 @media (max-width: 1400px) {
   .test-module-block {
+    
     .test-module-flex-container {
       .photo-test-module {
         @include width-height-value(446px, 660px);
@@ -9,7 +10,7 @@
       }
 
       .content-test-module-block {
-        @include width-height-value(740px, 690px);
+        @include width-height-value(740px, 620px);
         margin: 50px 0 0 50px;
         padding: 10px;
 
@@ -18,7 +19,7 @@
         }
 
         .subtitle-test-module-block {
-          @include text-styles(22px, 800, $text-color-yellow);
+          @include text-styles(22px, 700, $text-color-yellow);
           text-align: center;
           margin: 0;
         }
@@ -37,7 +38,7 @@
     padding-bottom: 100px;
 
     .reference-text {
-      @include text-styles(32px, 800, $main-color1);
+      @include text-styles(32px, 700, $main-color1);
       padding-top: 80px;
     }
 
@@ -48,29 +49,30 @@
       }
 
       .content-test-module-block {
-        @include width-height-value(650px, 600px);
+        @include width-height-value(650px, 500px);
         margin: 50px 0 0 10px;
         padding: 5px;
 
         .title-test-module-block {
-          @include text-styles(45px, 800, $text-primary-color);
+          @include text-styles(40px, 800, $text-primary-color);
           line-height: 50px;
         }
 
         .subtitle-test-module-block {
-          @include text-styles(20px, 800, $text-color-yellow);
+          @include text-styles(18px, 800, $text-color-yellow);
         }
 
         .text-test-module-block {
-          @include text-styles(20px, 500, $text-primary-color);
+          @include text-styles(18px, 500, $text-primary-color);
         }
 
         .button-try {
-          @include width-height-value(300px, 76px);
-          margin: 40px 0 0 0;
+          @include width-height-value(280px, 65px);
+          margin: 32px 0 0 0;
+          font-size: 20px;
 
           .link-button-try {
-            @include text-styles(22px, 800, $text-primary-color);
+            @include text-styles(20px, 800, $text-primary-color);
           }
         }
       }
@@ -84,19 +86,19 @@
     padding-bottom: 100px;
 
     .reference-text {
-      @include text-styles(26px, 800, $main-color1);
+      @include text-styles(26px, 700, $main-color1);
       padding-top: 60px;
     }
 
     .test-module-flex-container {
       .photo-test-module {
         @include width-height-value(290px, 435px);
-        right: 15px;
+        right: -10px;
       }
 
       .content-test-module-block {
-        @include width-height-value(480px, 480px);
-        margin: 30px 0 0 25px;
+        @include width-height-value(480px, 440px);
+        margin: 30px 0 0 50px;
         padding: 2px;
 
         .title-test-module-block {
@@ -114,11 +116,14 @@
         }
 
         .button-try {
-          @include width-height-value(230px, 66px);
+          @include width-height-value(230px, 50px);
           margin: 30px 0 0 0;
+          font-size: 16px;
+          
 
           .link-button-try {
-            @include text-styles(18px, 800, $text-primary-color);
+            @include text-styles(16px, 800, $text-primary-color);
+            margin-bottom: 0;
           }
         }
       }
@@ -129,40 +134,42 @@
 @media (max-width: 768px) {
   .test-module-block {
     @include width-height-value(100%, 100%);
-    padding-bottom: 80px;
+    padding-bottom:60px;
 
     .reference-text {
-      @include text-styles(22px, 800, $main-color1);
-      padding-top: 50px;
+      @include text-styles(22px, 700, $main-color1);
+      padding-top: 30px;
     }
 
     .test-module-flex-container {
       .photo-test-module {
-        @include width-height-value(220px, 330px);
+        @include width-height-value(220px, 320px);
         right: -20px;
       }
 
       .content-test-module-block {
-        @include width-height-value(360px, 360px);
+        @include width-height-value(360px, 330px);
         margin: 50px 0 0 10px;
         padding: 2px;
 
         .title-test-module-block {
-          @include text-styles(26px, 800, $text-primary-color);
+          @include text-styles(24px, 800, $text-primary-color);
           line-height: 40px;
           margin-bottom: 3px;
         }
 
         .subtitle-test-module-block {
-          @include text-styles(12px, 800, $text-color-yellow);
+          @include text-styles(11px, 800, $text-color-yellow);
         }
 
         .text-test-module-block {
           @include text-styles(12px, 500, $text-primary-color);
+          margin: 5px 0;
         }
 
         .button-try {
-          @include width-height-value(190px, 46px);
+          @include width-height-value(190px, 38px);
+          font-size: 15px;
           margin: 15px 0 0 0;
 
           .link-button-try {
@@ -180,7 +187,7 @@
     padding-bottom: 40px;
 
     .reference-text {
-      @include text-styles(16px, 800, $main-color1);
+      @include text-styles(16px, 700, $main-color1);
       padding-top: 30px;
     }
 
@@ -191,9 +198,11 @@
       }
 
       .content-test-module-block {
-        @include width-height-value(170px, 250px);
+        @include width-height-value(190px, 250px);
         margin: 0 0 0 7px;
         padding: 2px;
+        justify-content: flex-end;
+        padding-bottom: 14px;
 
         .title-test-module-block {
           @include text-styles(14px, 800, $text-primary-color);
@@ -203,7 +212,7 @@
         }
 
         .subtitle-test-module-block {
-          @include text-styles(10px, 800, $text-color-yellow);
+          @include text-styles(8px, 800, $text-color-yellow);
           padding: 0 10px;
         }
 
@@ -213,8 +222,9 @@
         }
 
         .button-try {
-          @include width-height-value(120px, 26px);
-          margin: 15px 0 0 0;
+          @include width-height-value(120px, 24px);
+          margin: 5px 0 0 0;
+          font-size: 10px;
 
           .link-button-try {
             @include text-styles(10px, 800, $text-primary-color);

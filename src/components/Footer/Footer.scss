@@ -5,7 +5,8 @@
 
 .dev-block {
     @include width-height-value(100%, 15px);
-    background: #222;        padding-bottom: 7px;
+    background: #222;
+    padding-bottom: 7px;
 
 
     .dev-flex-container {
@@ -26,6 +27,7 @@
         }
     }
 }
+
 .footer {
     @include width-height-value(100%, 300px);
     background-color: $main-background-blue;
@@ -33,60 +35,80 @@
     .footer-content {
         @include width-height-value(100%, 270px);
         padding-top: 30px;
-        @include flex-container(row, space-between, flex-start);
-        .logo-block1{
-            border-left: 3.5px solid #fff;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-left: 10px;
-            margin-bottom: 15px;
-            .logo-block
-            {text-decoration:dotted;}
-            .logo{
-              color: #fff;
-              font-weight: 600;
-              text-decoration: none;
-              
-            }
-          }
+        @include flex-container(row-reverse, space-between, flex-start);
+
         .logo-socnetwork {
-            @include flex-container(column, flex-start, flex-start);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .banner-button {
+                text-align: center;
+                @include button-style($main-background-orange, 18px, 50px, 14px 28px);
+                width: 220px;
+                color: $main-background-white;
+                text-decoration: none;
+                font-weight: 700;
+            }
 
-            .socnetworks-link {
-                @include flex-container(row, space-between, flex-start);
-                width: 45%;
+            .banner-button:hover {
+                background-color: $main-background-white;
+                transition: background-color 0.3s ease;
+                color: $hover-color;
+                transition: color 0.3s ease, background-color 0.3s ease;
+            }
 
-                .telegram-link {
-                    background-color: $main-background-white;
-                    @include width-height-value(29px, 25px);
-                    border-radius: 2px;
+            .logo-block1 {
+                border-right: 3.5px solid #fff;
+                padding-right: 10px;
+                margin-bottom: 15px;
+                height: 40px;
+                text-decoration: dotted;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-end;
+                
+
+                .logo-block {
+                    height: 100%;
+                    text-decoration: dotted;
                     
                 }
-                .tik-link{
-                    @include width-height-value(34px, 32px);
-                    border-radius: 2px;
+
+                .logo {
+                    margin-top: 0px;
+                    color: #fff;
+                    font-weight: 600;
+                    text-decoration: none;
+
                 }
             }
+
         }
 
         .menu-block {
             display: flex;
+            flex-direction: row-reverse;
             width: 60%;
             justify-content: flex-end;
-            .block-info{
-                margin-left: 50px;
+
+            .block-info {
+                margin-right: 50px;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
 
-                .link{
+                .link {
                     color: #d1d1d1;
                     text-decoration: none;
                     margin-bottom: 10px;
-                }
-                .info-title{
+                    &:hover {
+                        color: $hover-color;
+                        transition: color 0.3s ease;
+                      }}
+
+                .info-title {
                     @include position(relative);
                     @include text-styles(20px, 400, $text-primary-color);
 
@@ -94,11 +116,12 @@
                 }
 
             }
+
             .menu-list-footer {
                 @include flex-container(column, space-between, flex-start);
                 list-style: none;
                 @extend %reset-margin-padding;
-              
+
                 .menu-item {
                     color: #d1d1d1;
                     text-decoration: none;
@@ -106,8 +129,8 @@
 
                     .menu-link {
                         color: #d1d1d1;
-                    text-decoration: none;
-                    margin-bottom: 10px;
+                        text-decoration: none;
+                        margin-bottom: 10px;
 
                         &:hover {
                             color: $hover-color;
@@ -120,4 +143,3 @@
     }
 
 }
-

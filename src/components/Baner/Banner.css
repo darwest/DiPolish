@@ -10,8 +10,8 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: -20px;
+  width: 110%;
   height: 98%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../assets/img/background.png");
   background-size: cover;
@@ -42,7 +42,7 @@ body {
   font-size: 34px;
   font-weight: 700;
   color: #fff;
-  line-height: 48px;
+  line-height: 45px;
   word-wrap: break-word;
 }
 .banner-block .banner-flex-container .banner-block-one .banner-text-block .banner-subtitle {
@@ -57,7 +57,7 @@ body {
   background-color: #F66E0B;
   font-size: 21px;
   border-radius: 50px;
-  padding: 18px 28px;
+  padding: 14px 28px;
   cursor: pointer;
   border: none;
   width: 180px;
@@ -74,7 +74,7 @@ body {
 .banner-block .banner-flex-container .banner-image-block {
   width: 520px;
   height: 720px;
-  margin-top: 120px;
+  margin-top: 195px;
 }
 .banner-block .banner-flex-container .banner-image-block .main-photo {
   width: 520px;
@@ -82,7 +82,7 @@ body {
 }
 .banner-block .banner-block-two {
   width: 100%;
-  height: 400px;
+  height: 300px;
   background-color: #303881;
   transform: skewY(-5deg);
   overflow: hidden;
@@ -94,13 +94,13 @@ body {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: 300px;
   z-index: 5;
 }
 .banner-block .banner-block-two .banner-flex-container-two .banner-title-two {
   margin: 0;
   padding-right: 10px;
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 700;
   color: #fff;
   line-height: 48px;

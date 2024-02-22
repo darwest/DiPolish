@@ -39,6 +39,7 @@ body {
 }
 @media (max-width: 576px) {
   .container {
-    max-width: 280px;
+    max-width: 310px;
+    padding: 0 5px;
   }
 }/*# sourceMappingURL=App.css.map */

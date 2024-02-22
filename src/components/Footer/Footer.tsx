@@ -16,10 +16,18 @@ const Footer = () => {
           <div className="footer-content">
             <div className="logo-socnetwork">
               <div className="logo-block1">
-                <p className="logo-block">
+                <div className="logo-block">
                   <h1 className="logo">Hatsyk.polish</h1>
-                </p>
+                  
+                </div>
+              
               </div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSft29BqYNoGaUdZSBBs-58PuJ-YEhK0BUnxFsm3qJDHN5CrNg/viewform?usp=sf_link"
+                className="banner-button"
+                >
+                ЗАЛИШИТИ ЗАЯВКУ
+              </a>
               <div className="socnetworks-link">
 
                 
@@ -36,7 +44,7 @@ const Footer = () => {
               </div>
               <div className="block-info">
 
-                <p className="info-title">Соціальні мережі</p>
+                <p className="info-title">Соц. мережі</p>
                 <a className="link" href="https://instagram.com/hatsyk.polish?igshid=YTQwZjQ0NmI0OA==">
                   Instagram
                 </a>

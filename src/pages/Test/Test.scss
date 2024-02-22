@@ -29,12 +29,18 @@
     color: white;
     border: transparent;
     margin-top: 10px;
+    font-weight: 700;
     border-radius: 18px;
     font-size: 1.25rem;
     padding: 15px 25px ;
     margin-left: 2rem;
     cursor: pointer;
     font-family: $font;
+    &:hover{
+      background-color: $main-background-white;
+      color:$main-background-orange ;
+
+    }
 }
 
 
@@ -43,7 +49,7 @@
 
 
 .test-wrapper{
-  padding: 50px 0 0px;
+  padding: 90px 0 0px;
   font-family: $font;
 }
 
@@ -54,11 +60,13 @@
 
 .test-video {
     @include position(relative);
-    @include height-value(500px);
+    @include height-value(600px);
     max-width: 1020px;
     margin: 0 auto;
     z-index: 2;
+    margin-top: 30px;
     display: flex;
+    align-items: center;
     justify-content: center;
     
 

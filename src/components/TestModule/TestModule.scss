@@ -5,7 +5,7 @@
   background: $background-color-grey;
 
   .reference-text {
-    @include text-styles(36px, 800, $main-color1);
+    @include text-styles(36px, 700, $main-color1);
     font-style: normal;
     line-height: normal;
     text-align: right;
@@ -26,7 +26,7 @@
     }
 
     .content-test-module-block {
-      @include width-height-value(840px, 690px);
+      @include width-height-value(840px, 620px);
       border-radius: 40px;
       background: $main-background-blue;
       @include flex-container(column, center, center);
@@ -34,11 +34,11 @@
       padding: 15px;
 
       .title-test-module-block {
-        @include text-styles(60px, 800, $text-primary-color);
+        @include text-styles(55px, 800, $text-primary-color);
         line-height: 81.6px;
         letter-spacing: 2.04px;
         text-align: center;
-        margin: 0 0 15px 0;
+        margin: 0 0 5px 0;
       }
 
       .subtitle-test-module-block {

@@ -25,3 +25,21 @@
       }
     }
   }
+  .menu-list-footer{
+    .navbar-item-f{
+      color: #d1d1d1;
+      text-decoration: none;
+      margin-bottom: 10px;
+      
+      .navbar-link-f{
+        color: #d1d1d1;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                    &:hover {
+                      color: $hover-color;
+                      transition: color 0.3s ease;
+                    } }
+      
+     
+    }
+  }

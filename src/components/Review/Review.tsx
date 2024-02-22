@@ -37,12 +37,12 @@ const Review = () => {
   ];
 
   return (
-    <section className="reviews-block">
+    <section id="8" className="reviews-block">
       <div className="baner">
         <div className="container">
           <div className="reviews-flex-container">
             <div className="title-block">
-              <h2 className="title-reviews-block">ВІДГУКИ</h2>
+              <h2 className="title-reviews-block">ВІДГУКИ ПРО ЗАНЯТТЯ</h2>
               <p className="subtitle-reviews-block">
                 найцінніші докази моєї праці
                 <br />- це мої відгуки

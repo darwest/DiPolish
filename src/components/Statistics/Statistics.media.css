@@ -13,11 +13,12 @@ body {
     height: 400px;
   }
   .statistics-block .statistics-flex-container .title-statistics-block .vertical-line {
-    height: 250px;
+    height: 190px;
+    width: 4px;
   }
   .statistics-block .statistics-flex-container .title-statistics-block .title-statistics {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .statistics-block .statistics-flex-container .right-statistics-block {
     display: flex;
@@ -32,12 +33,11 @@ body {
     margin-left: 40px;
   }
   .statistics-block .statistics-flex-container .right-statistics-block .statistics .statistics-list-text {
-    padding: 0 10px 0 40px;
     margin-top: 30px;
   }
   .statistics-block .statistics-flex-container .right-statistics-block .statistics .statistics-list-text .statistics-list-number-item {
     font-size: 35px;
-    font-weight: 800;
+    font-weight: 700;
     color: #303881;
   }
   .statistics-block .statistics-flex-container .right-statistics-block .statistics .statistics-list-text .statistics-list-text-item {
@@ -80,18 +80,22 @@ body {
 @media (max-width: 992px) {
   .statistics-block {
     width: 100%;
-    height: 350px;
+    height: 320px;
   }
   .statistics-block .statistics-flex-container {
     width: 100%;
-    height: 350px;
+    height: 280px;
+    margin-top: 40px;
+  }
+  .statistics-block .statistics-flex-container .title-statistics-block {
+    width: 25%;
   }
   .statistics-block .statistics-flex-container .title-statistics-block .vertical-line {
-    height: 200px;
+    height: 150px;
   }
   .statistics-block .statistics-flex-container .title-statistics-block .title-statistics {
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 26px;
+    line-height: 35px;
   }
   .statistics-block .statistics-flex-container .right-statistics-block {
     display: flex;
@@ -102,16 +106,16 @@ body {
   .statistics-block .statistics-flex-container .right-statistics-block .statistics {
     border-radius: 30px;
     width: 450px;
-    height: 100px;
+    height: 110px;
     margin-left: 40px;
   }
   .statistics-block .statistics-flex-container .right-statistics-block .statistics .statistics-list-text {
-    padding: 0 10px 0 25px;
+    padding: 0 10px 0 10px;
     margin-top: 24px;
   }
   .statistics-block .statistics-flex-container .right-statistics-block .statistics .statistics-list-text .statistics-list-number-item {
     font-size: 26px;
-    font-weight: 800;
+    font-weight: 700;
     color: #303881;
   }
   .statistics-block .statistics-flex-container .right-statistics-block .statistics .statistics-list-text .statistics-list-text-item {
@@ -154,22 +158,24 @@ body {
 @media (max-width: 768px) {
   .statistics-block {
     width: 100%;
-    height: 300px;
+    height: 330px;
   }
   .statistics-block .statistics-flex-container {
     width: 100%;
     height: 300px;
+    padding-top: 30px;
   }
   .statistics-block .statistics-flex-container .title-statistics-block {
     width: 30%;
   }
   .statistics-block .statistics-flex-container .title-statistics-block .vertical-line {
-    height: 150px;
+    height: 130px;
     width: 4px;
+    margin-right: 15px;
   }
   .statistics-block .statistics-flex-container .title-statistics-block .title-statistics {
-    font-size: 24px;
-    line-height: 35px;
+    font-size: 22px;
+    line-height: 30px;
   }
   .statistics-block .statistics-flex-container .right-statistics-block {
     display: flex;
@@ -181,15 +187,15 @@ body {
     border-radius: 30px;
     width: 330px;
     height: 100px;
-    margin-left: 20px;
+    margin-left: 4px;
   }
   .statistics-block .statistics-flex-container .right-statistics-block .statistics .statistics-list-text {
     margin-top: 24px;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 5px;
   }
   .statistics-block .statistics-flex-container .right-statistics-block .statistics .statistics-list-text .statistics-list-number-item {
     font-size: 22px;
-    font-weight: 800;
+    font-weight: 700;
     color: #303881;
   }
   .statistics-block .statistics-flex-container .right-statistics-block .statistics .statistics-list-text .statistics-list-text-item {
@@ -232,22 +238,45 @@ body {
 @media (max-width: 576px) {
   .statistics-block {
     width: 100%;
-    height: 170px;
+    height: 230px;
   }
   .statistics-block .statistics-flex-container {
     width: 100%;
-    height: 170px;
+    height: 190px;
+    padding-top: 0px;
   }
-  .statistics-block .statistics-flex-container .title-statistics-block {
-    width: 35%;
+  .statistics-block .statistics-flex-container .statistics-item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50px;
+  }
+  .statistics-block .statistics-flex-container .statistics-item2 {
+    width: 50px;
+    display: flex;
+    align-items: flex-end;
+    width: 50px;
+  }
+  .statistics-block .statistics-flex-container .statistics-item4 {
+    width: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .statistics-block .statistics-flex-container .statistics-item3 {
+    width: 50px;
+    display: flex;
+    align-items: flex-end;
   }
   .statistics-block .statistics-flex-container .title-statistics-block .vertical-line {
-    height: 100px;
-    width: 4px;
+    height: 85px;
+    width: 5px;
     margin: 0 10px;
   }
   .statistics-block .statistics-flex-container .title-statistics-block .title-statistics {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
   }
   .statistics-block .statistics-flex-container .right-statistics-block {
@@ -259,23 +288,35 @@ body {
   .statistics-block .statistics-flex-container .right-statistics-block .statistics {
     border-radius: 15px;
     width: 160px;
-    height: 50px;
+    height: 130px;
     margin-left: 0;
   }
   .statistics-block .statistics-flex-container .right-statistics-block .statistics .statistics-list-text {
-    margin-top: 10px;
-    padding: 0 0 0 10px;
+    margin-top: 15px;
+    padding: 0 5px 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
   }
   .statistics-block .statistics-flex-container .right-statistics-block .statistics .statistics-list-text .statistics-list-number-item {
-    font-size: 12px;
-    font-weight: 800;
-    color: #303881;
-  }
-  .statistics-block .statistics-flex-container .right-statistics-block .statistics .statistics-list-text .statistics-list-text-item {
-    font-size: 5px;
+    font-size: 20px;
     font-weight: 700;
     color: #303881;
-    line-height: 6px;
+    padding: 5px 5px 0;
+  }
+  .statistics-block .statistics-flex-container .right-statistics-block .statistics .statistics-list-text .statistics-list-text-item {
+    font-size: 7px;
+    font-weight: 700;
+    color: #303881;
+    line-height: 8px;
+  }
+  .statistics-block .statistics-flex-container .right-statistics-block .statistics .statistics-list-text .text-left {
+    text-align: left;
+    padding-left: 5px;
+  }
+  .statistics-block .statistics-flex-container .right-statistics-block .statistics .statistics-list-text .text-right {
+    text-align: right;
+    padding-right: 6px;
   }
   .statistics-block .statistics-flex-container .colors-blocks {
     margin-top: 10px;
@@ -289,7 +330,7 @@ body {
     height: 10px;
   }
   .statistics-block .statistics-flex-container .colors-blocks .color-block-two {
-    width: 25px;
+    width: 28px;
     height: 10px;
   }
   .statistics-block .statistics-flex-container .colors-blocks .color-block-three {
@@ -305,7 +346,7 @@ body {
     height: 10px;
   }
   .statistics-block .statistics-flex-container .colors-blocks .color-block-six {
-    width: 30px;
+    width: 25px;
     height: 10px;
   }
 }/*# sourceMappingURL=Statistics.media.css.map */

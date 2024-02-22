@@ -30,11 +30,7 @@ const Header = () => {
             <ul className="menu-list">
               <NavBar/>
              
-               <a 
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSft29BqYNoGaUdZSBBs-58PuJ-YEhK0BUnxFsm3qJDHN5CrNg/viewform?usp=sf_link"
-                  className="menu-link-button"
-                  target="_blank">ЗАЛИШИТИ ЗАЯВКУ
-                </a>
+               
               
             </ul>
           </nav>

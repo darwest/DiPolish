@@ -47,20 +47,20 @@ const PolishTest = ({isTestStarted, setIsTestStarted} : Props) => {
   const typesTests = [
     {
       id: 1,
-      name: "Квіз тест",
-      description: "Виберіть одну правильну відповідь",
+      name: "Тест на одну правильну відповідь",
+      description: "Вибір однієї правильної",
       element: <QuizTest onFinish={handleFinishTest} />,
     },
     {
       id: 2,
-      name: "Мульти тест",
-      description: "Декілька відповідей правильні",
+      name: "Тест на декілька правильних відповідей",
+      description: "Вибір декілька правильних",
       element: <MultiTest onFinish={handleFinishTest} />,
     },
     {
       id: 3,
       name: "Встановіть відповідність",
-      description: "Встановіть відповідність між словосполученнями",
+      description: "Встановлення відповідностей між словосполученнями",
       element: <AudioTest onFinish={handleFinishTest} />,
     },
   ];
@@ -89,12 +89,12 @@ const PolishTest = ({isTestStarted, setIsTestStarted} : Props) => {
         {!isTestStarted && !isTestFinished && (
           
           <p className="test-description">
-          <span> <h1 className="test-heading">Пробний модуль</h1></span>
+          <span> <h1 className="test-heading">ПРОБНИЙ МОДУЛЬ</h1></span>
            Пропонуємо Вам закріпити свої знання пройшовши невеличкий тест. Сам
            тест складатиметься із 3 частин:
-           <span className="text-orange"> Квізу, </span>
-           <span className="text-orange">Мульти</span> та
-           <span className="text-orange"> Відповідності</span>.
+           <span className="text-orange"> питання з однією правильною відповіддю</span>, 
+           <span className="text-orange"> з кількома</span> та
+           <span className="text-orange"> з'єднай відповідності</span>.
            <br />
            Після проходження одного блоку ви зможете перейти до наступного, коли
            всі блоки будуть пройдені тест буде завершений і ви отримаєте свій
@@ -109,7 +109,7 @@ const PolishTest = ({isTestStarted, setIsTestStarted} : Props) => {
             onClick={handlerStartTest}
             className="test-btn"
           >
-            Розпочати тест
+            РОЗПОЧАТИ
           </button>
         )}
 
@@ -145,7 +145,7 @@ const PolishTest = ({isTestStarted, setIsTestStarted} : Props) => {
               }}
               className="test-btn"
             >
-              Повернутися на головну сторінку
+              ПОВЕРНУТИСЬ НА ГОЛОВНУ
             </button>
           </div>
         )}
