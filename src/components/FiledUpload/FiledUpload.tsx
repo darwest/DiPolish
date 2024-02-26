@@ -6,7 +6,7 @@ const FileUpload = () => {
 а потім посилання видаляється з тіла документа.*/
   const handleUpload = () => {
 
-    const fileUrl = '/src/assets/img/шпаргалка.pdf';
+    const fileUrl = 'src/assets/img/шпаргалка.pdf';
     const fileName = 'шпаргалка.pdf';
 
     const link = document.createElement('a');

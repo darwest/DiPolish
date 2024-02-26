@@ -128,6 +128,7 @@
   .header {
     @include z-index(999);
     @include height-value(50px);
+    position: relative;
 
 
     & .active {
@@ -137,7 +138,7 @@
     .header-flex-container {
       @include flex-container(row, flex-end, flex-start);
       padding-top: 15px;
-      @include height-value(60px);
+      @include height-value(50px);
 
       .logo-block1 {
         border-left: 3px solid #fff;
@@ -167,17 +168,19 @@
         background-color: none;
         transition: all 0.5s ease;
         z-index: 1;
+      
         background-color: $main-background-blue;
         padding: 20px 40px;
-        border-radius: 10px;
-        opacity: 0.95;
-
+        border-radius: 0 0 10px 10px;
+        opacity: 1;
+        
         &.active {
           transition: all 0.5s ease;
           display: block;
           visibility: visible;
           position: absolute;
           margin-top: 28px;
+          width: 25%;
         }
 
         .menu-list {
@@ -322,7 +325,7 @@
           display: block;
           visibility: visible;
           position: absolute;
-          margin-top: 280px;
+          margin-top: 290px;
         }
         .menu-list {
 

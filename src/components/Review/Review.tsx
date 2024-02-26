@@ -57,6 +57,7 @@ const Review = () => {
                     <Swiper
                       className="swiper"
                       slidesPerView={1}
+                      
                     >
                       {reviews.map((r, i) => (
                         <SwiperSlide className="swiper-slide" key={"reviweImg" + i}>
