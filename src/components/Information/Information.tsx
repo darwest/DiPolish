@@ -1,10 +1,6 @@
 //Імпорт стилів
 import "./Information.scss"
 import "./Information.media.scss"
-//Імпорт іконок
-import CtaPhone from "../../assets/img/cta-phone-icon.png"
-import CtaGraf from "../../assets/img/cta-graf-icon.png"
-import CtaLoc from "../../assets/img/cta-loc-icon.png"
 //Створюємо функціональний компонент Information, який рендерить відповідні елементи
 const Information = () => {
     return (
@@ -13,17 +9,14 @@ const Information = () => {
                 <div className="info-flex-container">
                     <div className="section-info-blocks">
                         <div className="info-block">
-                            <img src={CtaGraf} alt="loading" className="icon-info" />
                             <h3 className="title-info">Графік</h3>
                             <p className="subtitle-info">за домовленістю</p>
                         </div>
                         <div className="info-block">
-                            <img src={CtaLoc} alt="loading" className="icon-info" />
                             <h3 className="title-info">Платформа</h3>
                             <p className="subtitle-info">Meet, Zoom</p>
                         </div>
                         <div className="info-block">
-                            <img src={CtaPhone} alt="loading" className="icon-info" />
                             <h3 className="title-info">Контакти</h3>
                             <div className="block-contact">
                                 <a href="tel:+380688896135" className="subtitle-info">+(380) 68-889-61-35</a>
