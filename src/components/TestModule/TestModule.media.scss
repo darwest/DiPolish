@@ -15,7 +15,7 @@
         padding: 10px;
 
         .title-test-module-block {
-          @include text-styles(50px, 800, $text-primary-color);
+          @include text-styles(40px, 700, $text-primary-color);
         }
 
         .subtitle-test-module-block {
@@ -54,8 +54,8 @@
         padding: 5px;
 
         .title-test-module-block {
-          @include text-styles(40px, 800, $text-primary-color);
-          line-height: 50px;
+          @include text-styles(35px, 700, $text-primary-color);
+          line-height: 45px;
         }
 
         .subtitle-test-module-block {
@@ -102,8 +102,8 @@
         padding: 2px;
 
         .title-test-module-block {
-          @include text-styles(34px, 800, $text-primary-color);
-          line-height: 40px;
+          @include text-styles(25px, 700, $text-primary-color);
+          line-height: 30px;
           margin-bottom: 8px;
         }
 
@@ -153,9 +153,9 @@
         padding: 2px;
 
         .title-test-module-block {
-          @include text-styles(24px, 800, $text-primary-color);
-          line-height: 40px;
-          margin-bottom: 3px;
+          @include text-styles(18px, 700, $text-primary-color);
+          line-height: 22px;
+          margin-bottom: 6px;
         }
 
         .subtitle-test-module-block {
@@ -205,7 +205,7 @@
         padding-bottom: 14px;
 
         .title-test-module-block {
-          @include text-styles(14px, 800, $text-primary-color);
+          @include text-styles(14px, 700, $text-primary-color);
           line-height: 20px;
           margin-bottom: 3px;
           letter-spacing: 0;

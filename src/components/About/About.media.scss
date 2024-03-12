@@ -2,81 +2,97 @@
 @import "../../scss/common/reset";
 @import "../../scss/common/variables";
 
-
 @import "../../scss/common/mixins";
 
 @media (max-width: 1200px) {
-.about-me-block {
-  @include width-height-value(100%, 930px);
-  background-color: #fff;
-  padding-bottom: 0px;
+  .about-me-block {
+    @include width-height-value(100%, 1200px);
+    background-color: #fff;
+    padding-bottom: 0px;
 
-
-  .about-me-flex-container {
-    background-color: $main-background-white;
-    border-radius: 30px;
-    @include width-height-value(100%, 930px);
-    @include flex-container(row, space-between, center);
-
-    .photo-about {
-        width: 50%;
-        .icon-di {
-            width: 100%;
-            margin-left: 20px;
-            margin-top: 60px;
-          }
-      
-        .text-info2 {
-          display: none;
-
-        
-        }
-      }
-   
-    .text-info {
-      display: flex;
-      flex-direction: column;
+    .text-title-about {
       text-align: right;
 
-      width: 44%;
       .p {
-        margin: 0;
+        margin: 5px 0 5px;
+
         .hejka {
           font-size: 32px;
           font-weight: 700;
-          color: $main-color1
+          color: $main-color1;
         }
       }
 
       .welcome-message {
-        font-size: 20px;
-        font-weight: 300;
-        color: #2F2F2F;
-        margin: 5px 0 0 0;
+        font-size: 19px;
+        color: $main-background-blue;
+
+        .span {
+          color: $text-color-yellow;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .about-me-flex-container {
+      background-color: $main-background-white;
+      border-radius: 30px;
+      @include width-height-value(100%, 970px);
+      @include flex-container(row-reverse, space-between, center);
+
+      .photo-about {
+        width: 50%;
+
+        .icon-di {
+          width: 100%;
+          margin-left: 20px;
+          margin-top: 60px;
+        }
+
+        .text-info2 {
+          display: none;
+
+        }
       }
 
-      .facts {
-        text-align: left;
-        @include flex-container(column, center, flex-end);
-        width: 100%;
-        .fact-block {
-          width: 95%;
-          border: 5px $text-color-yellow solid;
-          border-radius: 35px;
-          margin-top: 30px;
+      .text-info {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+
+        width: 44%;
+
+        .facts {
+          text-align: left;
+          @include flex-container(column, center, flex-start);
+          width: 100%;
+          margin-top: 55px;
 
           .title-facts-blocks {
-            @include text-styles(30px, 700, $text-color-yellow);
+            @include text-styles(20px, 700, $text-color-yellow);
             font-style: normal;
-            line-height: 44px;
-            margin: 15px 0 0 15px;
+            margin: 50px 0 0 15px;
           }
 
-          .facts-list {
+          .fact-block {
+            width: 95%;
+            border: 5px $text-color-yellow solid;
+            border-radius: 35px;
+            margin-top: 30px;
 
-            .facts-item {
-              @include text-styles(16px, 700, $main-color1);
-              line-height: 30px;
+            .title-facts-blocks {
+              @include text-styles(30px, 700, $text-color-yellow);
+              font-style: normal;
+              line-height: 44px;
+              margin: 15px 0 0 15px;
+            }
+
+            .facts-list {
+
+              .facts-item {
+                @include text-styles(16px, 700, $main-color1);
+                line-height: 30px;
+              }
             }
           }
         }
@@ -84,298 +100,363 @@
     }
   }
 }
-}
 
 @media (max-width: 992px) {
-    .about-me-block {
+  .about-me-block {
+    @include width-height-value(100%, 870px);
+    background-color: #fff;
+    padding-bottom: 0px;
+
+    .text-title-about {
+      text-align: right;
+
+      .p {
+        margin: 5px 0 5px;
+
+        .hejka {
+          font-size: 26px;
+          font-weight: 700;
+          color: $main-color1;
+        }
+      }
+
+      .welcome-message {
+        font-size: 17px;
+        color: $main-background-blue;
+
+        .span {
+          color: $text-color-yellow;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .about-me-flex-container {
+      background-color: $main-background-white;
+      border-radius: 30px;
       @include width-height-value(100%, 650px);
-      background-color: #fff;
-      padding-bottom: 0px;
-    
-    
-      .about-me-flex-container {
-        background-color: $main-background-white;
-        border-radius: 30px;
-        @include width-height-value(100%, 650px);
-        @include flex-container(row, space-between, center);
-    
-    
-       
-    .photo-about {
+      @include flex-container(row-reverse, space-between, center);
+
+
+      .photo-about {
         width: 50%;
+
         .icon-di {
-            width: 100%;
-            margin-left: 20px;
-            margin-top: 60px;
-          }
-      
+          width: 100%;
+          margin-left: 20px;
+          margin-top: 60px;
+        }
+
         .text-info2 {
           display: none;
 
-        
         }
       }
-   
-    
-        .text-info {
-          display: flex;
-          flex-direction: column;
-          text-align: right;
-    
-          width: 44%;
-          .p {
-            margin: 0;
-            .hejka {
-              font-size: 28px;
-              font-weight: 700;
-              color: $main-color1
+
+      .text-info {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+
+        width: 44%;
+
+        .p {
+          margin: 0;
+
+          .hejka {
+            font-size: 28px;
+            font-weight: 700;
+            color: $main-color1
+          }
+        }
+
+        .welcome-message {
+          font-size: 15px;
+          font-weight: 300;
+          color: #2F2F2F;
+          margin: 5px 0 0 0;
+        }
+
+        .facts {
+          text-align: left;
+          @include flex-container(column, center, flex-start);
+          width: 100%;
+          margin-top: 25px;
+
+          .title-facts-blocks {
+            @include text-styles(22px, 700, $text-color-yellow);
+            font-style: normal;
+            margin: 25px 0 0 15px;
+            line-height: 18px;
+          }
+          .fact-block-one{
+            margin-top: 0;
             }
-          }
-    
-          .welcome-message {
-            font-size: 15px;
-            font-weight: 300;
-            color: #2F2F2F;
-            margin: 5px 0 0 0;
-          }
-    
-          .facts {
-            text-align: left;
-            @include flex-container(column, center, flex-end);
+              
+          .fact-block {
             width: 100%;
-            .fact-block {
-              width: 100%;
-              border: 4px $text-color-yellow solid;
-              border-radius: 30px;
-              margin-top: 30px;
-    
-              .title-facts-blocks {
-                @include text-styles(24px, 700, $text-color-yellow);
-                font-style: normal;
-                line-height: 1px;
-                margin: 25px 0 0 15px;
-              }
-    
-              .facts-list {
-    
-                .facts-item {
-                  @include text-styles(12px, 700, $main-color1);
-                  line-height: 20px;
-                }
+            border: 4px $text-color-yellow solid;
+            border-radius: 30px;
+            margin-top: 20px;
+          .title-facts-blocks {
+              @include text-styles(24px, 700, $text-color-yellow);
+              font-style: normal;
+              line-height: 25px;
+              margin: 15px 0 0 15px;
+            }
+
+            .facts-list {
+
+              .facts-item {
+                @include text-styles(12px, 700, $main-color1);
+                line-height: 20px;
               }
             }
           }
         }
       }
     }
-    }
-    
+  }
+}
+
 @media (max-width: 768px) {
-    .about-me-block {
-      @include width-height-value(100%, 570px);
-      background-color: #fff;
-      padding-bottom: 0px;
-    
-    
-      .about-me-flex-container {
-        background-color: $main-background-white;
-        border-radius: 30px;
-        @include width-height-value(100%, 570px);
-        @include flex-container(row, space-between, center);
-    
-        
-       
-    .photo-about {
-        width: 50%;
+  .about-me-block {
+    @include width-height-value(100%, 820px);
+    background-color: #fff;
+    padding-bottom: 0px;
+
+    .text-title-about {
+      text-align: right;
+
+      .p {
+        margin: 5px 0 5px;
+
+        .hejka {
+          font-size: 22px;
+          font-weight: 700;
+          color: $main-color1;
+        }
+      }
+
+      .welcome-message {
+        font-size: 12px;
+        color: $main-background-blue;
+
+        .span {
+          color: $text-color-yellow;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .about-me-flex-container {
+      background-color: $main-background-white;
+      border-radius: 30px;
+      @include width-height-value(100%, 670px);
+      @include flex-container(row-reverse, space-between, center);
+
+
+      .photo-about {
+        width: 48%;
+
         .icon-di {
-            width: 100%;
-            margin-left: 0px;
-            margin-top: 20px;
-          }
-      
-        .text-info2 {
-          display: flex;
-          flex-direction: column;
-          text-align: left;
-    
           width: 100%;
-          .p {
-            margin: 0;
-            .hejka {
-              font-size: 22px;
-              font-weight: 700;
-              color: $main-color1
-            }
-          }
-    
-          .welcome-message {
-            font-size: 12px;
-            font-weight: 300;
-            color: #2F2F2F;
-            margin: 5px 0 0 0;
-          }
-        
+          margin-left: 0px;
+          margin-top: 20px;
         }
+
       }
-   
-        
-        .text-info {
-          display: flex;
-          flex-direction: column;
+
+      .text-info {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        width: 45%;
+
+        .facts {
           text-align: left;
-    
-          width: 47%;
-          .p {
-            display: none;
-            margin: 0;
-            .hejka {
-              font-size: 22px;
-              font-weight: 700;
-              color: $main-color1
+
+          .title-facts-blocks {
+            @include text-styles(18px, 700, $text-color-yellow);
+            font-style: normal;
+            line-height: 1px;
+            margin: 25px 0 0 15px;
+          }
+
+          @include flex-container(column, center, flex-start);
+          width: 100%;
+
+          .fact-block {
+            width: 95%;
+            border: 3px $text-color-yellow solid;
+            border-radius: 30px;
+            margin-top: 15px;
+
+            .title-facts-blocks {
+              @include text-styles(20px, 700, $text-color-yellow);
+              font-style: normal;
+              line-height: 22px;
+              margin: 15px 0 0 15px;
             }
-          }
-    
-          .welcome-message {
-            display: none;
-            font-size: 12px;
-            font-weight: 300;
-            color: #2F2F2F;
-            margin: 5px 0 0 0;
-          }
-    
-          .facts {
-            text-align: left;
-            @include flex-container(column, center, flex-end);
-            width: 100%;
-            .fact-block {
-              width: 100%;
-              border: 3px $text-color-yellow solid;
-              border-radius: 30px;
-              margin-top: 15px;
-    
-              .title-facts-blocks {
-                @include text-styles(20px, 700, $text-color-yellow);
-                font-style: normal;
-                line-height: 1px;
-                margin: 25px 0 0 15px;
-              }
-    
-              .facts-list {
-    
-                .facts-item {
-                  @include text-styles(10px, 700, $main-color1);
-                  line-height: 17px;
-                }
+
+            .facts-list {
+              padding-left: 15px;
+
+              .facts-item {
+                @include text-styles(10px, 700, $main-color1);
+                line-height: 17px;
               }
             }
           }
         }
       }
     }
-    }
-    
+  }
+}
+
 @media (max-width: 576px) {
-    .about-me-block {
-      @include width-height-value(100%, 370px);
-      background-color: #fff;
-      padding-bottom: 0px;
-    
-    
-      .about-me-flex-container {
-        background-color: $main-background-white;
-        border-radius: 30px;
-        @include width-height-value(100%, 370px);
-        @include flex-container(row-reverse, space-between, center);
-    
-        
-       
-    .photo-about {
+  .about-me-block {
+    @include width-height-value(100%, 540px);
+    background-color: #fff;
+    padding-bottom: 0px;
+
+    .text-title-about {
+      text-align: right;
+      position: relative;
+
+      .p {
+        margin: 5px 0 5px;
+
+        .hejka {
+          font-size: 18px;
+          font-weight: 700;
+          color: $main-color1;
+        }
+      }
+
+      .welcome-message {
+        font-size: 9px;
+        position: absolute;
+        font-weight: 600;
+        color: $main-background-blue;
+
+        .span {
+          color: $text-color-yellow;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .about-me-flex-container {
+      background-color: $main-background-white;
+      border-radius: 30px;
+      @include width-height-value(100%, 470px);
+      @include flex-container(row-reverse, space-between, center);
+
+
+      .photo-about {
         width: 50%;
+
         .icon-di {
-            width: 100%;
-            margin-left: 0px;
-            margin-top: 20px;
-          }
-      
+          width: 100%;
+          margin-left: 0px;
+          margin-top: 20px;
+        }
+
         .text-info2 {
           display: flex;
           flex-direction: column;
           text-align: right;
-    
+
           width: 100%;
+
           .p {
             margin: 0;
+
             .hejka {
               font-size: 18px;
               font-weight: 700;
               color: $main-color1
             }
           }
-    
+
           .welcome-message {
             font-size: 10px;
             font-weight: 300;
             color: #2F2F2F;
             margin: 5px 0 0 0;
           }
-        
+
         }
       }
-   
-        
-        .text-info {
-          display: flex;
-          flex-direction: column;
+
+      .text-info {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        width: 38%;
+
+        .p {
+          display: none;
+          margin: 0;
+
+          .hejka {
+            font-size: 22px;
+            font-weight: 700;
+            color: $main-color1
+          }
+        }
+
+        .welcome-message {
+          display: none;
+          font-size: 12px;
+          font-weight: 300;
+          color: #2F2F2F;
+          margin: 5px 0 0 0;
+        }
+
+        .facts {
+          margin-top: 110px;
           text-align: left;
-    
-          width: 47%;
-          .p {
-            display: none;
-            margin: 0;
-            .hejka {
-              font-size: 22px;
-              font-weight: 700;
-              color: $main-color1
+          @include flex-container(column, center, flex-start);
+          width: 100%;
+
+          .title-facts-blocks {
+            @include text-styles(10px, 700, $text-color-yellow);
+            font-style: normal;
+            line-height: 12px;
+            margin: 15px 0 0 15px;
+            padding-right: 0;
+          }
+
+          .fact-block {
+            width: 95%;
+            border: 2px $text-color-yellow solid;
+            border-radius: 20px;
+            margin-top: 8px;
+
+            .title-facts-blocks {
+              @include text-styles(10px, 700, $text-color-yellow);
+              font-style: normal;
+              line-height: 12px;
+              margin: 7px 0 0 5px;
             }
-          }
-    
-          .welcome-message {
-            display: none;
-            font-size: 12px;
-            font-weight: 300;
-            color: #2F2F2F;
-            margin: 5px 0 0 0;
-          }
-    
-          .facts {
-            margin-top: 55px;
-            text-align: left;
-            @include flex-container(column, center, flex-end);
-            width: 100%;
-            .fact-block {
-              width: 95%;
-              border: 2px $text-color-yellow solid;
-              border-radius: 20px;
-              margin-top: 8px;
-    
-              .title-facts-blocks {
-                @include text-styles(12px, 700, $text-color-yellow);
-                font-style: normal;
-                line-height: 1px;
-                margin: 15px 0 0 15px;
-              }
-    
-              .facts-list {
-                 padding: 0 0 0 15px;
-                 margin: 10px 0;
-                .facts-item {
-                  @include text-styles(6px, 700, $main-color1);
-                  line-height: 10px;
-                }
+
+            .facts-list {
+              padding: 0 0 0 10px;
+              margin: 7px 0;
+
+              .facts-item {
+                @include text-styles(6px, 700, $main-color1);
+                line-height: 10px;
               }
             }
           }
         }
       }
     }
-    }
+  }
+}
+

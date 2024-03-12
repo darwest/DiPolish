@@ -34,12 +34,7 @@ const Test = () => {
       <div className="hint">
         <div className="container">
           <div className="hint-content">
-            <p className="hint-text">
-              Важко запам'ятати нові конструкції або з'явилися труднощі ? Не
-              біда, тримай нашу шпаргалочку, яка завжди підкаже тобі правильну
-              відповідь
-            </p>
-            <FileUpload />
+            <a className="hint-text" target="_blank" href="https://drive.google.com/drive/folders/1dwnZBXava_GAwPqam-oMKlASFNdfmGcj?usp=sharing">Хочу конспект з уроку!</a>
           </div>
         </div>
       </div>

@@ -1,1 +1,426 @@
-/*# sourceMappingURL=PolishTest.css.map */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1171px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 638px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 420px;
+    padding: 0 5px;
+    margin: 0 auto;
+  }
+}
+.test-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 15px;
+}
+
+.test-heading {
+  text-align: center;
+  color: #303881;
+  font-weight: 900;
+  font-size: 2.6rem;
+  margin: 0 0 40px;
+}
+
+.test-description {
+  text-align: center;
+  font-size: 1.35rem;
+  width: 70%;
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .test-description {
+    font-size: 1rem;
+    width: 70%;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  .test-heading {
+    font-size: 2rem;
+  }
+  .test-btn {
+    background-color: #F66E0B;
+    cursor: pointer;
+    color: white;
+    font-size: 20px !important;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    padding: 10px !important;
+    transition: all 0.4s ease;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+  }
+  .hint {
+    background-color: #303881;
+    color: white;
+    padding: 30px 15px !important;
+    margin-top: 80px !important;
+  }
+  .hint-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: auto;
+  }
+  .hint-text {
+    text-align: center;
+    font-size: 20px !important;
+    font-weight: 500;
+    width: 100%;
+  }
+  .hint-btn {
+    background-color: #F66E0B;
+    border: none;
+    border-radius: 22px !important;
+    padding: 15px !important;
+    font-size: 20px !important;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+  .hint-btn:hover {
+    border-color: #F66E0B;
+    background-color: transparent;
+    color: #fff;
+    color: #F66E0B;
+  }
+  .title {
+    font-size: 30px !important;
+    text-align: center !important;
+  }
+  .test-target {
+    font-size: 15px !important;
+    margin-bottom: 20px !important;
+  }
+  .test-buttons {
+    display: flex;
+    gap: 15px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .test-buttons > button {
+    background-color: #F66E0B;
+    color: white;
+    border: transparent;
+    margin-top: 10px;
+    border-radius: 15px;
+    font-size: 15px !important;
+    padding: 8px 15px 9px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+  }
+  .test {
+    width: 400px !important;
+  }
+  .test-word-match-input {
+    width: 275px !important;
+    padding: 5px !important;
+  }
+  .test-btn-finish {
+    padding: 10px 15px !important;
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 576px) {
+  .test-word-match-input {
+    width: 270px !important;
+  }
+  .test-btn-finish {
+    padding: 10px 15px !important;
+    font-size: 15px !important;
+    width: 160px !important;
+    margin-left: 5px !important;
+  }
+  .test-word-match-text {
+    font-size: 18px !important;
+  }
+  .title {
+    font-size: 18px !important;
+  }
+  .test {
+    width: 250px !important;
+    margin-left: 40px !important;
+  }
+  .test-word-match-text {
+    margin-left: 50px !important;
+    font-size: 14px !important;
+  }
+  .test-word-match-input {
+    padding: 2px !important;
+    width: 160px !important;
+  }
+  .test-btn-finish {
+    padding: 8px 25px !important;
+    font-size: 12px !important;
+    font-weight: 600;
+  }
+  .hint-btn {
+    padding: 8px 15px !important;
+  }
+  .test-description {
+    font-size: 10px !important;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+  .test-heading {
+    font-size: 22px;
+    margin: 0 0 8px 0;
+  }
+  .test-btn {
+    font-size: 14px !important;
+  }
+  .hint {
+    margin-top: 135px !important;
+    padding: 30px 0 30px !important;
+  }
+  .hint-text {
+    font-size: 12px !important;
+    margin-bottom: 5px !important;
+  }
+  .hint-btn {
+    font-size: 14px !important;
+    border-radius: 10px !important;
+  }
+  .test-element {
+    width: 60% !important;
+  }
+  .test-wrapper {
+    padding: 20px 0 0 0 !important;
+  }
+  .test-target {
+    font-size: 10px !important;
+  }
+  .title {
+    margin-bottom: 8px;
+  }
+  .question {
+    font-size: 11px;
+    margin-top: 0;
+  }
+  .test-variants {
+    gap: 15px !important;
+    font-size: 11px !important;
+    margin: 5px 0 !important;
+  }
+  .test-buttons {
+    display: flex;
+    gap: 15px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .test-buttons > button {
+    margin-top: 15px !important;
+    border-radius: 10px !important;
+    font-weight: 600;
+    font-size: 9px !important;
+    padding: 8px 15px 9px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+  }
+  .test-buttons .test-btn-next {
+    background-color: #303881;
+    color: white;
+    font-size: 8px !important;
+    font-family: "Montserrat", sans-serif;
+  }
+  .test-result-heading {
+    font-size: 12px;
+  }
+  .level {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+  .test-result-list {
+    gap: 12px !important;
+  }
+  .result-incorrect {
+    padding: 8px !important;
+    font-size: 10px !important;
+  }
+  .test-btn {
+    font-size: 12px !important;
+    padding: 8px 15px !important;
+    border-radius: 10px !important;
+  }
+  .result-correct {
+    padding: 8px !important;
+    font-size: 10px !important;
+  }
+}
+.test-video {
+  margin-bottom: 0 !important;
+}
+
+.test-btn {
+  background-color: #F66E0B;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  padding: 15px;
+  transition: all 0.4s ease;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.test-btn:hover {
+  border-color: #F66E0B;
+  background-color: transparent;
+  color: #F66E0B;
+}
+
+.test-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 110%;
+}
+
+.test-element {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.test-variants {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  align-items: flex-start;
+}
+.test-variants input {
+  cursor: pointer;
+}
+
+.test-buttons {
+  display: flex;
+  gap: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+.test-buttons > button {
+  background-color: #F66E0B;
+  color: white;
+  border: transparent;
+  margin-top: 10px;
+  border-radius: 15px;
+  font-size: 1rem;
+  padding: 8px 15px 9px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+.test-buttons > button:hover {
+  background-color: #303881;
+}
+.test-buttons .test-btn-next {
+  background-color: #303881;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.test-audio-text {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #F66E0B;
+  font-size: 1.2rem;
+  width: 600px;
+}
+
+.test-audio-input {
+  margin: 20px 0;
+  padding: 5px 10px;
+  border: 2px solid #F66E0B;
+  outline: none;
+  width: 100%;
+}
+
+.test-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.test-result .test-result-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 500px;
+  overflow: auto;
+  margin-bottom: 50px;
+  padding: 0 15px;
+}
+.test-result .test-result-list .test-result-element {
+  list-style: none;
+  padding: 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+.test-result .test-result-list .result-correct {
+  color: green;
+}
+.test-result .test-result-list .result-correct:hover {
+  color: white;
+  background-color: green;
+}
+.test-result .test-result-list .result-incorrect {
+  color: red;
+}
+.test-result .test-result-list .result-incorrect:hover {
+  color: white;
+  background-color: red;
+}
+
+.test-target {
+  margin-bottom: 45px;
+  font-weight: 600;
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center;
+  color: #F66E0B;
+}
+
+.text-orange {
+  color: #F66E0B;
+  font-weight: 900;
+}/*# sourceMappingURL=PolishTest.css.map */

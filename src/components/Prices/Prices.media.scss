@@ -50,13 +50,15 @@
 @media (max-width: 992px) {
    
   .price-section{
-    @include width-height-value(100%, 550px);
+    @include width-height-value(100%, 500px);
     .price-flex-container{
       @include width-height-value(100%, 100%);
   
       .title-price-section{
-        @include text-styles(24px, 700, $main-color2);
+        @include text-styles(28px, 700, $main-color2);
         margin: 55px 0 0;
+        padding-bottom: 35px;
+
       }
       .subtitle-price-section{
         @include text-styles(22px, 300, #2F2F2F);
@@ -71,6 +73,7 @@
           .title-price-block{
             @include text-styles(20px, 500, $text-primary-color);
             margin: 50px 0 30px;
+            
           }
           .icon-price-block{
             @include width-height-value(80px, 70px);
@@ -169,6 +172,8 @@
       .title-price-section{
         @include text-styles(18px, 700, $main-color2);
         margin: 40px 0 0;
+        padding-bottom: 20px;
+
       }
       .subtitle-price-section{
         @include text-styles(10px, 300, #2F2F2F);

@@ -45,13 +45,13 @@ const Footer = () => {
               <div className="block-info">
 
                 <p className="info-title">Соц. мережі</p>
-                <a className="link" href="https://instagram.com/hatsyk.polish?igshid=YTQwZjQ0NmI0OA==">
+                <a className="link"  target="_blank" href="https://www.instagram.com/hatsyk.diana?igsh=MWxtdXo0NXo1azE1Yw==">
                   Instagram
                 </a>
-                <a className="link" href="http://t.me/d_hatsykk">
+                <a className="link" target="_blank"  href="http://t.me/d_hatsykk">
                  Telegram
                 </a>
-                <a className="link" href="https://www.tiktok.com/@di_polishh?_t=8hvbMUGTWwX&_r=1">
+                <a className="link" target="_blank" href="https://www.tiktok.com/@di_polishh?_t=8hvbMUGTWwX&_r=1">
                   Tik Tok
                 </a>
                 

@@ -23,8 +23,9 @@
   font-size: 42px;
   font-weight: 700;
   color: #F66E0B;
-  margin: 60px 0 5px;
+  margin: 80px 0 5px;
   text-align: left;
+  padding-bottom: 50px;
 }
 .price-section .price-flex-container .subtitle-price-section {
   font-size: 22px;

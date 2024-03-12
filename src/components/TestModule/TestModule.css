@@ -41,11 +41,10 @@
   padding: 15px;
 }
 .test-module-block .test-module-flex-container .content-test-module-block .title-test-module-block {
-  font-size: 55px;
-  font-weight: 800;
+  font-size: 45px;
+  font-weight: 700;
   color: #fff;
-  line-height: 81.6px;
-  letter-spacing: 2.04px;
+  line-height: 57.6px;
   text-align: center;
   margin: 0 0 5px 0;
 }

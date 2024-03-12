@@ -34,9 +34,8 @@
       padding: 15px;
 
       .title-test-module-block {
-        @include text-styles(55px, 800, $text-primary-color);
-        line-height: 81.6px;
-        letter-spacing: 2.04px;
+        @include text-styles(45px, 700, $text-primary-color);
+        line-height: 57.6px;
         text-align: center;
         margin: 0 0 5px 0;
       }

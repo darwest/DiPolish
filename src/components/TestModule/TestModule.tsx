@@ -13,13 +13,12 @@ const TestModule = () => {
         <h3 className="reference-text">ПОЛЬСЬКА МОВА ЗІ МНОЮ - ЦЕ ЛЕГКО!</h3>
         <div className="test-module-flex-container">
           <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: .8, delay: .2}} className="content-test-module-block">
-            <h2 className="title-test-module-block">ПРОБНИЙ МОДУЛЬ</h2>
+            <h2 className="title-test-module-block">ХОЧЕШ ЗРОЗУМІТИ ЯКИЙ Я ВИКЛАДАЧ?</h2>
             <h3 className="subtitle-test-module-block">
-             ХОЧЕШ ЗРОЗУМІТИ ЯКИЙ Я ВИКЛАДАЧ?
+             ТОДІ ПРОЙДИ ПРОБНИЙ МОДУЛЬ
             </h3>
             <p className="text-test-module-block">
-              Тоді уяви, що в нас з тобою перше заняття. Розпочнемо з теорії. Спробуй подивитись відеоурок до кінця:) Після вивчення матеріалу, на тебе чекає тестування, яке допоможе закріпити нові знання. І на завершення модуля ти вже побачиш перші результати!
-            </p>
+            Уяви, що в нас з тобою перше заняття. Переглянь відеоурок та вивчи невеличкий матеріал. Після чого, на тебе чекає тестування, яке допоможе закріпити нові знання. І на завершення модуля ти вже побачиш перші результати!            </p>
             <h5 className="link-button-try">
             <Link className="button-try" to={"/test"}>
               

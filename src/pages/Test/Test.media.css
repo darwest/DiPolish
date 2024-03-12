@@ -51,6 +51,9 @@
     font-size: 0.7rem;
     padding: 5px;
   }
+  .hint {
+    padding: 30px 0 30px;
+  }
   .hint .container {
     margin: 0 auto;
   }

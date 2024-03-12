@@ -39,6 +39,7 @@
                     margin-bottom: 8px;
                     @include text-styles(34px, 700, $text-primary-color);
                     line-height: 45px;
+                    
                     word-wrap: break-word;
 
                 }
@@ -95,9 +96,10 @@
                 padding-right: 10px;
                 @include text-styles(32px, 700, $text-primary-color);
                 line-height: 48px;
-                width: 60%;
+                width: 60%; 
                 text-align: right;
                 transform: skewY(5deg);
+
             }
         }
     }

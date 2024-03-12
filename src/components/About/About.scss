@@ -5,27 +5,51 @@
 
 
   .about-me-block {
-    @include width-height-value(100%, 1100px);
+    @include width-height-value(100%, 1500px);
     background-color: #fff;
     padding-bottom: 70px;
 
+    .text-title-about {
+      text-align: right;
+
+      .p {
+
+        .hejka {
+          font-size: 42px;
+          font-weight: 700;
+          color: $main-color1;
+        }
+      }
+
+      .welcome-message {
+        font-size: 27px;
+        font-weight: 500;
+        color: $main-background-blue;
+          .span{
+          color: $text-color-yellow;
+          font-weight: 500;
+        }
+      }
+    }
 
     .about-me-flex-container {
       background-color: $main-background-white;
       border-radius: 30px;
-      @include width-height-value(100%, 1100px);
-      @include flex-container(row, space-between, center);
+      @include width-height-value(100%, 1200px);
+      @include flex-container(row-reverse, space-between, center);
 
       .photo-about {
         width: 50%;
+
         .icon-di {
           width: 100%;
           margin-left: 30px;
         }
+
         .text-info2 {
           display: none;
 
-        
+
         }
       }
 
@@ -36,33 +60,32 @@
 
         width: 40%;
 
-        .p {
-          margin: 0;
 
-          .hejka {
-            font-size: 42px;
-            font-weight: 700;
-            color: $main-color1
-          }
-        }
-
-        .welcome-message {
-          font-size: 22px;
-          font-weight: 300;
-          color: #2F2F2F;
-          margin: 5px 0 0 0;
-        }
 
         .facts {
+          padding: 0 10px 0;
+
           text-align: left;
-          @include flex-container(column, center, flex-end);
+          @include flex-container(column, center, flex-start);
           width: 100%;
+         .fact-block-one{
+          margin-top: 0;
+         }
+          .title-facts-blocks {
+            @include text-styles(30px, 700, $text-color-yellow);
+            font-style: normal;
+            line-height: 44px;
+            margin: 20px 0 0 15px;
+            padding-right: 10px;;
+          }
 
           .fact-block {
             width: 98%;
             border: 5px $text-color-yellow solid;
             border-radius: 40px;
             margin-top: 30px;
+            text-align: left;
+            padding: 0 10px 0;
 
             .title-facts-blocks {
               @include text-styles(40px, 700, $text-color-yellow);

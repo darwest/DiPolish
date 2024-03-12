@@ -44,6 +44,7 @@
 }
 
 .test-wrapper {
+  height: 100%;
   padding: 90px 0 0px;
   font-family: "Montserrat", sans-serif;
 }
@@ -75,7 +76,9 @@
   background-color: #303881;
   color: white;
   padding: 40px 15px;
-  margin-top: 230px;
+  margin-top: 300px;
+  position: absolute;
+  width: 100%;
 }
 
 .hint-content {
@@ -91,6 +94,11 @@
   font-size: 24px;
   font-weight: 500;
   width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+.hint-text:hover {
+  color: #F66E0B;
 }
 
 .hint-btn {

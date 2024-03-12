@@ -272,11 +272,11 @@ body {
   }
   .statistics-block .statistics-flex-container .title-statistics-block .vertical-line {
     height: 85px;
-    width: 5px;
-    margin: 0 10px;
+    width: 4px;
+    margin: 0 8px;
   }
   .statistics-block .statistics-flex-container .title-statistics-block .title-statistics {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
   }
   .statistics-block .statistics-flex-container .right-statistics-block {

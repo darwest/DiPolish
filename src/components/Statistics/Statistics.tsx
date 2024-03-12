@@ -35,8 +35,8 @@ const Statistics = () => {
                   </div>
                 </motion.div>
                 <motion.div initial={{y: -100, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: .5, delay: 0.5}} className="statistics-item3">
-                  <div className="statistics-list-number-item ">B2+</div>
-                  <div className="statistics-list-text-item text-right">рівень знань</div>
+                  <div className="statistics-list-number-item ">9</div>
+                  <div className="statistics-list-text-item text-right">експертів у команді</div>
                 </motion.div>
                 
               </div>

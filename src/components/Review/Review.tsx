@@ -42,10 +42,9 @@ const Review = () => {
         <div className="container">
           <div className="reviews-flex-container">
             <div className="title-block">
-              <h2 className="title-reviews-block">ВІДГУКИ ПРО ЗАНЯТТЯ</h2>
+              <h2 className="title-reviews-block">ВІДГУКИ МОЇХ УЧНІВ</h2>
               <p className="subtitle-reviews-block">
-                найцінніші докази моєї праці
-                <br />- це мої відгуки
+              — це найцінніші докази моєї праці.
               </p>
             </div>
             <div className="banner-reviews-block">

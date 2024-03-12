@@ -22,7 +22,6 @@ const Prices = () => {
                     >
                         ЩО ПО ЦІНАХ?
                     </motion.h2>
-                    <h2 className="subtitle-price-section">jakość ma swoją cenę</h2>
 
                     <div className="price-blocks-container">
                         <motion.div

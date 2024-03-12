@@ -11,8 +11,8 @@
     padding: 10px;
   }
   .test-module-block .test-module-flex-container .content-test-module-block .title-test-module-block {
-    font-size: 50px;
-    font-weight: 800;
+    font-size: 40px;
+    font-weight: 700;
     color: #fff;
   }
   .test-module-block .test-module-flex-container .content-test-module-block .subtitle-test-module-block {
@@ -52,10 +52,10 @@
     padding: 5px;
   }
   .test-module-block .test-module-flex-container .content-test-module-block .title-test-module-block {
-    font-size: 40px;
-    font-weight: 800;
+    font-size: 35px;
+    font-weight: 700;
     color: #fff;
-    line-height: 50px;
+    line-height: 45px;
   }
   .test-module-block .test-module-flex-container .content-test-module-block .subtitle-test-module-block {
     font-size: 18px;
@@ -103,10 +103,10 @@
     padding: 2px;
   }
   .test-module-block .test-module-flex-container .content-test-module-block .title-test-module-block {
-    font-size: 34px;
-    font-weight: 800;
+    font-size: 25px;
+    font-weight: 700;
     color: #fff;
-    line-height: 40px;
+    line-height: 30px;
     margin-bottom: 8px;
   }
   .test-module-block .test-module-flex-container .content-test-module-block .subtitle-test-module-block {
@@ -156,11 +156,11 @@
     padding: 2px;
   }
   .test-module-block .test-module-flex-container .content-test-module-block .title-test-module-block {
-    font-size: 24px;
-    font-weight: 800;
+    font-size: 18px;
+    font-weight: 700;
     color: #fff;
-    line-height: 40px;
-    margin-bottom: 3px;
+    line-height: 22px;
+    margin-bottom: 6px;
   }
   .test-module-block .test-module-flex-container .content-test-module-block .subtitle-test-module-block {
     font-size: 11px;
@@ -212,7 +212,7 @@
   }
   .test-module-block .test-module-flex-container .content-test-module-block .title-test-module-block {
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 700;
     color: #fff;
     line-height: 20px;
     margin-bottom: 3px;
