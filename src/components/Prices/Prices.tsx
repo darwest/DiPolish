@@ -11,7 +11,7 @@ import Sm from "../../assets/img/sm.png";
 //Створюємо компонент Prices який рендерить секцію цін, яка містить різні блоки цін
 const Prices = () => {
     return (
-        <section  id="4" className="price-section">
+        <section id="4" className="price-section">
             <div className="container">
                 <div className="price-flex-container">
                     <motion.h2

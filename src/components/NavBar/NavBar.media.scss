@@ -19,20 +19,23 @@
       @include text-styles(16px, 400, $text-primary-color);
     }
   }
-  .menu-list-footer{
-    .navbar-item-f{
+
+  .menu-list-footer {
+    .navbar-item-f {
       color: #d1d1d1;
       text-decoration: none;
       margin-bottom: 10px;
-      .navbar-link-f{
+
+      .navbar-link-f {
         color: #d1d1d1;
-                    text-decoration: none;
-                    margin-bottom: 10px;
-                    font-size: 16px;
+        text-decoration: none;
+        margin-bottom: 10px;
+        font-size: 16px;
       }
     }
   }
 }
+
 @media (max-width: 992px) {
   .navbar-item {
     margin-right: 12px;
@@ -51,16 +54,18 @@
       @include text-styles(13px, 400, $text-primary-color);
     }
   }
-  .menu-list-footer{
-    .navbar-item-f{
+
+  .menu-list-footer {
+    .navbar-item-f {
       color: #d1d1d1;
       text-decoration: none;
       margin-bottom: 5px;
-      .navbar-link-f{
+
+      .navbar-link-f {
         color: #d1d1d1;
-                    text-decoration: none;
-                    margin-bottom: 0px;
-                    font-size: 12px;
+        text-decoration: none;
+        margin-bottom: 0px;
+        font-size: 12px;
       }
     }
   }
@@ -87,16 +92,18 @@
       margin: 0px 0;
     }
   }
-  .menu-list-footer{
-    .navbar-item-f{
+
+  .menu-list-footer {
+    .navbar-item-f {
       color: #d1d1d1;
       text-decoration: none;
       margin-bottom: 0px;
-      .navbar-link-f{
+
+      .navbar-link-f {
         color: #d1d1d1;
-                    text-decoration: none;
-                    margin-bottom: 0px;
-                    font-size: 10px;
+        text-decoration: none;
+        margin-bottom: 0px;
+        font-size: 10px;
       }
     }
   }
@@ -111,16 +118,18 @@
       @include text-styles(10px, 400, $text-primary-color);
     }
   }
-  .menu-list-footer{
-    .navbar-item-f{
+
+  .menu-list-footer {
+    .navbar-item-f {
       color: #d1d1d1;
       text-decoration: none;
       margin-bottom: 0px;
-      .navbar-link-f{
+
+      .navbar-link-f {
         color: #d1d1d1;
-                    text-decoration: none;
-                    margin-bottom: 0px;
-                    font-size: 10px;
+        text-decoration: none;
+        margin-bottom: 0px;
+        font-size: 10px;
       }
     }
   }

@@ -18,49 +18,49 @@ const Footer = () => {
               <div className="logo-block1">
                 <div className="logo-block">
                   <h1 className="logo">Hatsyk.polish</h1>
-                  
+
                 </div>
-              
+
               </div>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSft29BqYNoGaUdZSBBs-58PuJ-YEhK0BUnxFsm3qJDHN5CrNg/viewform?usp=sf_link"
                 className="banner-button"
-                >
+              >
                 ЗАЛИШИТИ ЗАЯВКУ
               </a>
               <div className="socnetworks-link">
 
-                
+
               </div>
             </div>
 
             <nav className="menu-block">
               <div className="block-info">
                 <p className="info-title">Контакти</p>
-                
-                  <a className="link" href="tel:+380688896135" >+(380) 68-889-61-35</a>
-                  <a className="link" href="mailto:gacikdp@gmail.com">gacikdp@gmail.com</a>
-               
+
+                <a className="link" href="tel:+380688896135" >+(380) 68-889-61-35</a>
+                <a className="link" href="mailto:gacikdp@gmail.com">gacikdp@gmail.com</a>
+
               </div>
               <div className="block-info">
 
                 <p className="info-title">Соц. мережі</p>
-                <a className="link"  target="_blank" href="https://www.instagram.com/hatsyk.diana?igsh=MWxtdXo0NXo1azE1Yw==">
+                <a className="link" target="_blank" href="https://www.instagram.com/hatsyk.diana?igsh=MWxtdXo0NXo1azE1Yw==">
                   Instagram
                 </a>
-                <a className="link" target="_blank"  href="http://t.me/d_hatsykk">
-                 Telegram
+                <a className="link" target="_blank" href="http://t.me/d_hatsykk">
+                  Telegram
                 </a>
                 <a className="link" target="_blank" href="https://www.tiktok.com/@di_polishh?_t=8hvbMUGTWwX&_r=1">
                   Tik Tok
                 </a>
-                
+
               </div>
               <div className="block-info">
-              <p className="info-title">Меню</p>
-              <ul className="menu-list-footer">
-                <NavBar />
-              </ul>
+                <p className="info-title">Меню</p>
+                <ul className="menu-list-footer">
+                  <NavBar />
+                </ul>
               </div>
             </nav>
           </div>

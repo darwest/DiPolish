@@ -6,12 +6,12 @@ import "./NavBar.scss"
 import "./NavBar.media.scss"
 
 const NavBar = () => {
-  const location = useLocation(); 
-  const onHomePage = location.pathname === '/'; 
+  const location = useLocation();
+  const onHomePage = location.pathname === '/';
 
   const myLinks = [
-    { value: "Головна",  to: "/", type: "routerLink" },
-    { value: "Досягнення", to: "7", type: "scrollLink" }, 
+    { value: "Головна", to: "/", type: "routerLink" },
+    { value: "Досягнення", to: "7", type: "scrollLink" },
     { value: "Про мене", to: "2", type: "scrollLink" },
     { value: "Відгуки", to: "8", type: "scrollLink" },
     { value: "Пробний", to: "3", type: "scrollLink" },

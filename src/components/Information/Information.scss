@@ -7,6 +7,7 @@
   .info-flex-container {
     @include width-height-value(100%, 1000px);
     @include flex-container(column, center, center);
+
     .section-info-blocks {
       @include flex-container(row, stretch, stretch);
 
@@ -42,6 +43,7 @@
       margin-top: 80px;
       @include flex-container(row, space-between, center);
       border: $main-color2 solid 1px;
+
       .block-waiting-call {
         @include flex-container(row, center, center);
         @include width-height-value(370px, 152px);
@@ -67,4 +69,3 @@
     }
   }
 }
-

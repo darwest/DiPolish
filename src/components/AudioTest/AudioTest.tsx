@@ -24,7 +24,7 @@ const WordMatchTest: React.FC<WordMatchTestProps> = ({ onFinish }) => {
     { id: 7, correctAnswer: "Є" },
     { id: 8, correctAnswer: "Б" },
     { id: 9, correctAnswer: "Д" },
-    
+
   ]);
 
   const [selectedAnswers, setSelectedAnswers] = useState<Array<string | null>>(
@@ -51,14 +51,14 @@ const WordMatchTest: React.FC<WordMatchTestProps> = ({ onFinish }) => {
   };
   const confirmFinishTest = () => {
     const results: Array<ResultAnswerType> = [];
-  
+
     wordMatchQuestionsList.forEach((question, index) => {
       const userAnswer = selectedAnswers[index];
-  
+
       // Ця перевірка гарантує, що userAnswer не є null
       if (userAnswer !== null) {
         const isCorrect = question.correctAnswer === userAnswer;
-  
+
         results.push({
           id: question.id,
           correctAnswer: question.correctAnswer,
@@ -68,11 +68,11 @@ const WordMatchTest: React.FC<WordMatchTestProps> = ({ onFinish }) => {
         });
       }
     });
-  
+
     onFinish(results);
     setIsConfirmationModalOpen(false); // Закриття модального вікна після завершення тесту
   };
-  
+
   return (
     <div className="test-e">
       <div>

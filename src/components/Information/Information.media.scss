@@ -6,6 +6,7 @@
 
     .info-flex-container {
       @include width-height-value(100%, 900px);
+
       .section-info-blocks {
         .info-block {
           @include width-height-value(280px, 355px);
@@ -35,6 +36,7 @@
 
       .section-waiting-call {
         margin-top: 70px;
+
         .block-waiting-call {
           @include width-height-value(290px, 152px);
 
@@ -54,12 +56,14 @@
     }
   }
 }
+
 @media (max-width: 992px) {
   .info-block {
     @include width-height-value(100%, 700px);
 
     .info-flex-container {
       @include width-height-value(100%, 700px);
+
       .section-info-blocks {
         .info-block {
           @include width-height-value(210px, 290px);
@@ -89,6 +93,7 @@
 
       .section-waiting-call {
         margin-top: 70px;
+
         .block-waiting-call {
           @include width-height-value(220px, 100px);
 
@@ -108,12 +113,14 @@
     }
   }
 }
+
 @media (max-width: 768px) {
   .info-block {
     @include width-height-value(100%, 500px);
 
     .info-flex-container {
       @include width-height-value(100%, 500px);
+
       .section-info-blocks {
         .info-block {
           @include width-height-value(170px, 220px);
@@ -143,6 +150,7 @@
 
       .section-waiting-call {
         margin-top: 50px;
+
         .block-waiting-call {
           @include width-height-value(175px, 80px);
 
@@ -162,12 +170,14 @@
     }
   }
 }
+
 @media (max-width: 576px) {
   .info-block {
     @include width-height-value(100%, 250px);
 
     .info-flex-container {
       @include width-height-value(100%, 250px);
+
       .section-info-blocks {
         .info-block {
           @include width-height-value(85px, 100px);
@@ -197,6 +207,7 @@
 
       .section-waiting-call {
         margin-top: 20px;
+
         .block-waiting-call {
           @include width-height-value(95px, 30px);
 

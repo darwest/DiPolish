@@ -195,7 +195,8 @@
   }
   .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .swiper .swiper-slide .image-slider {
     border-radius: 20px;
-    height: 370px; /* Орієнтовно зменшено на 20% */
+    height: 370px;
+    /* Орієнтовно зменшено на 20% */
   }
   .reviews-block .reviews-flex-container .banner-reviews-block .banner-flex-container .swiper .swiper-slide img {
     height: 100%;

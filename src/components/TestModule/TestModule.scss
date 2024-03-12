@@ -61,20 +61,23 @@
         text-decoration: none;
         @include flex-container(row, center, center);
 
-        &:hover{
+        &:hover {
           color: $main-background-orange;
           background-color: $main-background-white;
           transition: background-color 0.3s ease;
           transition: color 0.3s ease, background-color 0.3s ease;
-     
+
         }
+
         .link-button-try {
           @include text-styles(25px, 800, $text-primary-color);
           text-align: center;
           line-height: 16px;
           text-decoration: none;
-          &:hover{
-            color:  $main-background-orange;;
+
+          &:hover {
+            color: $main-background-orange;
+            ;
           }
         }
       }

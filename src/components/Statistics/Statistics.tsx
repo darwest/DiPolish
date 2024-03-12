@@ -11,38 +11,38 @@ const Statistics = () => {
         <div className="statistics-flex-container">
           <div className="title-statistics-block">
             <div className="vertical-line"></div>
-            <div  className="title-statistics">
+            <div className="title-statistics">
               ЧОМУ ВАРТО ОБРАТИ МЕНЕ?
             </div>
           </div>
           <div className="right-statistics-block">
             <div className="statistics">
               <div className="statistics-list-text">
-                <motion.div initial={{y: -100, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: .5, delay: 0.2}} className="statistics-item1">
+                <motion.div initial={{ y: -100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: .5, delay: 0.2 }} className="statistics-item1">
                   <div className="statistics-list-number-item">50+</div>
                   <div className="statistics-list-text-item text-left">талановитих учнів</div>
                 </motion.div>
-                <motion.div initial={{y: -100, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: .5, delay: 0.3}} className="statistics-item2">
+                <motion.div initial={{ y: -100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: .5, delay: 0.3 }} className="statistics-item2">
                   <div className="statistics-list-number-item ">2.5+</div>
                   <div className="statistics-list-text-item text-right">
                     роки досвіду роботи
                   </div>
                 </motion.div>
-                <motion.div initial={{y: -100, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: .5, delay: 0.4}} className="statistics-item4">
+                <motion.div initial={{ y: -100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: .5, delay: 0.4 }} className="statistics-item4">
                   <div className="statistics-list-number-item">3160+</div>
                   <div className="statistics-list-text-item text-left">
                     годин проведених занять
                   </div>
                 </motion.div>
-                <motion.div initial={{y: -100, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: .5, delay: 0.5}} className="statistics-item3">
+                <motion.div initial={{ y: -100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: .5, delay: 0.5 }} className="statistics-item3">
                   <div className="statistics-list-number-item ">9</div>
                   <div className="statistics-list-text-item text-right">експертів у команді</div>
                 </motion.div>
-                
+
               </div>
             </div>
 
-            <div  className="colors-blocks">
+            <div className="colors-blocks">
               <div className="color-block-one"></div>
               <div className="color-block-two"></div>
               <div className="color-block-three"></div>

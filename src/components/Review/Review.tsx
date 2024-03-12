@@ -5,7 +5,7 @@ import 'swiper/css/effect-fade';
 import "./Review.scss";
 import "./Review.media.scss";
 //Імпорт компонента Слайдер
-import {Swiper, SwiperSlide} from "swiper/react"
+import { Swiper, SwiperSlide } from "swiper/react"
 //Імпорт зображень для слайдів у слайдері
 import ReviewImg1 from "../../assets/reviews/1.jpg";
 import ReviewImg2 from "../../assets/reviews/2.jpg";
@@ -44,19 +44,19 @@ const Review = () => {
             <div className="title-block">
               <h2 className="title-reviews-block">ВІДГУКИ МОЇХ УЧНІВ</h2>
               <p className="subtitle-reviews-block">
-              — це найцінніші докази моєї праці.
+                — це найцінніші докази моєї праці.
               </p>
             </div>
             <div className="banner-reviews-block">
               <div className="container">
                 <div className="banner-flex-container">
-              
 
-              <div className="slider-container back-photo">
+
+                  <div className="slider-container back-photo">
                     <Swiper
                       className="swiper"
                       slidesPerView={1}
-                      
+
                     >
                       {reviews.map((r, i) => (
                         <SwiperSlide className="swiper-slide" key={"reviweImg" + i}>
@@ -78,8 +78,8 @@ const Review = () => {
               </div>
             </div>
             <p className="bottom-title-reviews-block">
-                ГОРТАЙ ВЛІВО!
-              </p>
+              ГОРТАЙ ВЛІВО!
+            </p>
           </div>
         </div>
       </div>

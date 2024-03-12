@@ -108,6 +108,7 @@
     }
   }
 }
+
 @media (max-width: 576px) {
   .video-block {
     @include width-height-value(100%, 300px);
@@ -118,6 +119,7 @@
       .title-block {
         margin: 0 0 0 25px;
         text-align: center;
+
         .video-title {
           @include text-styles(18px, 700, $text-primary-color);
 

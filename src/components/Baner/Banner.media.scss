@@ -3,95 +3,97 @@
 @import "../../scss/common/variables";
 
 @media (max-width: 1200px) {
-    
-.banner-block {
-    position: relative;
+
+    .banner-block {
+        position: relative;
 
 
 
-    .banner-flex-container {
-        padding: 0 15px;
-        max-height: 700px;
-
-        .banner-block-one {
-            @include flex-container(row, space-between, center);
+        .banner-flex-container {
+            padding: 0 15px;
             max-height: 700px;
 
-            .banner-text-block {
-                @include flex-container(column, space-between, flex-start);
+            .banner-block-one {
+                @include flex-container(row, space-between, center);
+                max-height: 700px;
 
-                .banner-title {
-                    margin-bottom: 8px;
-                    @include text-styles(32px, 700, $text-primary-color);
-                    line-height: 45px;
-                    word-wrap: break-word;
+                .banner-text-block {
+                    @include flex-container(column, space-between, flex-start);
+
+                    .banner-title {
+                        margin-bottom: 8px;
+                        @include text-styles(32px, 700, $text-primary-color);
+                        line-height: 45px;
+                        word-wrap: break-word;
+
+                    }
+
+                    .banner-subtitle {
+                        margin: 0 0 50px;
+                        @include text-styles(20px, 400, #A8A8A8);
+                        word-wrap: break-word
+                    }
+
+                    .banner-button {
+                        text-align: center;
+                        @include button-style($main-background-orange, 21px, 50px, 12px 28px);
+                        width: 140px;
+                        color: $main-background-white;
+                        text-decoration: none;
+                        font-weight: 700;
+                    }
+
+                    .banner-button:hover {
+                        background-color: $main-background-white;
+                        transition: background-color 0.3s ease;
+                        color: $hover-color;
+                        transition: color 0.3s ease, background-color 0.3s ease;
+                    }
 
                 }
+            }
 
-                .banner-subtitle {
-                    margin: 0 0 50px;
-                    @include text-styles(20px, 400, #A8A8A8);
-                    word-wrap: break-word
+            .banner-image-block {
+                @include width-height-value(500px, 700px);
+                margin-top: 205px;
+
+                .main-photo {
+                    @include width-height-value(520px, 720px);
                 }
-
-                .banner-button {
-                    text-align: center;
-                    @include button-style($main-background-orange, 21px, 50px, 12px 28px);
-                    width: 140px;
-                    color: $main-background-white;
-                    text-decoration: none;
-                    font-weight: 700;
-                }
-
-                .banner-button:hover {
-                    background-color: $main-background-white;
-                    transition: background-color 0.3s ease;
-                    color: $hover-color;
-                    transition: color 0.3s ease, background-color 0.3s ease;
-                }
-
             }
         }
 
-        .banner-image-block {
-            @include width-height-value(500px, 700px);
-            margin-top: 205px;
-
-            .main-photo {
-                @include width-height-value(520px, 720px);
-            }
-        }
-    }
-
-    .banner-block-two {
-        @include width-height-value(100%, 300px);
-        background-color: $main-background-blue;
-        transform: skewY(-5deg);
-        overflow: hidden;
-        z-index: 5;
-
-        .banner-flex-container-two {
-            @include flex-container(row, flex-end, center);
+        .banner-block-two {
             @include width-height-value(100%, 300px);
+            background-color: $main-background-blue;
+            transform: skewY(-5deg);
+            overflow: hidden;
             z-index: 5;
 
-            .banner-title-two {
-                margin: 0;
-                padding-right: 10px;
-                @include text-styles(32px, 700, $text-primary-color);
-                line-height: 48px;
-                width: 60%;
-                text-align: right;
+            .banner-flex-container-two {
+                @include flex-container(row, flex-end, center);
+                @include width-height-value(100%, 300px);
+                z-index: 5;
+
+                .banner-title-two {
+                    margin: 0;
+                    padding-right: 10px;
+                    @include text-styles(32px, 700, $text-primary-color);
+                    line-height: 48px;
+                    width: 60%;
+                    text-align: right;
+                }
             }
         }
     }
-}
 
 }
+
 @media (max-width: 992px) {
 
     .banner-block {
         top: 50px;
+
         .banner-flex-container {
             max-height: 400px;
             padding: 0 10px;
@@ -167,11 +169,13 @@
                         @include text-styles(18px, 700, $text-primary-color);
                         line-height: 23px;
                     }
+
                     .banner-subtitle {
                         margin-bottom: 20px;
                         @include text-styles(13px, 400, #A8A8A8);
                         word-wrap: break-word
                     }
+
                     .banner-button {
                         text-align: center;
                         @include button-style($main-background-orange, 14px, 50px, 8px 10px);
@@ -214,9 +218,10 @@
 
     .banner-block {
         &::before {
-           
+
             height: 105%;
         }
+
         .banner-flex-container {
             max-height: 350px;
             padding: 0;
@@ -233,7 +238,7 @@
                     height: 250px;
                     display: flex;
                     justify-content: flex-start;
-                    margin-top:0px;
+                    margin-top: 0px;
 
                     .banner-title {
                         @include text-styles(13px, 700, $text-primary-color);

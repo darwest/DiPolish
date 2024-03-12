@@ -62,7 +62,7 @@ const MultiTest = ({ onFinish }: MultiTestProps) => {
   ]);
 
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
-  const [selectedAnswers, setSelectedAnswers] = useState<Array<number[]>>([]); 
+  const [selectedAnswers, setSelectedAnswers] = useState<Array<number[]>>([]);
   const [isConfirmationModalOpen, setIsConfirmationModalOpen] = useState(false);
 
   useEffect(() => {

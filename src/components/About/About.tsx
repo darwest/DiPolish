@@ -40,16 +40,16 @@ const About = () => {
         >
           <span className="hejka">ПРО МЕНЕ</span>
         </motion.p>
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.9, delay: 0.4 }}
-          className="welcome-message"
-        >
-          Привіт! Мене звати <span className="span">Діана - професійний викладач</span> польської та англійської мов. <br></br>Я створила власну <span className="span">школу іноземних мов</span>, в якій об’єднала експертів в одну команду зі спільною метою - зробити вивчення іноземних не лише результативним, але й цікавим та простим.
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.9, delay: 0.4 }}
+            className="welcome-message"
+          >
+            Привіт! Мене звати <span className="span">Діана - професійний викладач</span> польської та англійської мов. <br></br>Я створила власну <span className="span">школу іноземних мов</span>, в якій об’єднала експертів в одну команду зі спільною метою - зробити вивчення іноземних не лише результативним, але й цікавим та простим.
 
-         <br></br></motion.p>
-          </div>
+            <br></br></motion.p>
+        </div>
         <div className="about-me-flex-container">
 
 
@@ -58,9 +58,9 @@ const About = () => {
           </div>
 
           <div className="text-info">
-            
+
             <div className="facts">
-            <motion.span className="title-facts-blocks" initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: .3, delay: .4 }}> ДЕКІЛЬКА ФАКТІВ:</motion.span> 
+              <motion.span className="title-facts-blocks" initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: .3, delay: .4 }}> ДЕКІЛЬКА ФАКТІВ:</motion.span>
               <motion.div className="fact-block fact-block-one" initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: .3, delay: .4 }}>
                 <h2 className="title-facts-blocks">ОСВІТА:</h2>
                 <ul className="facts-list">

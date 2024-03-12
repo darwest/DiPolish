@@ -1,8 +1,6 @@
-//Імпорт компонента Modal з бібліотеки react-modal  для створення модального вікна
 import Modal from "react-modal";
 import "./MessageModal.scss"
 
-//Props визначає типи властивостей, які можна передати компоненту
 interface Props {
   isOpen: boolean;
   onRequestClose: () => void;
@@ -12,7 +10,6 @@ interface Props {
   onCancel: () => void;
 }
 
-//Це функціональний компонент який приймає об'єкт Props з шістьма властивостями, які визначаються в інтерфейсі Props 
 const MessageModal = ({
   isOpen,
   onRequestClose,

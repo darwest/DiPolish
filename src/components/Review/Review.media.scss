@@ -2,64 +2,68 @@
 
 @media (max-width: 1200px) {
 
-.reviews-block {
-    background-image: url('../../assets/img/gradient.png');
-    background-size: cover;
-    background-position: center;
-    @include width-height-value(100%, 1000px);
-    z-index: 1;
-
-    .reviews-flex-container {
+    .reviews-block {
+        background-image: url('../../assets/img/gradient.png');
+        background-size: cover;
+        background-position: center;
         @include width-height-value(100%, 1000px);
+        z-index: 1;
 
-        .title-block {
+        .reviews-flex-container {
+            @include width-height-value(100%, 1000px);
 
-            .title-reviews-block {
-                @include text-styles(32px, 700, $main-color2);
+            .title-block {
 
-            }
+                .title-reviews-block {
+                    @include text-styles(32px, 700, $main-color2);
 
-            .subtitle-reviews-block {
-                @include text-styles(20px, 300,  #2F2F2F);
-                margin: 8px 0 60px;
+                }
 
+                .subtitle-reviews-block {
+                    @include text-styles(20px, 300, #2F2F2F);
+                    margin: 8px 0 60px;
+
+                }
             }
         }
     }
 }
-}
+
 @media (max-width: 992px) {
-    
-.reviews-block {
-    background-image: url('../../assets/img/gradient.png');
-    background-size: cover;
-    background-position: center;
-    @include width-height-value(100%, 850px);
-    z-index: 1;
 
-    .reviews-flex-container {
-        @include width-height-value(100%, 800px);
-        .bottom-title-reviews-block{
-            @include text-styles(24px, 700, $main-color1);
-            text-align: center;
-            margin: 10px 0 0  30px;
-        }
-        .title-block {
+    .reviews-block {
+        background-image: url('../../assets/img/gradient.png');
+        background-size: cover;
+        background-position: center;
+        @include width-height-value(100%, 850px);
+        z-index: 1;
 
-            .title-reviews-block {
-                @include text-styles(28px, 700, $main-color2);
+        .reviews-flex-container {
+            @include width-height-value(100%, 800px);
 
+            .bottom-title-reviews-block {
+                @include text-styles(24px, 700, $main-color1);
+                text-align: center;
+                margin: 10px 0 0 30px;
             }
 
-            .subtitle-reviews-block {
-                @include text-styles(15px, 300,  #2F2F2F);
-                margin: 8px 0 40px;
+            .title-block {
 
+                .title-reviews-block {
+                    @include text-styles(28px, 700, $main-color2);
+
+                }
+
+                .subtitle-reviews-block {
+                    @include text-styles(15px, 300, #2F2F2F);
+                    margin: 8px 0 40px;
+
+                }
             }
         }
     }
 }
-}
+
 @media (max-width: 768px) {
 
     .reviews-block {
@@ -68,140 +72,153 @@
         background-position: center;
         @include width-height-value(100%, 730px);
         z-index: 1;
-    
+
         .reviews-flex-container {
             @include width-height-value(100%, 730px);
             justify-content: flex-start;
-            .bottom-title-reviews-block{
+
+            .bottom-title-reviews-block {
                 @include text-styles(22px, 700, $main-color1);
                 text-align: center;
-                margin: 10px 0 0  25px;
+                margin: 10px 0 0 25px;
             }
+
             .title-block {
-    
+
                 .title-reviews-block {
                     @include text-styles(22px, 700, $main-color2);
-    
+
                 }
-    
+
                 .subtitle-reviews-block {
-                    @include text-styles(12px, 300,  #2F2F2F);
+                    @include text-styles(12px, 300, #2F2F2F);
                     margin: 8px 0 30px;
-    
+
                 }
             }
-            
-        .banner-reviews-block {
-            @include flex-container(column, center, center);
 
-            .banner-flex-container {
+            .banner-reviews-block {
                 @include flex-container(column, center, center);
 
-                .back-photo {
-                    background-image: url('../../assets/img/tel.png');
-                    background-size: cover;
-                    background-position: center;
-                    @include width-height-value(255px, 530px);
-                    flex-shrink: 0;
-                    @include flex-container(row, center, center);
-                }
-                
-                .swiper{
-                    margin-bottom: 5px;
-                    .swiper-slide{
-                        .image-slider {
-                            height: 470px;
-                        }
-                        img{
-                            height: 105%;
-                            width: 100%;
-                            object-fit: contain;
-                        }
+                .banner-flex-container {
+                    @include flex-container(column, center, center);
+
+                    .back-photo {
+                        background-image: url('../../assets/img/tel.png');
+                        background-size: cover;
+                        background-position: center;
+                        @include width-height-value(255px, 530px);
+                        flex-shrink: 0;
+                        @include flex-container(row, center, center);
                     }
 
-                   
+                    .swiper {
+                        margin-bottom: 5px;
+
+                        .swiper-slide {
+                            .image-slider {
+                                height: 470px;
+                            }
+
+                            img {
+                                height: 105%;
+                                width: 100%;
+                                object-fit: contain;
+                            }
+                        }
+
+
+                    }
                 }
             }
-        }
         }
     }
 
 }
+
 @media (max-width: 576px) {
 
-.reviews-block {
-    background-image: url('../../assets/img/gradient.png');
-    background-size: cover;
-    background-position: center;
-    @include width-height-value(100%, 600px);
-    z-index: 1;
-
-    .reviews-flex-container {
+    .reviews-block {
+        background-image: url('../../assets/img/gradient.png');
+        background-size: cover;
+        background-position: center;
         @include width-height-value(100%, 600px);
-        align-items: center;
-        justify-content: center;
-        .bottom-title-reviews-block{
-            @include text-styles(15px, 700, $main-color1);
-            text-align: center;
-            margin: 10px 0 0  8px;
-        }
-        .title-block {
+        z-index: 1;
 
-            .title-reviews-block {
-                @include text-styles(18px, 700, $main-color2);
+        .reviews-flex-container {
+            @include width-height-value(100%, 600px);
+            align-items: center;
+            justify-content: center;
 
+            .bottom-title-reviews-block {
+                @include text-styles(15px, 700, $main-color1);
+                text-align: center;
+                margin: 10px 0 0 8px;
             }
 
-            .subtitle-reviews-block {
-                @include text-styles(10px, 300,  #2F2F2F);
-                margin: 8px 0 30px;
+            .title-block {
 
-            }
-        }
-        .banner-reviews-block {
-            @include flex-container(column, center, center);
-        
-            .banner-flex-container {
-                @include flex-container(column, center, flex-start);
-        
-                .back-photo {
-                    background-image: url('../../assets/img/tel.png');
-                    background-size: cover;
-                    background-position: center;
-                    @include width-height-value(200px, 410px); /* Орієнтовно зменшено на 20-30% */
-                    flex-shrink: 0;
-                    @include flex-container(row, center, center);
+                .title-reviews-block {
+                    @include text-styles(18px, 700, $main-color2);
+
                 }
-                
-                .swiper {
-                    margin-bottom: 30px;
-                    border-radius: 20px;
 
-                    .swiper-slide {
-                        display: flex;
-                        align-items: flex-start;
-                        justify-content: center;
-                        margin-bottom: 20px;
-                        
-                        .image-slider {
-                            border-radius: 20px;
-  
-                            height: 370px; /* Орієнтовно зменшено на 20% */
-                        }
-                        img {
-                            
-                            height: 100%;
-                            width: 100%;
-                            object-fit: contain;
+                .subtitle-reviews-block {
+                    @include text-styles(10px, 300, #2F2F2F);
+                    margin: 8px 0 30px;
+
+                }
+            }
+
+            .banner-reviews-block {
+                @include flex-container(column, center, center);
+
+                .banner-flex-container {
+                    @include flex-container(column, center, flex-start);
+
+                    .back-photo {
+                        background-image: url('../../assets/img/tel.png');
+                        background-size: cover;
+                        background-position: center;
+                        @include width-height-value(200px, 410px);
+                        /* Орієнтовно зменшено на 20-30% */
+                        flex-shrink: 0;
+                        @include flex-container(row, center, center);
+                    }
+
+                    .swiper {
+                        margin-bottom: 30px;
+                        border-radius: 20px;
+
+                        .swiper-slide {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: center;
+                            margin-bottom: 20px;
+
+                            .image-slider {
+                                border-radius: 20px;
+
+                                height: 370px;
+                                /* Орієнтовно зменшено на 20% */
+                            }
+
+                            img {
+
+                                height: 100%;
+                                width: 100%;
+                                object-fit: contain;
+                            }
                         }
                     }
                 }
             }
         }
+
+        .blue-line {
+            display: none;
+        }
     }
-    .blue-line{
-display: none;    }   
-}  
-      
+
 
 }

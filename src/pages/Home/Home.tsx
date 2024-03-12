@@ -11,21 +11,21 @@ import { useLayoutEffect } from "react";
 import { useLocation } from 'react-router-dom'; // Імпортуйте useLocation
 
 const Home = () => {
-  const location = useLocation(); 
+  const location = useLocation();
   useLayoutEffect(() => {
     const searchParams = new URLSearchParams(location.search);
     const scrollToId = searchParams.get("scrollTo");
-  
+
     if (scrollToId) {
       setTimeout(() => {
         const element = document.getElementById(scrollToId);
         if (element) {
           element.scrollIntoView({ behavior: "smooth", block: "start" });
         }
-      }, 100); 
+      }, 100);
     }
   }, [location.search]);
-  
+
   return (
     <>
       <Banner />
@@ -34,7 +34,6 @@ const Home = () => {
       <Review />
       <TestModule />
       <Prices />
-      
       <Video />
       <Information />
       <Footer />

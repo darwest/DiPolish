@@ -13,29 +13,29 @@ import "./PolishTest.scss";
 
 /*Тут ми визначаємо тип для пропсів*/
 type Props = {
-    isTestStarted: boolean,
-    setIsTestStarted: React.Dispatch<React.SetStateAction<boolean>>
+  isTestStarted: boolean,
+  setIsTestStarted: React.Dispatch<React.SetStateAction<boolean>>
 }
 //Створюємо компонент PolishTest який отримує пропси isTestStarted, setIsTestStarted 
-const PolishTest = ({isTestStarted, setIsTestStarted} : Props) => {
+const PolishTest = ({ isTestStarted, setIsTestStarted }: Props) => {
   const navigate = useNavigate();
 
   const [currentTest, setCurrentTest] = useState<number>(0);                   //змінна стану currentTest, вказує на поточний тест, який виводиться на екрані, поч.значення 0
   const [correctAnswersCount, setCorrectAnswersCount] = useState<number>(0);   //оголошується змінна стану correctAnswersCount типу number зі значенням за замовчуванням 0, і setCorrectAnswersCount - функція для оновлення цього значення.
   const [resultAnswers, setResultAnswers] = useState<ResultAnswerType[]>([]);  //оголошення змінної стану resultAnswers, яка є масивом типу ResultAnswerType. Поч. значення - порожній масив, setResultAnswers - функція для оновлення цього стану.
   const [isTestFinished, setIsTestFinished] = useState<boolean>(false);        //оголошення змінної стану isTestFinished, функ setIsTestFinished для оновлення стану
- 
+
   //Ця функція handleFinishTest викликається після завершення кожного типу тесту. 
   //setResultAnswers функція, яка встановлює новий стан для resultAnswers, приймаючи попередній стан, тут ми створюємо масив який скл. з попередніх результатів і нових(... озн. розгортання масиву)
   const handleFinishTest = (results: ResultAnswerType[]) => {
-  setResultAnswers((prevResults) => [...prevResults, ...results]);
- /*змінна correctCount буде містити кількість результатів, які мають клас result-correct.
-   кількість правильних відповідей correctCount додається до попереднього значення correctAnswersCount, і отримане значення встановлюється як новий стан correctAnswersCount*/
+    setResultAnswers((prevResults) => [...prevResults, ...results]);
+    /*змінна correctCount буде містити кількість результатів, які мають клас result-correct.
+      кількість правильних відповідей correctCount додається до попереднього значення correctAnswersCount, і отримане значення встановлюється як новий стан correctAnswersCount*/
     const correctCount = results.filter(
       (result) => result.className === "result-correct"
     ).length;
     setCorrectAnswersCount((prevCount) => prevCount + correctCount);
-  //перевірка, чи є ще тестові блоки, якщо є то до значення prevTest дод. 1 щоб перейти до наступного тестового блоку
+    //перевірка, чи є ще тестові блоки, якщо є то до значення prevTest дод. 1 щоб перейти до наступного тестового блоку
     if (currentTest + 1 < typesTests.length) {
       setCurrentTest((prevTest) => prevTest + 1);
     } else {
@@ -43,7 +43,7 @@ const PolishTest = ({isTestStarted, setIsTestStarted} : Props) => {
       setIsTestStarted(false);
     }
   };
-//Масив об'єктів
+  //Масив об'єктів
   const typesTests = [
     {
       id: 1,
@@ -64,12 +64,12 @@ const PolishTest = ({isTestStarted, setIsTestStarted} : Props) => {
       element: <AudioTest onFinish={handleFinishTest} />,
     },
   ];
-//Ця функція встановлює значення isTestStarted на true за допомогою функції setIsTestStarted
+  //Ця функція встановлює значення isTestStarted на true за допомогою функції setIsTestStarted
   function handlerStartTest(): void {
     setIsTestStarted(true);
   }
 
-//функція getLevel визначає рівень користувача на основі кількості правильних відповідей у тесті
+  //функція getLevel визначає рівень користувача на основі кількості правильних відповідей у тесті
   const getLevel = (correctAnswersCount: number) => {
     if (correctAnswersCount < 5) {
       return "Низький";
@@ -85,20 +85,20 @@ const PolishTest = ({isTestStarted, setIsTestStarted} : Props) => {
   return (
     <div className="test-container">
       <div className="test-block">
-       
+
         {!isTestStarted && !isTestFinished && (
-          
+
           <p className="test-description">
-          <span> <h1 className="test-heading">ПРОБНИЙ МОДУЛЬ</h1></span>
-          Якщо ви переглянули відео, тоді я пропоную вам закріпити свої знання пройшовши невеличкий тест. Тест складається з 3 частин:
-           <span className="text-orange"> питання з однією правильною відповіддю</span>, 
-           <span className="text-orange"> питання з декількома привильними відповідями</span> та
-           <span className="text-orange"> завдання: з'єднай відповідності</span>.
-           <br />
-           Після проходження одного блоку ви зможете перейти до наступного. Після проходження всіх блоків, тест буде завершений і ви отримаєте свій результат.
-         </p>
+            <span> <h1 className="test-heading">ПРОБНИЙ МОДУЛЬ</h1></span>
+            Якщо ви переглянули відео, тоді я пропоную вам закріпити свої знання пройшовши невеличкий тест. Тест складається з 3 частин:
+            <span className="text-orange"> питання з однією правильною відповіддю</span>,
+            <span className="text-orange"> питання з декількома привильними відповідями</span> та
+            <span className="text-orange"> завдання: з'єднай відповідності</span>.
+            <br />
+            Після проходження одного блоку ви зможете перейти до наступного. Після проходження всіх блоків, тест буде завершений і ви отримаєте свій результат.
+          </p>
         )}
-       
+
 
         {!isTestStarted && !isTestFinished && (
           <button
@@ -121,7 +121,7 @@ const PolishTest = ({isTestStarted, setIsTestStarted} : Props) => {
         {isTestFinished && (
           <div className="test-result">
             <h3 className="test-result-heading">Ви відповіли правильно на <span className="text-orange">{correctAnswersCount}</span> питань</h3>
-              <h4 className="level">Ваш рівень - { getLevel(correctAnswersCount)}</h4>
+            <h4 className="level">Ваш рівень - {getLevel(correctAnswersCount)}</h4>
             <ul className="test-result-list">
               {resultAnswers.map((result, index) => (
                 <li
