@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container">
         <div className="header-flex-container">
           <div className="logo-block1">
-            <h1 className="logo" >Hatsyk.polish</h1>
+            <h1 className="logo" >Hatsyk.Diana</h1>
           </div>
           <div onClick={() => { setisMenuOpen(prev => !prev) }} className={`burger-menu ${isMenuOpen && "active"}`}>
             <div className={`menu-burger-block ${isMenuOpen && "active"}`}>

@@ -17,7 +17,7 @@ const Footer = () => {
             <div className="logo-socnetwork">
               <div className="logo-block1">
                 <div className="logo-block">
-                  <h1 className="logo">Hatsyk.polish</h1>
+                  <h1 className="logo">Hatsyk.Diana</h1>
 
                 </div>
 
@@ -51,7 +51,7 @@ const Footer = () => {
                 <a className="link" target="_blank" href="http://t.me/d_hatsykk">
                   Telegram
                 </a>
-                <a className="link" target="_blank" href="https://www.tiktok.com/@di_polishh?_t=8hvbMUGTWwX&_r=1">
+                <a className="link" target="_blank" href="https://www.tiktok.com/@hatsyk.polish?_t=8kcToAJwfHZ&_r=1">
                   Tik Tok
                 </a>
 

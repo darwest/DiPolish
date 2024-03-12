@@ -19,7 +19,7 @@ const Statistics = () => {
             <div className="statistics">
               <div className="statistics-list-text">
                 <motion.div initial={{ y: -100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: .5, delay: 0.2 }} className="statistics-item1">
-                  <div className="statistics-list-number-item">50+</div>
+                  <div className="statistics-list-number-item">100+</div>
                   <div className="statistics-list-text-item text-left">талановитих учнів</div>
                 </motion.div>
                 <motion.div initial={{ y: -100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: .5, delay: 0.3 }} className="statistics-item2">

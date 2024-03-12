@@ -56,7 +56,7 @@ const QuizTest = ({ onFinish }: QuizTestProps) => {
         { "option": "A. Jak się masz?", "isCorrect": false },
         { "option": "Б. Co słychać?", "isCorrect": false },
         { "option": "В. Jak pani/ pan się ma?", "isCorrect": true },
-        { "option": "Г. Co nowega?", "isCorrect": false }
+        { "option": "Г. Co nowego?", "isCorrect": false }
       ]
     },
     {

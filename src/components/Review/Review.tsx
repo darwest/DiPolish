@@ -18,6 +18,12 @@ import ReviewImg9 from "../../assets/reviews/9.jpg";
 import ReviewImg10 from "../../assets/reviews/10.jpg";
 import ReviewImg11 from "../../assets/reviews/11.jpg";
 import ReviewImg12 from "../../assets/reviews/12.jpg";
+import ReviewImg13 from "../../assets/reviews/13.jpg";
+import ReviewImg14 from "../../assets/reviews/14.jpg";
+import ReviewImg16 from "../../assets/reviews/16.jpg";
+import ReviewImg17 from "../../assets/reviews/17.jpg";
+import ReviewImg18 from "../../assets/reviews/18.jpg";
+
 
 
 const Review = () => {
@@ -34,6 +40,12 @@ const Review = () => {
     ReviewImg10,
     ReviewImg11,
     ReviewImg12,
+    ReviewImg13,
+    ReviewImg14,
+    ReviewImg16,
+    ReviewImg17,
+    ReviewImg18,
+
   ];
 
   return (
