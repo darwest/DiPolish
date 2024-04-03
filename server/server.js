@@ -75,7 +75,6 @@ app.get("/api/quiz", async (req, res) => {
   }
 });
 
-// Маршрут для отримання даних MultiTest
 app.get("/api/multi", async (req, res) => {
   try {
     const multiTestQuestionsList = await MultiTestQuestion.find();
@@ -86,7 +85,6 @@ app.get("/api/multi", async (req, res) => {
   }
 });
 
-//Маршрут для отримання даних AudioTest
 
 app.get("/api/audio", async (req, res) => {
   try {
@@ -98,7 +96,6 @@ app.get("/api/audio", async (req, res) => {
   }
 });
 
-//якщо сервер запущено нам з'явиться таке повідомлення з посиланням на 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });

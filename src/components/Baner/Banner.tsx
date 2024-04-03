@@ -40,7 +40,7 @@ const Banner = () => {
             <motion.div className="banner-image-block">
               <motion.img
                 src={MainPhoto}
-                alt="loading"
+                alt="Викладач польської та англійської мов"
                 className="main-photo"
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1, transition: { duration: 1 } }}

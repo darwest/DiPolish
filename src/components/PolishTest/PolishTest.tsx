@@ -1,22 +1,15 @@
-//Імпорт хука
 import { useState } from "react";
-//Імпорт компонентів
 import QuizTest from "../QuizTest/QuizTest";
 import MultiTest from "../MultiTest/MultiTest";
 import AudioTest from "../AudioTest/AudioTest";
-//Імпорт хука для навігації між сторінками
 import { useNavigate } from "react-router-dom";
-//Імпорт типу, який визначає формат тестування
 import { ResultAnswerType } from "../../types/ResultAnswerType";
-//Імпорт стилів
 import "./PolishTest.scss";
 
-/*Тут ми визначаємо тип для пропсів*/
 type Props = {
   isTestStarted: boolean,
   setIsTestStarted: React.Dispatch<React.SetStateAction<boolean>>
 }
-//Створюємо компонент PolishTest який отримує пропси isTestStarted, setIsTestStarted 
 const PolishTest = ({ isTestStarted, setIsTestStarted }: Props) => {
   const navigate = useNavigate();
 
@@ -25,17 +18,12 @@ const PolishTest = ({ isTestStarted, setIsTestStarted }: Props) => {
   const [resultAnswers, setResultAnswers] = useState<ResultAnswerType[]>([]);  //оголошення змінної стану resultAnswers, яка є масивом типу ResultAnswerType. Поч. значення - порожній масив, setResultAnswers - функція для оновлення цього стану.
   const [isTestFinished, setIsTestFinished] = useState<boolean>(false);        //оголошення змінної стану isTestFinished, функ setIsTestFinished для оновлення стану
 
-  //Ця функція handleFinishTest викликається після завершення кожного типу тесту. 
-  //setResultAnswers функція, яка встановлює новий стан для resultAnswers, приймаючи попередній стан, тут ми створюємо масив який скл. з попередніх результатів і нових(... озн. розгортання масиву)
   const handleFinishTest = (results: ResultAnswerType[]) => {
     setResultAnswers((prevResults) => [...prevResults, ...results]);
-    /*змінна correctCount буде містити кількість результатів, які мають клас result-correct.
-      кількість правильних відповідей correctCount додається до попереднього значення correctAnswersCount, і отримане значення встановлюється як новий стан correctAnswersCount*/
     const correctCount = results.filter(
       (result) => result.className === "result-correct"
     ).length;
     setCorrectAnswersCount((prevCount) => prevCount + correctCount);
-    //перевірка, чи є ще тестові блоки, якщо є то до значення prevTest дод. 1 щоб перейти до наступного тестового блоку
     if (currentTest + 1 < typesTests.length) {
       setCurrentTest((prevTest) => prevTest + 1);
     } else {
@@ -43,7 +31,6 @@ const PolishTest = ({ isTestStarted, setIsTestStarted }: Props) => {
       setIsTestStarted(false);
     }
   };
-  //Масив об'єктів
   const typesTests = [
     {
       id: 1,

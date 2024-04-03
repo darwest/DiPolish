@@ -27,7 +27,7 @@ const TestModule = () => {
               </Link>
             </h5>
           </motion.div>
-          <img src={DiTest} className="photo-test-module" />
+          <img src={DiTest} alt="Викладач польської та англійської мов, школа іноземних мов, пробний урок з польської" className="photo-test-module" />
         </div>
       </div>
       <div id="4"></div>

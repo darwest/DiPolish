@@ -54,7 +54,7 @@ const About = () => {
 
 
           <div className="photo-about">
-            <img src={IconDi} alt="loading" className="icon-di" />
+            <img src={IconDi} alt="Викладач польської та англійської мов" className="icon-di" />
           </div>
 
           <div className="text-info">

@@ -75,7 +75,7 @@ const Review = () => {
                           <div className="image-slider">
                             <img
                               src={r}
-                              alt="Loading"
+                              alt="Викладач польської та англійської мов, відгуки про заняття, школа іноземних мов"
                               width="250px"
                               className="img-slider"
                             />
