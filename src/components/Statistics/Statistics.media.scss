@@ -239,11 +239,11 @@
 
 @media (max-width: 576px) {
     .statistics-block {
-        @include width-height-value(100%, 230px);
+        @include width-height-value(100%, 340px);
 
 
         .statistics-flex-container {
-            @include width-height-value(100%, 190px);
+            @include width-height-value(100%, 300px);
             padding-top: 0px;
 
             .statistics-item1 {

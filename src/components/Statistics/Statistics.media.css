@@ -238,11 +238,11 @@ body {
 @media (max-width: 576px) {
   .statistics-block {
     width: 100%;
-    height: 230px;
+    height: 340px;
   }
   .statistics-block .statistics-flex-container {
     width: 100%;
-    height: 190px;
+    height: 300px;
     padding-top: 0px;
   }
   .statistics-block .statistics-flex-container .statistics-item1 {
