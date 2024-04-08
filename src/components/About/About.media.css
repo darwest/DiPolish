@@ -294,7 +294,7 @@ body {
 @media (max-width: 576px) {
   .about-me-block {
     width: 100%;
-    height: 540px;
+    height: 690px;
     background-color: #fff;
     padding-bottom: 0px;
   }
@@ -314,6 +314,8 @@ body {
     font-size: 9px;
     position: absolute;
     font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
     color: #303881;
   }
   .about-me-block .text-title-about .welcome-message .span {
@@ -327,61 +329,27 @@ body {
     height: 470px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
   .about-me-block .about-me-flex-container .photo-about {
-    width: 50%;
+    margin-top: -55px;
+    position: absolute;
+    -webkit-mask-image: linear-gradient(to left, transparent, black 50%);
+    mask-image: linear-gradient(to left, transparent, black 30%);
   }
   .about-me-block .about-me-flex-container .photo-about .icon-di {
-    width: 100%;
     margin-left: 0px;
-    margin-top: 20px;
-  }
-  .about-me-block .about-me-flex-container .photo-about .text-info2 {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    width: 100%;
-  }
-  .about-me-block .about-me-flex-container .photo-about .text-info2 .p {
-    margin: 0;
-  }
-  .about-me-block .about-me-flex-container .photo-about .text-info2 .p .hejka {
-    font-size: 18px;
-    font-weight: 700;
-    color: #303881;
-  }
-  .about-me-block .about-me-flex-container .photo-about .text-info2 .welcome-message {
-    font-size: 10px;
-    font-weight: 300;
-    color: #2F2F2F;
-    margin: 5px 0 0 0;
+    margin-top: 0px;
   }
   .about-me-block .about-me-flex-container .text-info {
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 38%;
-  }
-  .about-me-block .about-me-flex-container .text-info .p {
-    display: none;
-    margin: 0;
-  }
-  .about-me-block .about-me-flex-container .text-info .p .hejka {
-    font-size: 22px;
-    font-weight: 700;
-    color: #303881;
-  }
-  .about-me-block .about-me-flex-container .text-info .welcome-message {
-    display: none;
-    font-size: 12px;
-    font-weight: 300;
-    color: #2F2F2F;
-    margin: 5px 0 0 0;
+    width: 100%;
   }
   .about-me-block .about-me-flex-container .text-info .facts {
-    margin-top: 110px;
+    margin-top: 480px;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -390,12 +358,12 @@ body {
     width: 100%;
   }
   .about-me-block .about-me-flex-container .text-info .facts .title-facts-blocks {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 700;
     color: #F6B40B;
     font-style: normal;
     line-height: 12px;
-    margin: 15px 0 0 15px;
+    margin: 50px 0 0 10px;
     padding-right: 0;
   }
   .about-me-block .about-me-flex-container .text-info .facts .fact-block {
@@ -403,21 +371,22 @@ body {
     border: 2px #F6B40B solid;
     border-radius: 20px;
     margin-top: 8px;
+    padding: 7px;
   }
   .about-me-block .about-me-flex-container .text-info .facts .fact-block .title-facts-blocks {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 700;
     color: #F6B40B;
     font-style: normal;
     line-height: 12px;
-    margin: 7px 0 0 5px;
+    margin: 2px 0 0 5px;
   }
   .about-me-block .about-me-flex-container .text-info .facts .fact-block .facts-list {
     padding: 0 0 0 10px;
     margin: 7px 0;
   }
   .about-me-block .about-me-flex-container .text-info .facts .fact-block .facts-list .facts-item {
-    font-size: 6px;
+    font-size: 8px;
     font-weight: 700;
     color: #303881;
     line-height: 10px;
