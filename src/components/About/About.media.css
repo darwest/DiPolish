@@ -333,12 +333,14 @@ body {
     align-items: center;
   }
   .about-me-block .about-me-flex-container .photo-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: -55px;
     position: absolute;
-    -webkit-mask-image: linear-gradient(to left, transparent, black 50%);
-    mask-image: linear-gradient(to left, transparent, black 30%);
   }
   .about-me-block .about-me-flex-container .photo-about .icon-di {
+    width: 210px;
     margin-left: 0px;
     margin-top: 0px;
   }
@@ -356,6 +358,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    padding-left: 0;
   }
   .about-me-block .about-me-flex-container .text-info .facts .title-facts-blocks {
     font-size: 14px;
@@ -382,7 +385,7 @@ body {
     margin: 2px 0 0 5px;
   }
   .about-me-block .about-me-flex-container .text-info .facts .fact-block .facts-list {
-    padding: 0 0 0 10px;
+    padding: 0 15px 0 20px;
     margin: 7px 0;
   }
   .about-me-block .about-me-flex-container .text-info .facts .fact-block .facts-list .facts-item {

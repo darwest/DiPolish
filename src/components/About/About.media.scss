@@ -359,11 +359,13 @@
 
 
       .photo-about {
+       display: flex;
+       align-items: center;
+      justify-content: center;
        margin-top: -55px;
         position: absolute;
-        -webkit-mask-image: linear-gradient(to left, transparent, black 50%);
-          mask-image: linear-gradient(to left, transparent, black 30%);  
-        .icon-di {
+       .icon-di {
+          width: 210px;
           margin-left: 0px;
           margin-top: 0px;
         }
@@ -382,6 +384,7 @@
           text-align: left;
           @include flex-container(column, center, flex-start);
           width: 100%;
+          padding-left: 0;
 
           .title-facts-blocks {
             @include text-styles(14px, 700, $text-color-yellow);
@@ -406,7 +409,7 @@
             }
 
             .facts-list {
-              padding: 0 0 0 10px;
+              padding: 0 15px 0 20px;
               margin: 7px 0;
 
               .facts-item {

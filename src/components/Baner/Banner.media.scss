@@ -223,7 +223,7 @@
         }
 
         .banner-flex-container {
-            max-height: 450px;
+            max-height: 420px;
             padding: 0;
             position: relative;
 
@@ -235,7 +235,7 @@
 
                 .banner-text-block {
                     padding-left: 10px;
-                    height: 530px;
+                    height: 480px;
                     display: flex;
                     justify-content: flex-start;
                     margin-top: 0px;
@@ -244,7 +244,7 @@
                         @include text-styles(13px, 700, $text-primary-color);
                         line-height: 17px;
                         margin-bottom: 0;
-                        margin-top: 15px;
+                        margin-top: 0px;
                     }
 
                     .banner-subtitle {
@@ -277,10 +277,10 @@
         }
 
         .banner-block-two {
-            @include width-height-value(100%, 150px);
+            @include width-height-value(100%, 140px);
 
             .banner-flex-container-two {
-                @include width-height-value(100%, 150px);
+                @include width-height-value(100%, 140px);
 
                 .banner-title-two {
                     margin: 0;
