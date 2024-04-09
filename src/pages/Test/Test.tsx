@@ -26,7 +26,7 @@ const Test = () => {
       <div className="hint">
         <div className="container">
           <div className="hint-content">
-            <a className="hint-text" target="_blank" href="https://drive.google.com/drive/folders/1dwnZBXava_GAwPqam-oMKlASFNdfmGcj?usp=sharing">Хочу конспект з уроку!</a>
+            <a className="hint-text" target="_blank" href="https://drive.google.com/file/d/1YmClDWepa9TpWRmv6OumMSCUUMnjCUKn/view?usp=sharing">Хочу конспект з уроку!</a>
           </div>
         </div>
       </div>

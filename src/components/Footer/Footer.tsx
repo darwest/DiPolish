@@ -48,7 +48,7 @@ const Footer = () => {
                 <a className="link" target="_blank" href="https://www.instagram.com/hatsyk.diana?igsh=MWxtdXo0NXo1azE1Yw==">
                   Instagram
                 </a>
-                <a className="link" target="_blank" href="http://t.me/d_hatsykk">
+                <a className="link" target="_blank" href="https://t.me/hatsyk_diana">
                   Telegram
                 </a>
                 <a className="link" target="_blank" href="https://www.tiktok.com/@hatsyk.polish?_t=8kcToAJwfHZ&_r=1">
