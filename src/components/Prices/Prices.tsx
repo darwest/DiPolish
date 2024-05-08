@@ -32,7 +32,7 @@ const Prices = () => {
                         >
                             <h3 className="title-price-block">ІНДИВІДУАЛЬНІ</h3>
                             <img src={Stud1} className="icon-price-block" />
-                            <p className="price">250 грн/год.</p>
+                            <p className="price">350 грн/год.</p>
                             <p className="description-price">*ціна за одну особу</p>
                         </motion.div>
                         <img src={Sm} width="40px" className="sm sm1" alt="loading" />
@@ -44,7 +44,7 @@ const Prices = () => {
                         >
                             <h3 className="title-price-block">ПАРНІ</h3>
                             <img src={Stud2} className="icon-price-block" />
-                            <p className="price">200 грн/год.</p>
+                            <p className="price">350 грн/год.</p>
                             <p className="description-price">*ціна за одну особу</p>
                         </motion.div>
                         <img src={Sm} width="40px" className="sm sm2" alt="loading" />
@@ -60,7 +60,7 @@ const Prices = () => {
                                 <img src={Stud1} className="icon-price-block" />
                                 <img src={Stud2} className="icon-price-block" />
                             </div>
-                            <p className="price">150 грн/год.</p>
+                            <p className="price">250 грн/год.</p>
                             <p className="description-price">*ціна за одну особу</p>
                         </motion.div>
                         <img src={Sm} width="40px" className="sm sm3" alt="loading" />
